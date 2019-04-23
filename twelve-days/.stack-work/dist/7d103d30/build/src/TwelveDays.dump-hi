@@ -1,0 +1,74 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-25 00:08:46.3512124 UTC
+
+interface twelve-days-1.2.0.4-2WXnNvbW8DuCKjm7tzsIS2:TwelveDays 8043
+  interface hash: e8f9cb54dac9fec39d384b967189b760
+  ABI hash: fe8479fe455483ffbba430f3ea20cbbb
+  export-list hash: c1c8c8305bf8c46a38a892056c5ed8f3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  TwelveDays.recite
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+cf86f0ed30db0a5210944fe4089524fa
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   TwelveDays.$trModule3
+                   TwelveDays.$trModule1) -}
+c9bd62f75cd1a17ed29c5550fb93f974
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS TwelveDays.$trModule2) -}
+5a6de7a28be7a3f8c425de10f444447d
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("TwelveDays"#) -}
+586985ad0568f13dd0540c162f4e43aa
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS TwelveDays.$trModule4) -}
+5f37c74f0565207f3b6e3b4323e584ef
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("twelve-days-1.2.0.4-2WXnNvbW8DuCKjm7tzsIS2"#) -}
+51d7706b64480d4d7ebede2d1facdfd7
+  $wrecite ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int# -> (# GHC.Base.String, [GHC.Base.String] #)
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0] -}
+6599630aaba32d76ec832b08569bc9a6
+  recite :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Base.String]
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m2, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { GHC.Types.I# ww3 ->
+                 case TwelveDays.$wrecite ww1 ww3 of ww4 { (#,#) ww5 ww6 ->
+                 GHC.Types.: @ GHC.Base.String ww5 ww6 } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

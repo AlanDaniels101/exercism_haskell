@@ -1,0 +1,76 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-12 03:08:24.3550068 UTC
+
+interface acronym-1.6.0.9-2ozgtPVAUtGsQTtTryFws:Acronym 8043
+  interface hash: 989c4dece1baf05a378fe3f9d30c14af
+  ABI hash: ae87930459b280669b98d70bafdd50fd
+  export-list hash: b5b19f853f15f6a18290702464814a99
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Acronym.abbreviate
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Char c550369827d719df8be8fb1e8cd699c1
+import  -/  base-4.11.1.0:Data.Tuple bfd15ca14ee9b1b9cd782c618946afb4
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Unicode 875b8e8d21ca0bd8abbb7bede4488443
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+bae587e4719354efbf6e7b69bd150b4a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Acronym.$trModule3
+                   Acronym.$trModule1) -}
+2e3356df84f93cd969eed23543ff6548
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Acronym.$trModule2) -}
+0a198cbb3475e00fb0e466cb02146fa7
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Acronym"#) -}
+48cd12c41a7f8f6b9c008384c3a0a8e4
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Acronym.$trModule4) -}
+2b1e9dbf5abc18b0c6b0f3f871770702
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("acronym-1.6.0.9-2ozgtPVAUtGsQTtTryFws"#) -}
+351d36783f6153d05930d84f2d87323c
+  abbreviate :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (s :: GHC.Base.String) ->
+                 Acronym.abbreviate_go2
+                   (GHC.Types.: @ GHC.Types.Char Acronym.abbreviate1 s)
+                   s) -}
+b1ae35fa1830f28e76653d9010a1baf5
+  abbreviate1 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# ' '#) -}
+a1d9f25f3bbfddedce6952cf449c380e
+  abbreviate_go2 ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

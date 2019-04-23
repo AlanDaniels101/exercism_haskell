@@ -1,0 +1,80 @@
+
+==================== FINAL INTERFACE ====================
+2019-04-16 00:44:09.990936 UTC
+
+interface run-length-encoding-1.1.0.5-8sQejL3XtLXAjQan3qLQvD:RunLength 8043
+  interface hash: cacdca4b974b6e32d8c8e32325de981d
+  ABI hash: a577f878db617707ca6dfe0f19928de6
+  export-list hash: b42149a6ae446f4fc7ff48c4f1aac7ab
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  RunLength.decode
+  RunLength.encode
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Char c550369827d719df8be8fb1e8cd699c1
+import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
+import  -/  base-4.11.1.0:Data.List cb78ca5eace70fd310936fda86b3e611
+import  -/  base-4.11.1.0:Data.OldList 3987872d5de68d40c22cd1c30825ad08
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:GHC.Show 6211aec7cccd267a5ee999e4414d7b90
+import  -/  base-4.11.1.0:GHC.Unicode 875b8e8d21ca0bd8abbb7bede4488443
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  base-4.11.1.0:Text.Read 5c288a0919cb418cf58278e23fdb845d
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+73191a4f9bad1e895655cef0b60ca910
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   RunLength.$trModule3
+                   RunLength.$trModule1) -}
+ebc713363a67cca687c76a1979ad13b2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS RunLength.$trModule2) -}
+05f179b91fae5bf74987eea8bb2afb24
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("RunLength"#) -}
+12e017edb71d3bc53ed2808c0dde82fe
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS RunLength.$trModule4) -}
+5ffca9bc0a5a624e3214859f1dd8f5bc
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("run-length-encoding-1.1.0.5-8sQejL3XtLXAjQan3qLQvD"#) -}
+d0d29e95a51221b972bb9d7dc1e4dbe3
+  decode :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,U> -}
+c9642981851f0b9348ba3165dfb48b67
+  encode :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (text :: GHC.Base.String) ->
+                 RunLength.encode_go
+                   (Data.OldList.groupBy @ GHC.Types.Char GHC.Classes.eqChar text)) -}
+16f03c119fa0d1831ab3e40de7750bff
+  encode_go :: [GHC.Base.String] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

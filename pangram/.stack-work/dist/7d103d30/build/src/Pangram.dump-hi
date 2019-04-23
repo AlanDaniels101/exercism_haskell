@@ -1,0 +1,80 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-22 02:46:46.7676528 UTC
+
+interface pangram-1.4.1.10-8VED5JCm86mHpAFwH26C6F:Pangram 8043
+  interface hash: 73374fefa31444b1a895bb01bffca36a
+  ABI hash: 0204ff56e867c3c461c652faeb970ebc
+  export-list hash: 578fb984225d403e414e514fc53d2b6e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Pangram.isPangram
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Char c550369827d719df8be8fb1e8cd699c1
+import  -/  base-4.11.1.0:Data.List cb78ca5eace70fd310936fda86b3e611
+import  -/  base-4.11.1.0:Data.OldList 3987872d5de68d40c22cd1c30825ad08
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.Unicode 875b8e8d21ca0bd8abbb7bede4488443
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+7d2c3094c3352a849ab9ec59955a4f15
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Pangram.$trModule3
+                   Pangram.$trModule1) -}
+e2357cb44c32987bb6cc35cd6284b6c4
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Pangram.$trModule2) -}
+bceb80cea99fedb022c6fb5a8d8f3cb2
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Pangram"#) -}
+d3e83270ce6c0587798e82a6c8fd6571
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Pangram.$trModule4) -}
+696b0f36e1b4afe66f82b571cbf2d145
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("pangram-1.4.1.10-8VED5JCm86mHpAFwH26C6F"#) -}
+19368629f8c56793a999afc69659d95e
+  isPangram :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (text :: GHC.Base.String) ->
+                 GHC.Base.eqString
+                   (Data.OldList.intersectBy
+                      @ GHC.Types.Char
+                      GHC.Classes.eqChar
+                      Pangram.isPangram1
+                      (GHC.Base.map
+                         @ GHC.Types.Char
+                         @ GHC.Types.Char
+                         GHC.Unicode.toLower
+                         text))
+                   Pangram.isPangram1) -}
+97b8cb0b7d56f7b0aa1a564dfaa04f06
+  isPangram1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Enum.eftChar 97# 122#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
