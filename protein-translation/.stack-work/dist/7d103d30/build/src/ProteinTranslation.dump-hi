@@ -1,0 +1,73 @@
+
+==================== FINAL INTERFACE ====================
+2019-04-27 22:50:34.4998022 UTC
+
+interface protein-translation-1.1.1.3-46PAR5b2P9vBD5r1V3EyC8:ProteinTranslation 8043
+  interface hash: be2036bfff2c7d9da5634e863096c9d1
+  ABI hash: b09bc38caf26f004fbf820d1fd6a097f
+  export-list hash: 572774960d86638ed2326c0a9d488821
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ProteinTranslation.proteins
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+9170e9a2f21dad583ab260ffdfee636e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ProteinTranslation.$trModule3
+                   ProteinTranslation.$trModule1) -}
+16c732c713c57502382c51152c558d93
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ProteinTranslation.$trModule2) -}
+9d59d3718fbe9d9d7b963595ae63c584
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ProteinTranslation"#) -}
+6db06e52d15a2f4eb8c8f86fcccad0f9
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ProteinTranslation.$trModule4) -}
+53c6bb6b8d75f2f10cd663d93cef430d
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("protein-translation-1.1.1.3-46PAR5b2P9vBD5r1V3EyC8"#) -}
+e5d5b70021d79776765352e980504f2a
+  group3 :: GHC.Base.String -> [GHC.Base.String]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+382dba11924949d5b1f677fef5a06552
+  proteins :: GHC.Base.String -> GHC.Base.Maybe [GHC.Base.String]
+  {- Arity: 1, Strictness: <L,1*U>m2, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Base.String) ->
+                 GHC.Base.Just
+                   @ [GHC.Base.String]
+                   (ProteinTranslation.proteins_go (ProteinTranslation.group3 w))) -}
+8c1031ca9933b5c547184287694b23bf
+  proteins_go :: [[GHC.Types.Char]] -> [[GHC.Types.Char]]
+  {- Arity: 1, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

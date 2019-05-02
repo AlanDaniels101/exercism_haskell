@@ -1,0 +1,517 @@
+
+==================== FINAL INTERFACE ====================
+2019-04-30 18:46:06.8935363 UTC
+
+interface dnd-character-1.1.0.0-9x6msZ3U5ZvJ7CBofs69eM:DND 8043
+  interface hash: bc7d75460668cb9c53410f222efcc8a4
+  ABI hash: 949cb5fbc51784bf8818db2c1bad4ce8
+  export-list hash: 3da555330673db75c1935f227a6a7fa7
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  DND.ability
+  DND.character
+  DND.modifier
+  DND.Character{DND.Character charisma constitution dexterity hitpoints intelligence name strength wisdom}
+module dependencies:
+package dependencies: QuickCheck-2.11.3 Win32-2.6.1.0 array-0.5.2.0
+                      base-4.11.1.0* containers-0.5.11.0 deepseq-1.4.3.0
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 integer-gmp-1.0.2.0
+                      pretty-1.1.3.6 primitive-0.6.3.0 random-1.1
+                      template-haskell-2.13.0.0 tf-random-0.5 time-1.8.0.2
+                      transformers-0.5.5.0
+orphans: transformers-0.5.5.0:Control.Monad.Trans.Error
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal
+                         ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.11.3:Test.QuickCheck d7eee254374769eecc0d474ec3ec2b2a
+import  -/  QuickCheck-2.11.3:Test.QuickCheck.Gen 70de318255983a8f81837627e2ad11b7
+import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:GHC.Real 032ed0a1053f878238d78e95e75f2edf
+import  -/  base-4.11.1.0:GHC.Show 6211aec7cccd267a5ee999e4414d7b90
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+a41c81626aa606ae993dc0655db3c7fa
+  $fEqCharacter :: GHC.Classes.Eq DND.Character
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ DND.Character DND.$fEqCharacter_$c== DND.$fEqCharacter_$c/= -}
+a41c81626aa606ae993dc0655db3c7fa
+  $fEqCharacter_$c/= ::
+    DND.Character -> DND.Character -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U))><S(SLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: DND.Character) (y :: DND.Character) ->
+                 case DND.$fEqCharacter_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+a41c81626aa606ae993dc0655db3c7fa
+  $fEqCharacter_$c== ::
+    DND.Character -> DND.Character -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U))><S(SLLLLLLL),1*U(1*U,1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Unfolding: (\ (ds :: DND.Character) (ds1 :: DND.Character) ->
+                 case ds of wild { DND.Character a1 a2 a3 a4 a5 a6 a7 a8 ->
+                 case ds1 of wild1 { DND.Character b1 b2 b3 b4 b5 b6 b7 b8 ->
+                 case GHC.Base.eqString a1 b1 of wild2 {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case a2 of wild3 { GHC.Types.I# x ->
+                      case b2 of wild4 { GHC.Types.I# y ->
+                      case GHC.Prim.==# x y of lwild {
+                        DEFAULT -> GHC.Types.False
+                        1#
+                        -> case a3 of wild5 { GHC.Types.I# x1 ->
+                           case b3 of wild6 { GHC.Types.I# y1 ->
+                           case GHC.Prim.==# x1 y1 of lwild1 {
+                             DEFAULT -> GHC.Types.False
+                             1#
+                             -> case a4 of wild7 { GHC.Types.I# x2 ->
+                                case b4 of wild8 { GHC.Types.I# y2 ->
+                                case GHC.Prim.==# x2 y2 of lwild2 {
+                                  DEFAULT -> GHC.Types.False
+                                  1#
+                                  -> case a5 of wild9 { GHC.Types.I# x3 ->
+                                     case b5 of wild10 { GHC.Types.I# y3 ->
+                                     case GHC.Prim.==# x3 y3 of lwild3 {
+                                       DEFAULT -> GHC.Types.False
+                                       1#
+                                       -> case a6 of wild11 { GHC.Types.I# x4 ->
+                                          case b6 of wild12 { GHC.Types.I# y4 ->
+                                          case GHC.Prim.==# x4 y4 of lwild4 {
+                                            DEFAULT -> GHC.Types.False
+                                            1#
+                                            -> case a7 of wild13 { GHC.Types.I# x5 ->
+                                               case b7 of wild14 { GHC.Types.I# y5 ->
+                                               case GHC.Prim.==# x5 y5 of lwild5 {
+                                                 DEFAULT -> GHC.Types.False
+                                                 1#
+                                                 -> GHC.Classes.eqInt
+                                                      a8
+                                                      b8 } } } } } } } } } } } } } } } } } } } } }) -}
+a41c81626aa606ae993dc0655db3c7fa
+  $fShowCharacter :: GHC.Show.Show DND.Character
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ DND.Character
+                  DND.$fShowCharacter_$cshowsPrec
+                  DND.$fShowCharacter_$cshow
+                  DND.$fShowCharacter_$cshowList -}
+a41c81626aa606ae993dc0655db3c7fa
+  $fShowCharacter1 :: DND.Character -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S,1*U(1*U,1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U))><L,U>,
+     Unfolding: (\ (w :: DND.Character) (w1 :: GHC.Base.String) ->
+                 case w of ww { DND.Character ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 DND.$w$cshowsPrec 0# ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 w1 }) -}
+58ea7268c7962414930174da5ee1106d
+  $fShowCharacter2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+a41c81626aa606ae993dc0655db3c7fa
+  $fShowCharacter_$cshow :: DND.Character -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(1*U,1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: DND.Character) ->
+                 DND.$fShowCharacter_$cshowsPrec
+                   DND.$fShowCharacter2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a41c81626aa606ae993dc0655db3c7fa
+  $fShowCharacter_$cshowList :: [DND.Character] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [DND.Character]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ DND.Character DND.$fShowCharacter1 ls s) -}
+a41c81626aa606ae993dc0655db3c7fa
+  $fShowCharacter_$cshowsPrec ::
+    GHC.Types.Int -> DND.Character -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U),1*U(U))><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: DND.Character)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { DND.Character ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ->
+                 DND.$w$cshowsPrec ww1 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 w2 } }) -}
+77fd842c89b24dd68f6b60170699ffa0
+  $tc'Character :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10169797969194745261##
+                   16125287022988854293##
+                   DND.$trModule
+                   DND.$tc'Character2
+                   0#
+                   DND.$tc'Character1) -}
+877e9db76b6f3e0bd9e10d53ab8e8179
+  $tc'Character1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0211f35ac8fb7514b36fdece80747f32
+  $tc'Character2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS DND.$tc'Character3) -}
+38711cad42d19b74e40275ee4717e59c
+  $tc'Character3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Character"#) -}
+de2c56f96c8c3d9ad6643477d838e74d
+  $tcCharacter :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15775395041669709705##
+                   9993934100091808496##
+                   DND.$trModule
+                   DND.$tcCharacter1
+                   0#
+                   GHC.Types.krep$*) -}
+30e422ff67d6a0825e74d0e3ea26f67f
+  $tcCharacter1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS DND.$tcCharacter2) -}
+aa71af7547193dc55e75d02881c6f5f9
+  $tcCharacter2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Character"#) -}
+3878f57273b8ff3d045689a297512ca7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module DND.$trModule3 DND.$trModule1) -}
+9bcf48e3d853e7844c556dd774028e4f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS DND.$trModule2) -}
+ff5c3b6b6da69f1eb41e9a336a39c26f
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("DND"#) -}
+0345dbf1ebecb9535e63b19f2a4bd674
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS DND.$trModule4) -}
+b2bde20d27ac6ebd544759b24e7caeb8
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("dnd-character-1.1.0.0-9x6msZ3U5ZvJ7CBofs69eM"#) -}
+cc8054f6e9abce33c12bb20826efdf6f
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 10,
+     Strictness: <S,U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,1*U(U)><L,U>,
+     Inline: [0] -}
+bddf19791925fd5b3530c7efe6fab917
+  $wability ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Word#
+    -> GHC.Prim.Word#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+  {- Arity: 4, Strictness: <S,U><S,U><S,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.ByteArray#)
+                   (ww1 :: GHC.Prim.Word#)
+                   (ww2 :: GHC.Prim.Word#)
+                   (ww3 :: GHC.Prim.Int#) ->
+                 case System.Random.TF.Gen.$wtfGenSplit
+                        ww
+                        ww1
+                        ww2
+                        ww3 of ww7 { (#,#) ww8 ww9 ->
+                 case ww9 of ww4 { System.Random.TF.Gen.TFGen ww5 ww6 ww10 ww11 ww12 ww13 ->
+                 case System.Random.TF.Gen.$wtfGenSplit
+                        ww5
+                        ww6
+                        ww10
+                        ww11 of ww14 { (#,#) ww15 ww16 ->
+                 case ww16 of ww17 { System.Random.TF.Gen.TFGen ww18 ww19 ww20 ww21 ww22 ww23 ->
+                 case System.Random.TF.Gen.$wtfGenSplit
+                        ww18
+                        ww19
+                        ww20
+                        ww21 of ww24 { (#,#) ww25 ww26 ->
+                 case ww26 of ww27 { System.Random.TF.Gen.TFGen ww28 ww29 ww30 ww31 ww32 ww33 ->
+                 case System.Random.TF.Gen.$wtfGenSplit
+                        ww28
+                        ww29
+                        ww30
+                        ww31 of ww34 { (#,#) ww35 ww36 ->
+                 case System.Random.$wrandomIvalInteger
+                        @ Test.QuickCheck.Random.QCGen
+                        @ GHC.Types.Int
+                        Test.QuickCheck.Random.$fRandomGenQCGen
+                        GHC.Num.$fNumInt
+                        DND.ability3
+                        DND.ability2
+                        ww8
+                          `cast`
+                        (Sym (Test.QuickCheck.Random.N:QCGen[0])) of ww37 { (#,#) ww38 ww39 ->
+                 case ww38 of ww40 { GHC.Types.I# ww41 ->
+                 let {
+                   r2 :: GHC.Types.Int
+                   = case System.Random.$wrandomIvalInteger
+                            @ Test.QuickCheck.Random.QCGen
+                            @ GHC.Types.Int
+                            Test.QuickCheck.Random.$fRandomGenQCGen
+                            GHC.Num.$fNumInt
+                            DND.ability3
+                            DND.ability2
+                            ww15
+                              `cast`
+                            (Sym (Test.QuickCheck.Random.N:QCGen[0])) of ww42 { (#,#) ww43 ww44 ->
+                     ww43 }
+                 } in
+                 let {
+                   r3 :: GHC.Types.Int
+                   = case System.Random.$wrandomIvalInteger
+                            @ Test.QuickCheck.Random.QCGen
+                            @ GHC.Types.Int
+                            Test.QuickCheck.Random.$fRandomGenQCGen
+                            GHC.Num.$fNumInt
+                            DND.ability3
+                            DND.ability2
+                            ww25
+                              `cast`
+                            (Sym (Test.QuickCheck.Random.N:QCGen[0])) of ww42 { (#,#) ww43 ww44 ->
+                     ww43 }
+                 } in
+                 let {
+                   r4 :: GHC.Types.Int
+                   = case System.Random.$wrandomIvalInteger
+                            @ Test.QuickCheck.Random.QCGen
+                            @ GHC.Types.Int
+                            Test.QuickCheck.Random.$fRandomGenQCGen
+                            GHC.Num.$fNumInt
+                            DND.ability3
+                            DND.ability2
+                            ww35
+                              `cast`
+                            (Sym (Test.QuickCheck.Random.N:QCGen[0])) of ww42 { (#,#) ww43 ww44 ->
+                     ww43 }
+                 } in
+                 let {
+                   rolls :: [GHC.Types.Int]
+                   = GHC.Types.: @ GHC.Types.Int r4 (GHC.Types.[] @ GHC.Types.Int)
+                 } in
+                 let {
+                   rolls1 :: [GHC.Types.Int] = GHC.Types.: @ GHC.Types.Int r3 rolls
+                 } in
+                 let {
+                   rolls2 :: [GHC.Types.Int] = GHC.Types.: @ GHC.Types.Int r2 rolls1
+                 } in
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Prim.Int#
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x :: GHC.Prim.Int#)[OneShot] ->
+                     case GHC.List.$wgo1 rolls2 ww41 of ww42 { DEFAULT ->
+                     GHC.Prim.-# x ww42 }
+                 } in
+                 letrec {
+                   $wgo :: [GHC.Types.Int] -> GHC.Prim.Int# -> GHC.Prim.Int#
+                     <join 2> {- Arity: 2, Strictness: <S,1*U><S,U>, Inline: [0] -}
+                   = \ (w :: [GHC.Types.Int]) (ww42 :: GHC.Prim.Int#) ->
+                     case w of wild {
+                       [] -> $j ww42
+                       : y ys
+                       -> case y of wild1 { GHC.Types.I# y1 ->
+                          $wgo ys (GHC.Prim.+# ww42 y1) } }
+                 } in
+                 $wgo
+                   (GHC.Types.: @ GHC.Types.Int ww40 rolls2)
+                   0# } } } } } } } } }) -}
+2cd8feb31054fdc98c4b44373ad6361f
+  $wcharacter ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Word#
+    -> GHC.Prim.Word#
+    -> GHC.Prim.Int#
+    -> (# GHC.Base.String, GHC.Types.Int, GHC.Types.Int, GHC.Types.Int,
+          GHC.Types.Int, GHC.Types.Int, GHC.Types.Int, GHC.Types.Int #)
+  {- Arity: 4, Strictness: <S,U><S,U><S,U><S,1*U>, Inline: [0] -}
+a41c81626aa606ae993dc0655db3c7fa
+  data Character
+    = Character {name :: GHC.Base.String,
+                 strength :: GHC.Types.Int,
+                 dexterity :: GHC.Types.Int,
+                 constitution :: GHC.Types.Int,
+                 intelligence :: GHC.Types.Int,
+                 wisdom :: GHC.Types.Int,
+                 charisma :: GHC.Types.Int,
+                 hitpoints :: GHC.Types.Int}
+d2f4fe99e2829e220b3ef473b248c9b6
+  ability :: Test.QuickCheck.Gen.Gen GHC.Types.Int
+  {- Arity: 2, Strictness: <S(SSSSLL),1*U(U,U,U,1*U,A,A)><L,A>m,
+     Unfolding: InlineRule (0, True, True)
+                DND.ability1
+                  `cast`
+                (Sym (Test.QuickCheck.Gen.N:Gen[0] <GHC.Types.Int>_R)) -}
+28028a3807809d2d72d3a3a48ca579ee
+  ability1 ::
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 2, Strictness: <S(SSSSLL),1*U(U,U,U,1*U,A,A)><L,A>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Test.QuickCheck.Random.QCGen) (w1 :: GHC.Types.Int) ->
+                 case w `cast`
+                      (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case DND.$wability ww1 ww2 ww3 ww4 of ww7 { DEFAULT ->
+                 GHC.Types.I# ww7 } }) -}
+21245aa4391ee90ac2a2c315b6704760
+  ability2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (6) -}
+4934e0a79ca471720d485b857a5e0b77
+  ability3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+9cf5ca14b376475fa7fc845156da527c
+  character :: Test.QuickCheck.Gen.Gen DND.Character
+  {- Arity: 2, Strictness: <S(SSSSLL),1*U(U,U,U,1*U,A,A)><L,A>m,
+     Unfolding: InlineRule (0, True, True)
+                DND.character1
+                  `cast`
+                (Sym (Test.QuickCheck.Gen.N:Gen[0] <DND.Character>_R)) -}
+eca3460628f1c276f3d1e5bcafa9f4ab
+  character1 ::
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> DND.Character
+  {- Arity: 2, Strictness: <S(SSSSLL),1*U(U,U,U,1*U,A,A)><L,A>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Test.QuickCheck.Random.QCGen) (w1 :: GHC.Types.Int) ->
+                 case w `cast`
+                      (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case DND.$wcharacter
+                        ww1
+                        ww2
+                        ww3
+                        ww4 of ww7 { (#,,,,,,,#) ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ->
+                 DND.Character ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 } }) -}
+a41c81626aa606ae993dc0655db3c7fa
+  charisma :: DND.Character -> GHC.Types.Int
+  RecSel Left DND.Character
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLSL),1*U(A,A,A,A,A,A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: DND.Character) ->
+                 case ds of wild { DND.Character ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds7 }) -}
+a41c81626aa606ae993dc0655db3c7fa
+  constitution :: DND.Character -> GHC.Types.Int
+  RecSel Left DND.Character
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLLL),1*U(A,A,A,1*U(U),A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: DND.Character) ->
+                 case ds of wild { DND.Character ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds4 }) -}
+a41c81626aa606ae993dc0655db3c7fa
+  dexterity :: DND.Character -> GHC.Types.Int
+  RecSel Left DND.Character
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLLL),1*U(A,A,1*U(U),A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: DND.Character) ->
+                 case ds of wild { DND.Character ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds3 }) -}
+a41c81626aa606ae993dc0655db3c7fa
+  hitpoints :: DND.Character -> GHC.Types.Int
+  RecSel Left DND.Character
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLS),1*U(A,A,A,A,A,A,A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: DND.Character) ->
+                 case ds of wild { DND.Character ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds8 }) -}
+a41c81626aa606ae993dc0655db3c7fa
+  intelligence :: DND.Character -> GHC.Types.Int
+  RecSel Left DND.Character
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLLL),1*U(A,A,A,A,1*U(U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: DND.Character) ->
+                 case ds of wild { DND.Character ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds5 }) -}
+f76fd95959e0e14043de6d88bd4edd51
+  modifier :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (c :: GHC.Types.Int) ->
+                 case c of wild { GHC.Types.I# x ->
+                 GHC.Types.I#
+                   (GHC.Prim.uncheckedIShiftRA# (GHC.Prim.-# x 10#) 1#) }) -}
+a41c81626aa606ae993dc0655db3c7fa
+  name :: DND.Character -> GHC.Base.String
+  RecSel Left DND.Character
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLLL),1*U(1*U,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: DND.Character) ->
+                 case ds of wild { DND.Character ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds1 }) -}
+a41c81626aa606ae993dc0655db3c7fa
+  strength :: DND.Character -> GHC.Types.Int
+  RecSel Left DND.Character
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLLL),1*U(A,1*U(U),A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: DND.Character) ->
+                 case ds of wild { DND.Character ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds2 }) -}
+a41c81626aa606ae993dc0655db3c7fa
+  wisdom :: DND.Character -> GHC.Types.Int
+  RecSel Left DND.Character
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLL),1*U(A,A,A,A,A,1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: DND.Character) ->
+                 case ds of wild { DND.Character ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds6 }) -}
+instance [safe] GHC.Classes.Eq [DND.Character] = DND.$fEqCharacter
+instance [safe] GHC.Show.Show [DND.Character] = DND.$fShowCharacter
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
