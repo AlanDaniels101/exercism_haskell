@@ -1,0 +1,96 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-04 21:08:40.752755 UTC
+
+interface diamond-1.1.0.4-AZJaQlg069W1nRXLGsJi7D:Diamond 8043
+  interface hash: 8e4f825f0f10d76d29559074bfd32a0d
+  ABI hash: 6d8e100864419b68e7d4d8b6808ca72a
+  export-list hash: 8305f1d640a5f93bdb632b1888861aa7
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Diamond.diamond
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Char c550369827d719df8be8fb1e8cd699c1
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.Enum e4ba78b4713760aa26fb70e6c50823d5
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:GHC.Real 032ed0a1053f878238d78e95e75f2edf
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+41f66632e454599486b02d614fff63d8
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Diamond.$trModule3
+                   Diamond.$trModule1) -}
+9c5cbc6f915767a5f6bf8956fba0d819
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Diamond.$trModule2) -}
+cdbc4a956db2237281000d52b9bc3670
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Diamond"#) -}
+bf4817c061150088ab1a796e6effffc9
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Diamond.$trModule4) -}
+d7f4a58d2b9ac35a210f23bf54b7fdb4
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("diamond-1.1.0.4-AZJaQlg069W1nRXLGsJi7D"#) -}
+7b0d9570f75296b7236f60025c630dbc
+  $wdiamond :: GHC.Types.Char -> (# [GHC.Base.String] #)
+  {- Arity: 1, Strictness: <L,1*U(U)>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Char) ->
+                 (# case w of ww { GHC.Types.C# ww1 ->
+                    let {
+                      totalWidth :: GHC.Prim.Int#
+                      = GHC.Prim.+#
+                          (GHC.Prim.*# (GHC.Prim.-# (GHC.Prim.ord# ww1) 65#) 2#)
+                          1#
+                    } in
+                    let {
+                      totalWidth1 :: GHC.Types.Int = GHC.Types.I# totalWidth
+                    } in
+                    GHC.Base.++
+                      @ [GHC.Types.Char]
+                      (Diamond.$wgenUpperDiamond ww1 totalWidth1)
+                      (case Diamond.$wgenLowerDiamond ww1 totalWidth1 of wild {
+                         [] -> GHC.List.scanl2 @ GHC.Base.String : ds1 xs -> xs }) } #)) -}
+8a3b00f369d0881ea452448e92a5d6c9
+  $wgenLowerDiamond ::
+    GHC.Prim.Char# -> GHC.Types.Int -> [GHC.Base.String]
+  {- Arity: 2, Strictness: <S,1*U><L,U(U)>m2, Inline: [0] -}
+0a652baa73d3212317c951263326052c
+  $wgenUpperDiamond ::
+    GHC.Prim.Char# -> GHC.Types.Int -> [GHC.Base.String]
+  {- Arity: 2, Strictness: <S,1*U><L,U(U)>, Inline: [0] -}
+b04b5d3886ae57209efc3cb117b124e4
+  diamond :: GHC.Types.Char -> GHC.Base.Maybe [GHC.Base.String]
+  {- Arity: 1, Strictness: <L,1*U(U)>m2, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Char) ->
+                 case Diamond.$wdiamond w of ww { Unit# ww1 ->
+                 GHC.Base.Just @ [GHC.Base.String] ww1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
