@@ -1,0 +1,83 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-04 01:00:52.8017247 UTC
+
+interface isogram-1.7.0.8-LjAkoULIGc22UMei71HtOR:Isogram 8043
+  interface hash: 36527e2adbc20464aad07e127f01fff2
+  ABI hash: e6cf7e2601df9a19db0160e4d19172ed
+  export-list hash: 4e0bacda61691f0369a387e86415cf8e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Isogram.isIsogram
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Char c550369827d719df8be8fb1e8cd699c1
+import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
+import  -/  base-4.11.1.0:Data.List cb78ca5eace70fd310936fda86b3e611
+import  -/  base-4.11.1.0:Data.OldList 3987872d5de68d40c22cd1c30825ad08
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Unicode 875b8e8d21ca0bd8abbb7bede4488443
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+b26e30dc32d4fc7c8d92fc5934d21846
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Isogram.$trModule3
+                   Isogram.$trModule1) -}
+2e8489b48956151665eea9e948d3ca10
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Isogram.$trModule2) -}
+e5ca59ad564e9596b9d70443c164414f
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Isogram"#) -}
+34e8d5c684d8dd5c0f668ca320a5d6f2
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Isogram.$trModule4) -}
+90ccf4b8b9e97976df12be35d0f1a73c
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("isogram-1.7.0.8-LjAkoULIGc22UMei71HtOR"#) -}
+1566c6051b498d1986c73c3d2136492c
+  isIsogram :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: GHC.Base.String) ->
+                 let {
+                   alphaOnly :: [GHC.Types.Char] = Isogram.isIsogram_go xs
+                 } in
+                 case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        alphaOnly
+                        0# of ww2 { DEFAULT ->
+                 case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        (Data.OldList.nubBy @ GHC.Types.Char GHC.Classes.eqChar alphaOnly)
+                        0# of ww1 { DEFAULT ->
+                 GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.==# ww2 ww1) } }) -}
+789a477c4cd8aaed309802198c3d8de7
+  isIsogram_go :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
