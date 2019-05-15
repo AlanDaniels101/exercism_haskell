@@ -1,0 +1,1077 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-15 00:53:04.7709168 UTC
+
+interface meetup-1.1.0.5-HQi65lCoIkL2davHtfG0jv:Meetup 8043
+  interface hash: a85a6c6ed9d5f0ec522b223dcf2ecc9d
+  ABI hash: c93afae14fd691d2501a486f70a8b6e4
+  export-list hash: ba62be8b74f00b3a7f50f0cb471ab8ef
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Meetup.meetupDay
+  Meetup.Schedule{Meetup.First Meetup.Fourth Meetup.Last Meetup.Second Meetup.Teenth Meetup.Third}
+  Meetup.Weekday{Meetup.Friday Meetup.Monday Meetup.Saturday Meetup.Sunday Meetup.Thursday Meetup.Tuesday Meetup.Wednesday}
+module dependencies:
+package dependencies: Win32-2.6.1.0 array-0.5.2.0 base-4.11.1.0*
+                      deepseq-1.4.3.0 ghc-prim-0.5.2.0 integer-gmp-1.0.2.0 time-1.8.0.2
+orphans: time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
+import  -/  base-4.11.1.0:Data.List cb78ca5eace70fd310936fda86b3e611
+import  -/  base-4.11.1.0:Data.Maybe 1f53643457b97538ca6f4ca7328e8b30
+import  -/  base-4.11.1.0:Data.Tuple bfd15ca14ee9b1b9cd782c618946afb4
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.Enum e4ba78b4713760aa26fb70e6c50823d5
+import  -/  base-4.11.1.0:GHC.Err 97cd376c529926d7dcbd3f06020fe0fc
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:GHC.Read da2c5f0cb256fac757eee7bfe86b3935
+import  -/  base-4.11.1.0:GHC.Real 032ed0a1053f878238d78e95e75f2edf
+import  -/  base-4.11.1.0:GHC.Show 6211aec7cccd267a5ee999e4414d7b90
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 6713f4457912bac968474ebbf062cd01
+import  -/  time-1.8.0.2:Data.Time.Calendar b6b5a47339201697127b2ff0b1226f3b
+import  -/  time-1.8.0.2:Data.Time.Calendar.Days e15a45d5b27edcd1c9a82745216926bb
+import  -/  time-1.8.0.2:Data.Time.Calendar.Gregorian 0b3be480a87108a1388faa4af18b929c
+import  -/  time-1.8.0.2:Data.Time.Calendar.OrdinalDate 1b3bd6f082d83a71a4bf8c51b481f128
+1229bb961ed4737d81b535709dea0fb3
+  $fBoundedWeekday :: GHC.Enum.Bounded Meetup.Weekday
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:. @ Meetup.Weekday Meetup.Monday Meetup.Sunday -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday :: GHC.Enum.Enum Meetup.Weekday
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Meetup.Weekday
+                  Meetup.$fEnumWeekday_$csucc
+                  Meetup.$fEnumWeekday_$cpred
+                  Meetup.$fEnumWeekday_$ctoEnum
+                  Meetup.$fEnumWeekday_$cfromEnum
+                  Meetup.$fEnumWeekday_$cenumFrom
+                  Meetup.$fEnumWeekday_$cenumFromThen
+                  Meetup.$fEnumWeekday_$cenumFromTo
+                  Meetup.$fEnumWeekday_$cenumFromThenTo -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday1 :: [Meetup.Weekday]
+  {- Unfolding: (Meetup.$fEnumWeekday_go7 6#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday2 :: [Meetup.Weekday]
+  {- Unfolding: (Meetup.$fEnumWeekday_go7 5#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday3 :: [Meetup.Weekday]
+  {- Unfolding: (Meetup.$fEnumWeekday_go7 4#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday4 :: [Meetup.Weekday]
+  {- Unfolding: (Meetup.$fEnumWeekday_go7 3#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday5 :: [Meetup.Weekday]
+  {- Unfolding: (Meetup.$fEnumWeekday_go7 2#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday6 :: [Meetup.Weekday]
+  {- Unfolding: (Meetup.$fEnumWeekday_go7 1#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday7 :: [Meetup.Weekday]
+  {- Unfolding: (Meetup.$fEnumWeekday_go7 0#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday8 :: Meetup.Weekday
+  {- Strictness: x -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday9 :: Meetup.Weekday
+  {- Strictness: x -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_$cenumFrom :: Meetup.Weekday -> [Meetup.Weekday]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Meetup.Weekday) ->
+                 case a of wild {
+                   Meetup.Monday -> Meetup.$fEnumWeekday7
+                   Meetup.Tuesday -> Meetup.$fEnumWeekday6
+                   Meetup.Wednesday -> Meetup.$fEnumWeekday5
+                   Meetup.Thursday -> Meetup.$fEnumWeekday4
+                   Meetup.Friday -> Meetup.$fEnumWeekday3
+                   Meetup.Saturday -> Meetup.$fEnumWeekday2
+                   Meetup.Sunday -> Meetup.$fEnumWeekday1 }) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_$cenumFromThen ::
+    Meetup.Weekday -> Meetup.Weekday -> [Meetup.Weekday]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_$cenumFromThenTo ::
+    Meetup.Weekday
+    -> Meetup.Weekday -> Meetup.Weekday -> [Meetup.Weekday]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_$cenumFromTo ::
+    Meetup.Weekday -> Meetup.Weekday -> [Meetup.Weekday]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Meetup.Weekday) (y :: Meetup.Weekday) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Meetup.Weekday]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Meetup.Monday
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT -> Meetup.$fEnumWeekday_go6 x1
+                            1# -> GHC.Types.[] @ Meetup.Weekday }
+                       Meetup.Tuesday
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT -> Meetup.$fEnumWeekday_go5 x1
+                            1# -> GHC.Types.[] @ Meetup.Weekday }
+                       Meetup.Wednesday
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT -> Meetup.$fEnumWeekday_go4 x1
+                            1# -> GHC.Types.[] @ Meetup.Weekday }
+                       Meetup.Thursday
+                       -> case GHC.Prim.># x1 3# of lwild {
+                            DEFAULT -> Meetup.$fEnumWeekday_go3 x1
+                            1# -> GHC.Types.[] @ Meetup.Weekday }
+                       Meetup.Friday
+                       -> case GHC.Prim.># x1 4# of lwild {
+                            DEFAULT -> Meetup.$fEnumWeekday_go2 x1
+                            1# -> GHC.Types.[] @ Meetup.Weekday }
+                       Meetup.Saturday
+                       -> case GHC.Prim.># x1 5# of lwild {
+                            DEFAULT -> Meetup.$fEnumWeekday_go1 x1
+                            1# -> GHC.Types.[] @ Meetup.Weekday }
+                       Meetup.Sunday
+                       -> case GHC.Prim.># x1 6# of lwild {
+                            DEFAULT -> Meetup.$fEnumWeekday_go x1
+                            1# -> GHC.Types.[] @ Meetup.Weekday } }
+                 } in
+                 case x of wild {
+                   Meetup.Monday -> $j 0#
+                   Meetup.Tuesday -> $j 1#
+                   Meetup.Wednesday -> $j 2#
+                   Meetup.Thursday -> $j 3#
+                   Meetup.Friday -> $j 4#
+                   Meetup.Saturday -> $j 5#
+                   Meetup.Sunday -> $j 6# }) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_$cfromEnum :: Meetup.Weekday -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Meetup.Weekday) ->
+                 case w of wild {
+                   Meetup.Monday -> GHC.Types.I# 0#
+                   Meetup.Tuesday -> GHC.Types.I# 1#
+                   Meetup.Wednesday -> GHC.Types.I# 2#
+                   Meetup.Thursday -> GHC.Types.I# 3#
+                   Meetup.Friday -> GHC.Types.I# 4#
+                   Meetup.Saturday -> GHC.Types.I# 5#
+                   Meetup.Sunday -> GHC.Types.I# 6# }) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_$cpred :: Meetup.Weekday -> Meetup.Weekday
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Meetup.Weekday) ->
+                 case a of wild {
+                   Meetup.Monday -> Meetup.$fEnumWeekday8
+                   Meetup.Tuesday -> Meetup.Monday
+                   Meetup.Wednesday -> Meetup.Tuesday
+                   Meetup.Thursday -> Meetup.Wednesday
+                   Meetup.Friday -> Meetup.Thursday
+                   Meetup.Saturday -> Meetup.Friday
+                   Meetup.Sunday -> Meetup.Saturday }) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_$csucc :: Meetup.Weekday -> Meetup.Weekday
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Meetup.Weekday) ->
+                 case a of wild {
+                   Meetup.Monday -> Meetup.Tuesday
+                   Meetup.Tuesday -> Meetup.Wednesday
+                   Meetup.Wednesday -> Meetup.Thursday
+                   Meetup.Thursday -> Meetup.Friday
+                   Meetup.Friday -> Meetup.Saturday
+                   Meetup.Saturday -> Meetup.Sunday
+                   Meetup.Sunday -> Meetup.$fEnumWeekday9 }) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_$ctoEnum :: GHC.Types.Int -> Meetup.Weekday
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Meetup.$w$ctoEnum ww1 }) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_go :: GHC.Prim.Int# -> [Meetup.Weekday]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_go1 :: GHC.Prim.Int# -> [Meetup.Weekday]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_go2 :: GHC.Prim.Int# -> [Meetup.Weekday]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_go3 :: GHC.Prim.Int# -> [Meetup.Weekday]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_go4 :: GHC.Prim.Int# -> [Meetup.Weekday]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_go5 :: GHC.Prim.Int# -> [Meetup.Weekday]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_go6 :: GHC.Prim.Int# -> [Meetup.Weekday]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEnumWeekday_go7 :: GHC.Prim.Int# -> [Meetup.Weekday]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEqWeekday :: GHC.Classes.Eq Meetup.Weekday
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Meetup.Weekday Meetup.$fEqWeekday_$c== Meetup.$fEqWeekday_$c/= -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEqWeekday_$c/= ::
+    Meetup.Weekday -> Meetup.Weekday -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Meetup.Weekday) (y :: Meetup.Weekday) ->
+                 case x of wild {
+                   Meetup.Monday
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Meetup.Monday -> GHC.Types.False }
+                   Meetup.Tuesday
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Meetup.Tuesday -> GHC.Types.False }
+                   Meetup.Wednesday
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Meetup.Wednesday -> GHC.Types.False }
+                   Meetup.Thursday
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Meetup.Thursday -> GHC.Types.False }
+                   Meetup.Friday
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Meetup.Friday -> GHC.Types.False }
+                   Meetup.Saturday
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Meetup.Saturday -> GHC.Types.False }
+                   Meetup.Sunday
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Meetup.Sunday -> GHC.Types.False } }) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fEqWeekday_$c== ::
+    Meetup.Weekday -> Meetup.Weekday -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Meetup.Weekday) (ds1 :: Meetup.Weekday) ->
+                 case ds of wild {
+                   Meetup.Monday
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Meetup.Monday -> GHC.Types.True }
+                   Meetup.Tuesday
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Meetup.Tuesday -> GHC.Types.True }
+                   Meetup.Wednesday
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Meetup.Wednesday -> GHC.Types.True }
+                   Meetup.Thursday
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Meetup.Thursday -> GHC.Types.True }
+                   Meetup.Friday
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Meetup.Friday -> GHC.Types.True }
+                   Meetup.Saturday
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Meetup.Saturday -> GHC.Types.True }
+                   Meetup.Sunday
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Meetup.Sunday -> GHC.Types.True } }) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday :: GHC.Read.Read Meetup.Weekday
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Meetup.Weekday
+                  Meetup.$fReadWeekday_$creadsPrec
+                  Meetup.$fReadWeekday_$creadList
+                  Meetup.$fReadWeekday1
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <Meetup.Weekday>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                  <Meetup.Weekday>_R))
+                  Meetup.$fReadWeekday_$creadListPrec -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday1 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Meetup.Weekday -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2,
+     Unfolding: (GHC.Read.$fRead()6
+                   @ Meetup.Weekday
+                   Meetup.$fReadWeekday2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <Meetup.Weekday>_R))) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday10 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Meetup.Weekday -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: Meetup.Weekday -> Text.ParserCombinators.ReadP.P b) ->
+                 k Meetup.Sunday) -}
+db178e350b2bca400634c30e44208ed3
+  $fReadWeekday11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Meetup.$fReadWeekday12) -}
+b44901d18795309e5bd70979e627d4c3
+  $fReadWeekday12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Sunday"#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday13 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+  {- Strictness: m,
+     Unfolding: ((Meetup.$fReadWeekday15,
+                  Meetup.$fReadWeekday14
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <Meetup.Weekday>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                  <Meetup.Weekday>_R)))) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday14 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Meetup.Weekday -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: Meetup.Weekday -> Text.ParserCombinators.ReadP.P b) ->
+                 k Meetup.Saturday) -}
+bbd79cfa84d1ef3c2ac91b15cee10c72
+  $fReadWeekday15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Meetup.$fReadWeekday16) -}
+579d1c75f1dee07ff402c65f5f65cded
+  $fReadWeekday16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Saturday"#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday17 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+  {- Strictness: m,
+     Unfolding: ((Meetup.$fReadWeekday19,
+                  Meetup.$fReadWeekday18
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <Meetup.Weekday>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                  <Meetup.Weekday>_R)))) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday18 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Meetup.Weekday -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: Meetup.Weekday -> Text.ParserCombinators.ReadP.P b) ->
+                 k Meetup.Friday) -}
+c6abeee20b1456fbfe7ea6e338f90f1f
+  $fReadWeekday19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Meetup.$fReadWeekday20) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday2 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP Meetup.Weekday
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: Text.ParserCombinators.ReadPrec.Prec) ->
+                 GHC.Read.choose2 @ Meetup.Weekday Meetup.$fReadWeekday_sps eta) -}
+6a967200f9e2a5ef1fcb6f98cecedc73
+  $fReadWeekday20 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Friday"#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday21 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+  {- Strictness: m,
+     Unfolding: ((Meetup.$fReadWeekday23,
+                  Meetup.$fReadWeekday22
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <Meetup.Weekday>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                  <Meetup.Weekday>_R)))) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday22 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Meetup.Weekday -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: Meetup.Weekday -> Text.ParserCombinators.ReadP.P b) ->
+                 k Meetup.Thursday) -}
+72b4d18ca28d715e4324a4d3994a7777
+  $fReadWeekday23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Meetup.$fReadWeekday24) -}
+01dfa0110738b3d574a81677a941a3af
+  $fReadWeekday24 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Thursday"#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday25 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+  {- Strictness: m,
+     Unfolding: ((Meetup.$fReadWeekday27,
+                  Meetup.$fReadWeekday26
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <Meetup.Weekday>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                  <Meetup.Weekday>_R)))) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday26 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Meetup.Weekday -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: Meetup.Weekday -> Text.ParserCombinators.ReadP.P b) ->
+                 k Meetup.Wednesday) -}
+91efa69ada99e13bae9bb843c5ec5c4f
+  $fReadWeekday27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Meetup.$fReadWeekday28) -}
+f4070684d12a6adb12c0e284d2adb3c4
+  $fReadWeekday28 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Wednesday"#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday29 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+  {- Strictness: m,
+     Unfolding: ((Meetup.$fReadWeekday31,
+                  Meetup.$fReadWeekday30
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <Meetup.Weekday>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                  <Meetup.Weekday>_R)))) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday3 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+                   Meetup.$fReadWeekday29
+                   Meetup.$fReadWeekday4) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday30 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Meetup.Weekday -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: Meetup.Weekday -> Text.ParserCombinators.ReadP.P b) ->
+                 k Meetup.Tuesday) -}
+bd31cc310d4932a3732d2ab41dcc9116
+  $fReadWeekday31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Meetup.$fReadWeekday32) -}
+33ada99ffeebde7cbaf048c0e15dfb4f
+  $fReadWeekday32 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Tuesday"#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday33 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+  {- Strictness: m,
+     Unfolding: ((Meetup.$fReadWeekday35,
+                  Meetup.$fReadWeekday34
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <Meetup.Weekday>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                  <Meetup.Weekday>_R)))) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday34 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (Meetup.Weekday -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: Meetup.Weekday -> Text.ParserCombinators.ReadP.P b) ->
+                 k Meetup.Monday) -}
+c458eebedb033fecb5e3e94e4d825050
+  $fReadWeekday35 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Meetup.$fReadWeekday36) -}
+e1150df118a7f1b9dd5e8cd03f225010
+  $fReadWeekday36 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Monday"#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday37 :: Text.ParserCombinators.ReadP.P [Meetup.Weekday]
+  {- Unfolding: ((Meetup.$fReadWeekday_$creadListPrec
+                    `cast`
+                  (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                       <[Meetup.Weekday]>_R)
+                    GHC.Read.$fRead()8)
+                   `cast`
+                 (Text.ParserCombinators.ReadP.N:ReadP[0] <[Meetup.Weekday]>_R)
+                   @ [Meetup.Weekday]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [Meetup.Weekday])) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday4 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+                   Meetup.$fReadWeekday25
+                   Meetup.$fReadWeekday5) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday5 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+                   Meetup.$fReadWeekday21
+                   Meetup.$fReadWeekday6) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday6 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+                   Meetup.$fReadWeekday17
+                   Meetup.$fReadWeekday7) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday7 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+                   Meetup.$fReadWeekday13
+                   Meetup.$fReadWeekday8) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday8 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+                   Meetup.$fReadWeekday9
+                   (GHC.Types.[]
+                      @ (GHC.Base.String,
+                         Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday))) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday9 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+  {- Strictness: m,
+     Unfolding: ((Meetup.$fReadWeekday11,
+                  Meetup.$fReadWeekday10
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <Meetup.Weekday>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                  <Meetup.Weekday>_R)))) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday_$creadList ::
+    Text.ParserCombinators.ReadP.ReadS [Meetup.Weekday]
+  {- Arity: 1,
+     Unfolding: (Text.ParserCombinators.ReadP.run
+                   @ [Meetup.Weekday]
+                   Meetup.$fReadWeekday37) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday_$creadListPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec [Meetup.Weekday]
+  {- Unfolding: (GHC.Read.list
+                   @ Meetup.Weekday
+                   Meetup.$fReadWeekday1
+                     `cast`
+                   ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                     ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                   <Meetup.Weekday>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                   <Meetup.Weekday>_R))) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday_$creadsPrec ::
+    GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS Meetup.Weekday
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (n :: GHC.Types.Int) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ Meetup.Weekday
+                   (GHC.Read.$fRead()6
+                      @ Meetup.Weekday
+                      Meetup.$fReadWeekday2
+                        `cast`
+                      (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                <Meetup.Weekday>_R))
+                      n
+                      @ Meetup.Weekday
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ Meetup.Weekday))) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fReadWeekday_sps ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec Meetup.Weekday)
+                   Meetup.$fReadWeekday33
+                   Meetup.$fReadWeekday3) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fShowWeekday :: GHC.Show.Show Meetup.Weekday
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Meetup.Weekday
+                  Meetup.$fShowWeekday_$cshowsPrec
+                  Meetup.$fShowWeekday_$cshow
+                  Meetup.$fShowWeekday_$cshowList -}
+1229bb961ed4737d81b535709dea0fb3
+  $fShowWeekday_$cshow :: Meetup.Weekday -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Meetup.Weekday) ->
+                 case x of wild {
+                   Meetup.Monday -> Meetup.$fReadWeekday35
+                   Meetup.Tuesday -> Meetup.$fReadWeekday31
+                   Meetup.Wednesday -> Meetup.$fReadWeekday27
+                   Meetup.Thursday -> Meetup.$fReadWeekday23
+                   Meetup.Friday -> Meetup.$fReadWeekday19
+                   Meetup.Saturday -> Meetup.$fReadWeekday15
+                   Meetup.Sunday -> Meetup.$fReadWeekday11 }) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fShowWeekday_$cshowList :: [Meetup.Weekday] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Meetup.Weekday]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Meetup.Weekday Meetup.$w$cshowsPrec ls s) -}
+1229bb961ed4737d81b535709dea0fb3
+  $fShowWeekday_$cshowsPrec ::
+    GHC.Types.Int -> Meetup.Weekday -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Meetup.Weekday)
+                   (w2 :: GHC.Base.String) ->
+                 Meetup.$w$cshowsPrec w1 w2) -}
+055ebf2a07757cadd7be18044c7cf452
+  $tc'First :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2015728754943601175##
+                   16819503427495981635##
+                   Meetup.$trModule
+                   Meetup.$tc'First2
+                   0#
+                   Meetup.$tc'First1) -}
+5be5d0eb22a3987798a4e3a4cd3c2a65
+  $tc'First1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+722f1a05a603eb06d591847ce7fa341f
+  $tc'First2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'First3) -}
+a9a778aee8e8e2fa8862dd914c525822
+  $tc'First3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'First"#) -}
+b5711d64b01f2cb57e6e2801109257df
+  $tc'Fourth :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5784511558548512197##
+                   5239198992582866480##
+                   Meetup.$trModule
+                   Meetup.$tc'Fourth1
+                   0#
+                   Meetup.$tc'First1) -}
+981112d84a5f37df86404f0dabc66cc8
+  $tc'Fourth1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'Fourth2) -}
+510d30d33292e8bb18ae47979e6638b3
+  $tc'Fourth2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Fourth"#) -}
+75fc3ca336e25ec4cc771a1589af2bde
+  $tc'Friday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10440123791050290265##
+                   5905127983911172738##
+                   Meetup.$trModule
+                   Meetup.$tc'Friday2
+                   0#
+                   Meetup.$tc'Friday1) -}
+ed753f9e4f2840d19fdff58705a478a8
+  $tc'Friday1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+d50febfc6326cf93392fd3a62227e654
+  $tc'Friday2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'Friday3) -}
+390b4ca8978ae571166ce7cebc0d9dd2
+  $tc'Friday3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Friday"#) -}
+1e922869bf214833a280e2e580cf1bd5
+  $tc'Last :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6076016852164967771##
+                   1694612306931391908##
+                   Meetup.$trModule
+                   Meetup.$tc'Last1
+                   0#
+                   Meetup.$tc'First1) -}
+ef3655a33658ea002fcb4018900ad58f
+  $tc'Last1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'Last2) -}
+4af03bb7875d7478d6f17ee6a184691a
+  $tc'Last2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Last"#) -}
+54357500a8f52663f1033bf014856804
+  $tc'Monday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15421264526526008699##
+                   13906598422963188065##
+                   Meetup.$trModule
+                   Meetup.$tc'Monday1
+                   0#
+                   Meetup.$tc'Friday1) -}
+1de2f41bcb0d02b9a432f82ec2e4b6cf
+  $tc'Monday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'Monday2) -}
+9d08fce11d5b2b7976734024822436ae
+  $tc'Monday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Monday"#) -}
+c69ef947a70ee15c14db9733348362ef
+  $tc'Saturday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1304582687198138070##
+                   14290786853294394221##
+                   Meetup.$trModule
+                   Meetup.$tc'Saturday1
+                   0#
+                   Meetup.$tc'Friday1) -}
+e222b9de301b6e6286f69209cf983db5
+  $tc'Saturday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'Saturday2) -}
+ba767f880991d9710f570473fa039ac8
+  $tc'Saturday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Saturday"#) -}
+8e13414127fa69d533e46cda431b073a
+  $tc'Second :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9594097122069232192##
+                   10154025157810016598##
+                   Meetup.$trModule
+                   Meetup.$tc'Second1
+                   0#
+                   Meetup.$tc'First1) -}
+b0628a21eb4d5de77d3562692de6bec5
+  $tc'Second1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'Second2) -}
+712bf03db3dd25656c2ad9342e433b10
+  $tc'Second2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Second"#) -}
+34ff378db5700d52383ea9d4408b3f46
+  $tc'Sunday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   418075683867098683##
+                   11374606008140848044##
+                   Meetup.$trModule
+                   Meetup.$tc'Sunday1
+                   0#
+                   Meetup.$tc'Friday1) -}
+6bc768753a259e891ed3e12b531ed105
+  $tc'Sunday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'Sunday2) -}
+ab4bab07ff358eb55144f5e418e45c75
+  $tc'Sunday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Sunday"#) -}
+3d9a5b03ff47d4b3f9bf6602ebc16e40
+  $tc'Teenth :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5017134677056398248##
+                   10233807122626421212##
+                   Meetup.$trModule
+                   Meetup.$tc'Teenth1
+                   0#
+                   Meetup.$tc'First1) -}
+b5ac46a9b46da90d31e92dc2d72c3a98
+  $tc'Teenth1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'Teenth2) -}
+d3332d7514da3f421b2848fb61d71811
+  $tc'Teenth2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Teenth"#) -}
+a33a7d22c04d94662529df1d8b0f7f96
+  $tc'Third :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16323877289180760497##
+                   15419932213321147027##
+                   Meetup.$trModule
+                   Meetup.$tc'Third1
+                   0#
+                   Meetup.$tc'First1) -}
+200a63ba5ad77dd7b83adccb410538bf
+  $tc'Third1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'Third2) -}
+7115091a5fc1abfcc784a2a0c92e5e6e
+  $tc'Third2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Third"#) -}
+bd375713e322739194f2384712a164d4
+  $tc'Thursday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16904370149313736661##
+                   549734044348203631##
+                   Meetup.$trModule
+                   Meetup.$tc'Thursday1
+                   0#
+                   Meetup.$tc'Friday1) -}
+60f75bd0accae25db5abbd02b061cdb0
+  $tc'Thursday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'Thursday2) -}
+74ab7245bd81bf69112e43a18046275e
+  $tc'Thursday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Thursday"#) -}
+96e08a46c75597159a0c7202da4461dc
+  $tc'Tuesday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13630097352735953017##
+                   17531291851000157297##
+                   Meetup.$trModule
+                   Meetup.$tc'Tuesday1
+                   0#
+                   Meetup.$tc'Friday1) -}
+a1f441de661fe6a90a376509c54f3cdc
+  $tc'Tuesday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'Tuesday2) -}
+9bd82451bad4c6caf2f63d931342d668
+  $tc'Tuesday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Tuesday"#) -}
+2558f20ecce8a7dba9c73c7b321b32a9
+  $tc'Wednesday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3954807874272372707##
+                   8226360554178072387##
+                   Meetup.$trModule
+                   Meetup.$tc'Wednesday1
+                   0#
+                   Meetup.$tc'Friday1) -}
+c66296ba2cae05f819c217b46b37b3bf
+  $tc'Wednesday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tc'Wednesday2) -}
+e7c48812f22710ec9724762ce8ce8d29
+  $tc'Wednesday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Wednesday"#) -}
+68b6eb91fa60307e2f87363c5f2abf64
+  $tcSchedule :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   219840361622206169##
+                   11321931839208439588##
+                   Meetup.$trModule
+                   Meetup.$tcSchedule1
+                   0#
+                   GHC.Types.krep$*) -}
+0f1ce4d1f739ca83bced2bd95f0d57d5
+  $tcSchedule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tcSchedule2) -}
+5b25e5217446d2a39a56c9df3cf5ded9
+  $tcSchedule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Schedule"#) -}
+cc64f6b939dbeff4c98efffaa8408853
+  $tcWeekday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14848133885101965267##
+                   11596770660885415602##
+                   Meetup.$trModule
+                   Meetup.$tcWeekday1
+                   0#
+                   GHC.Types.krep$*) -}
+9aeea7da78fdaf60ceb9abffb6a47fa5
+  $tcWeekday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$tcWeekday2) -}
+113c3b1bb2f394b270e066d5f9b6c76c
+  $tcWeekday2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Weekday"#) -}
+d157f6be833bdd57fd5a4c3eb3e00b06
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Meetup.$trModule3
+                   Meetup.$trModule1) -}
+9d2a67f087c481d3456ff69e09a22f76
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$trModule2) -}
+f8195904994072676f53f0323b7e18d0
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Meetup"#) -}
+94028398365d1c89c91216b892cfa792
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Meetup.$trModule4) -}
+967daf75023d91d6123e13c185a2cc13
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("meetup-1.1.0.5-HQi65lCoIkL2davHtfG0jv"#) -}
+1229bb961ed4737d81b535709dea0fb3
+  $w$cshowsPrec ::
+    Meetup.Weekday -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Meetup.Weekday) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Meetup.Monday
+                   -> GHC.Base.++ @ GHC.Types.Char Meetup.$fReadWeekday35 w1
+                   Meetup.Tuesday
+                   -> GHC.Base.++ @ GHC.Types.Char Meetup.$fReadWeekday31 w1
+                   Meetup.Wednesday
+                   -> GHC.Base.++ @ GHC.Types.Char Meetup.$fReadWeekday27 w1
+                   Meetup.Thursday
+                   -> GHC.Base.++ @ GHC.Types.Char Meetup.$fReadWeekday23 w1
+                   Meetup.Friday
+                   -> GHC.Base.++ @ GHC.Types.Char Meetup.$fReadWeekday19 w1
+                   Meetup.Saturday
+                   -> GHC.Base.++ @ GHC.Types.Char Meetup.$fReadWeekday15 w1
+                   Meetup.Sunday
+                   -> GHC.Base.++ @ GHC.Types.Char Meetup.$fReadWeekday11 w1 }) -}
+1229bb961ed4737d81b535709dea0fb3
+  $w$ctoEnum :: GHC.Prim.Int# -> Meetup.Weekday
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> Meetup.$wlvl ww
+                   1#
+                   -> case GHC.Prim.<=# ww 6# of lwild1 {
+                        DEFAULT -> Meetup.$wlvl ww
+                        1# -> GHC.Prim.tagToEnum# @ Meetup.Weekday ww } }) -}
+1229bb961ed4737d81b535709dea0fb3
+  $wlvl :: GHC.Prim.Int# -> Meetup.Weekday
+  {- Arity: 1, Strictness: <B,U>x, Inline: [0] -}
+18a1fc9373ff58476926f4107b82f259
+  $wmeetupDay ::
+    Meetup.Schedule
+    -> Meetup.Weekday
+    -> GHC.Integer.Type.Integer
+    -> GHC.Prim.Int#
+    -> Data.Time.Calendar.Days.Day
+  {- Arity: 4, Strictness: <S,1*U><S,1*U><S,U><S,U>, Inline: [0] -}
+0b0b746c55507d8dd7197238dc7465ea
+  data Schedule = First | Second | Third | Fourth | Last | Teenth
+1229bb961ed4737d81b535709dea0fb3
+  data Weekday
+    = Monday
+    | Tuesday
+    | Wednesday
+    | Thursday
+    | Friday
+    | Saturday
+    | Sunday
+0e49025fe95140a756cbf937293735fe
+  meetupDay ::
+    Meetup.Schedule
+    -> Meetup.Weekday
+    -> GHC.Integer.Type.Integer
+    -> GHC.Types.Int
+    -> Data.Time.Calendar.Days.Day
+  {- Arity: 4, Strictness: <S,1*U><S,1*U><S,U><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: Meetup.Schedule)
+                   (w1 :: Meetup.Weekday)
+                   (w2 :: GHC.Integer.Type.Integer)
+                   (w3 :: GHC.Types.Int) ->
+                 case w3 of ww { GHC.Types.I# ww1 ->
+                 Meetup.$wmeetupDay w w1 w2 ww1 }) -}
+instance [safe] GHC.Enum.Bounded [Meetup.Weekday]
+  = Meetup.$fBoundedWeekday
+instance [safe] GHC.Enum.Enum [Meetup.Weekday]
+  = Meetup.$fEnumWeekday
+instance [safe] GHC.Classes.Eq [Meetup.Weekday]
+  = Meetup.$fEqWeekday
+instance [safe] GHC.Read.Read [Meetup.Weekday]
+  = Meetup.$fReadWeekday
+instance [safe] GHC.Show.Show [Meetup.Weekday]
+  = Meetup.$fShowWeekday
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

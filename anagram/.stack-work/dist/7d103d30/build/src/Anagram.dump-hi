@@ -1,0 +1,103 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-05 22:09:16.1199159 UTC
+
+interface anagram-1.4.0.8-DDbjfe2BC12FDsllErGTC6:Anagram 8043
+  interface hash: 1936b0744ebbe45355dbf7acb864a823
+  ABI hash: 4c0d484cbf202e5f3aa0546f4b899270
+  export-list hash: 169db2116926c82af04054267e35e7a4
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Anagram.anagramsFor
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Char c550369827d719df8be8fb1e8cd699c1
+import  -/  base-4.11.1.0:Data.List cb78ca5eace70fd310936fda86b3e611
+import  -/  base-4.11.1.0:Data.OldList 3987872d5de68d40c22cd1c30825ad08
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Unicode 875b8e8d21ca0bd8abbb7bede4488443
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+defeb18744e370a9e3925894f494b66e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Anagram.$trModule3
+                   Anagram.$trModule1) -}
+2b00b42a86c6d2c1f7e45e3cdbf28b97
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Anagram.$trModule2) -}
+df7a5f8bdb6b1155fa0b2b671e57168d
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Anagram"#) -}
+d4bb7f44659fbaa843830277267a0d52
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Anagram.$trModule4) -}
+64a7670565b43257412257269e99f12a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("anagram-1.4.0.8-DDbjfe2BC12FDsllErGTC6"#) -}
+5a163f5723678d4cfbbc5bc090043f25
+  anagramsFor ::
+    GHC.Base.String -> [GHC.Base.String] -> [GHC.Base.String]
+  {- Arity: 2, Strictness: <L,1*U><S,1*U>,
+     Unfolding: (\ (xs :: GHC.Base.String) (xss :: [GHC.Base.String]) ->
+                 let {
+                   w :: [GHC.Types.Char]
+                   = GHC.Base.map
+                       @ GHC.Types.Char
+                       @ GHC.Types.Char
+                       GHC.Unicode.toLower
+                       xs
+                 } in
+                 GHC.List.filter
+                   @ [GHC.Types.Char]
+                   (\ (candidate :: GHC.Base.String) ->
+                    let {
+                      c :: [GHC.Types.Char]
+                      = GHC.Base.map
+                          @ GHC.Types.Char
+                          @ GHC.Types.Char
+                          GHC.Unicode.toLower
+                          candidate
+                    } in
+                    case GHC.Classes.$fEqModule_$s$c== w c of wild {
+                      GHC.Types.False
+                      -> case GHC.Base.eqString
+                                (Anagram.anagramsFor_go c w)
+                                (GHC.Types.[] @ GHC.Types.Char) of wild1 {
+                           GHC.Types.False -> GHC.Types.False
+                           GHC.Types.True
+                           -> GHC.Base.eqString
+                                (Anagram.anagramsFor_go w c)
+                                (GHC.Types.[] @ GHC.Types.Char) }
+                      GHC.Types.True -> GHC.Types.False })
+                   xss) -}
+dbccaa92b41f7750f66e4747c8c8a8ca
+  anagramsFor_go ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Base.String
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
