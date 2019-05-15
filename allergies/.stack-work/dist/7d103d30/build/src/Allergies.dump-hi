@@ -1,0 +1,710 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-15 18:23:04.4234394 UTC
+
+interface allergies-1.2.0.7-DeKr8ley4OV1IMbaQh7AR0:Allergies 8043
+  interface hash: b848272fdff951b586bea9eb35f68759
+  ABI hash: efca35d369c18f29fdc5e3ebc2b7b1df
+  export-list hash: 972f8133758ddc8fed766f59da0a37d3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Allergies.allergies
+  Allergies.isAllergicTo
+  Allergies.Allergen{Allergies.Cats Allergies.Chocolate Allergies.Eggs Allergies.Peanuts Allergies.Pollen Allergies.Shellfish Allergies.Strawberries Allergies.Tomatoes}
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Bits e6bc05a0d03c85e9cc84c6516097e98b
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.Enum e4ba78b4713760aa26fb70e6c50823d5
+import  -/  base-4.11.1.0:GHC.Err 97cd376c529926d7dcbd3f06020fe0fc
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:GHC.Show 6211aec7cccd267a5ee999e4414d7b90
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+6532af4dee1cb9b0787cc0039e8f7779
+  $fBoundedAllergen :: GHC.Enum.Bounded Allergies.Allergen
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Allergies.Allergen Allergies.Eggs Allergies.Cats -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen :: GHC.Enum.Enum Allergies.Allergen
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Allergies.Allergen
+                  Allergies.$fEnumAllergen_$csucc
+                  Allergies.$fEnumAllergen_$cpred
+                  Allergies.$fEnumAllergen_$ctoEnum
+                  Allergies.$fEnumAllergen_$cfromEnum
+                  Allergies.$fEnumAllergen_$cenumFrom
+                  Allergies.$fEnumAllergen_$cenumFromThen
+                  Allergies.$fEnumAllergen_$cenumFromTo
+                  Allergies.$fEnumAllergen_$cenumFromThenTo -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen1 :: [Allergies.Allergen]
+  {- Unfolding: (Allergies.$fEnumAllergen_go8 7#) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen10 :: Allergies.Allergen
+  {- Strictness: x -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen2 :: [Allergies.Allergen]
+  {- Unfolding: (Allergies.$fEnumAllergen_go8 6#) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen3 :: [Allergies.Allergen]
+  {- Unfolding: (Allergies.$fEnumAllergen_go8 5#) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen4 :: [Allergies.Allergen]
+  {- Unfolding: (Allergies.$fEnumAllergen_go8 4#) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen5 :: [Allergies.Allergen]
+  {- Unfolding: (Allergies.$fEnumAllergen_go8 3#) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen6 :: [Allergies.Allergen]
+  {- Unfolding: (Allergies.$fEnumAllergen_go8 2#) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen7 :: [Allergies.Allergen]
+  {- Unfolding: (Allergies.$fEnumAllergen_go8 1#) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen8 :: [Allergies.Allergen]
+  {- Unfolding: (Allergies.$fEnumAllergen_go8 0#) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen9 :: Allergies.Allergen
+  {- Strictness: x -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_$cenumFrom ::
+    Allergies.Allergen -> [Allergies.Allergen]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Allergies.Allergen) ->
+                 case a of wild {
+                   Allergies.Eggs -> Allergies.$fEnumAllergen8
+                   Allergies.Peanuts -> Allergies.$fEnumAllergen7
+                   Allergies.Shellfish -> Allergies.$fEnumAllergen6
+                   Allergies.Strawberries -> Allergies.$fEnumAllergen5
+                   Allergies.Tomatoes -> Allergies.$fEnumAllergen4
+                   Allergies.Chocolate -> Allergies.$fEnumAllergen3
+                   Allergies.Pollen -> Allergies.$fEnumAllergen2
+                   Allergies.Cats -> Allergies.$fEnumAllergen1 }) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_$cenumFromThen ::
+    Allergies.Allergen -> Allergies.Allergen -> [Allergies.Allergen]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_$cenumFromThenTo ::
+    Allergies.Allergen
+    -> Allergies.Allergen -> Allergies.Allergen -> [Allergies.Allergen]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_$cenumFromTo ::
+    Allergies.Allergen -> Allergies.Allergen -> [Allergies.Allergen]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Allergies.Allergen)
+                   (y :: Allergies.Allergen) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Allergies.Allergen]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Allergies.Eggs
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT -> Allergies.$fEnumAllergen_go7 x1
+                            1# -> GHC.Types.[] @ Allergies.Allergen }
+                       Allergies.Peanuts
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT -> Allergies.$fEnumAllergen_go6 x1
+                            1# -> GHC.Types.[] @ Allergies.Allergen }
+                       Allergies.Shellfish
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT -> Allergies.$fEnumAllergen_go5 x1
+                            1# -> GHC.Types.[] @ Allergies.Allergen }
+                       Allergies.Strawberries
+                       -> case GHC.Prim.># x1 3# of lwild {
+                            DEFAULT -> Allergies.$fEnumAllergen_go4 x1
+                            1# -> GHC.Types.[] @ Allergies.Allergen }
+                       Allergies.Tomatoes
+                       -> case GHC.Prim.># x1 4# of lwild {
+                            DEFAULT -> Allergies.$fEnumAllergen_go3 x1
+                            1# -> GHC.Types.[] @ Allergies.Allergen }
+                       Allergies.Chocolate
+                       -> case GHC.Prim.># x1 5# of lwild {
+                            DEFAULT -> Allergies.$fEnumAllergen_go2 x1
+                            1# -> GHC.Types.[] @ Allergies.Allergen }
+                       Allergies.Pollen
+                       -> case GHC.Prim.># x1 6# of lwild {
+                            DEFAULT -> Allergies.$fEnumAllergen_go1 x1
+                            1# -> GHC.Types.[] @ Allergies.Allergen }
+                       Allergies.Cats
+                       -> case GHC.Prim.># x1 7# of lwild {
+                            DEFAULT -> Allergies.$fEnumAllergen_go x1
+                            1# -> GHC.Types.[] @ Allergies.Allergen } }
+                 } in
+                 case x of wild {
+                   Allergies.Eggs -> $j 0#
+                   Allergies.Peanuts -> $j 1#
+                   Allergies.Shellfish -> $j 2#
+                   Allergies.Strawberries -> $j 3#
+                   Allergies.Tomatoes -> $j 4#
+                   Allergies.Chocolate -> $j 5#
+                   Allergies.Pollen -> $j 6#
+                   Allergies.Cats -> $j 7# }) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_$cfromEnum :: Allergies.Allergen -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Allergies.Allergen) ->
+                 case w of wild {
+                   Allergies.Eggs -> GHC.Types.I# 0#
+                   Allergies.Peanuts -> GHC.Types.I# 1#
+                   Allergies.Shellfish -> GHC.Types.I# 2#
+                   Allergies.Strawberries -> GHC.Types.I# 3#
+                   Allergies.Tomatoes -> GHC.Types.I# 4#
+                   Allergies.Chocolate -> GHC.Types.I# 5#
+                   Allergies.Pollen -> GHC.Types.I# 6#
+                   Allergies.Cats -> GHC.Types.I# 7# }) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_$cpred :: Allergies.Allergen -> Allergies.Allergen
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Allergies.Allergen) ->
+                 case a of wild {
+                   Allergies.Eggs -> Allergies.$fEnumAllergen9
+                   Allergies.Peanuts -> Allergies.Eggs
+                   Allergies.Shellfish -> Allergies.Peanuts
+                   Allergies.Strawberries -> Allergies.Shellfish
+                   Allergies.Tomatoes -> Allergies.Strawberries
+                   Allergies.Chocolate -> Allergies.Tomatoes
+                   Allergies.Pollen -> Allergies.Chocolate
+                   Allergies.Cats -> Allergies.Pollen }) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_$csucc :: Allergies.Allergen -> Allergies.Allergen
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Allergies.Allergen) ->
+                 case a of wild {
+                   Allergies.Eggs -> Allergies.Peanuts
+                   Allergies.Peanuts -> Allergies.Shellfish
+                   Allergies.Shellfish -> Allergies.Strawberries
+                   Allergies.Strawberries -> Allergies.Tomatoes
+                   Allergies.Tomatoes -> Allergies.Chocolate
+                   Allergies.Chocolate -> Allergies.Pollen
+                   Allergies.Pollen -> Allergies.Cats
+                   Allergies.Cats -> Allergies.$fEnumAllergen10 }) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_$ctoEnum :: GHC.Types.Int -> Allergies.Allergen
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Allergies.$w$ctoEnum ww1 }) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_go :: GHC.Prim.Int# -> [Allergies.Allergen]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_go1 :: GHC.Prim.Int# -> [Allergies.Allergen]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_go2 :: GHC.Prim.Int# -> [Allergies.Allergen]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_go3 :: GHC.Prim.Int# -> [Allergies.Allergen]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_go4 :: GHC.Prim.Int# -> [Allergies.Allergen]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_go5 :: GHC.Prim.Int# -> [Allergies.Allergen]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_go6 :: GHC.Prim.Int# -> [Allergies.Allergen]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_go7 :: GHC.Prim.Int# -> [Allergies.Allergen]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEnumAllergen_go8 :: GHC.Prim.Int# -> [Allergies.Allergen]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEqAllergen :: GHC.Classes.Eq Allergies.Allergen
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Allergies.Allergen
+                  Allergies.$fEqAllergen_$c==
+                  Allergies.$fEqAllergen_$c/= -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEqAllergen_$c/= ::
+    Allergies.Allergen -> Allergies.Allergen -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Allergies.Allergen) (y :: Allergies.Allergen) ->
+                 case x of wild {
+                   Allergies.Eggs
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Allergies.Eggs -> GHC.Types.False }
+                   Allergies.Peanuts
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Allergies.Peanuts -> GHC.Types.False }
+                   Allergies.Shellfish
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Allergies.Shellfish -> GHC.Types.False }
+                   Allergies.Strawberries
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Allergies.Strawberries -> GHC.Types.False }
+                   Allergies.Tomatoes
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Allergies.Tomatoes -> GHC.Types.False }
+                   Allergies.Chocolate
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Allergies.Chocolate -> GHC.Types.False }
+                   Allergies.Pollen
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Allergies.Pollen -> GHC.Types.False }
+                   Allergies.Cats
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Allergies.Cats -> GHC.Types.False } }) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fEqAllergen_$c== ::
+    Allergies.Allergen -> Allergies.Allergen -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Allergies.Allergen)
+                   (ds1 :: Allergies.Allergen) ->
+                 case ds of wild {
+                   Allergies.Eggs
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Allergies.Eggs -> GHC.Types.True }
+                   Allergies.Peanuts
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Allergies.Peanuts -> GHC.Types.True }
+                   Allergies.Shellfish
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Allergies.Shellfish -> GHC.Types.True }
+                   Allergies.Strawberries
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Allergies.Strawberries -> GHC.Types.True }
+                   Allergies.Tomatoes
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Allergies.Tomatoes -> GHC.Types.True }
+                   Allergies.Chocolate
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Allergies.Chocolate -> GHC.Types.True }
+                   Allergies.Pollen
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Allergies.Pollen -> GHC.Types.True }
+                   Allergies.Cats
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Allergies.Cats -> GHC.Types.True } }) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fShowAllergen :: GHC.Show.Show Allergies.Allergen
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Allergies.Allergen
+                  Allergies.$fShowAllergen_$cshowsPrec
+                  Allergies.$fShowAllergen_$cshow
+                  Allergies.$fShowAllergen_$cshowList -}
+454143c7d8278a140c6f435eb561efcb
+  $fShowAllergen1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Allergies.$fShowAllergen2) -}
+2e1301fc82e5caee16a4aa4c7fcda70c
+  $fShowAllergen10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Strawberries"#) -}
+69f56206a858470b11197b33970a15e4
+  $fShowAllergen11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Allergies.$fShowAllergen12) -}
+5b6bedd0b000d5533ab16bbdfb01d590
+  $fShowAllergen12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Shellfish"#) -}
+46893e70e595acad9fa3ed897a9386f0
+  $fShowAllergen13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Allergies.$fShowAllergen14) -}
+c0c333838369797f91aee3623d166ba6
+  $fShowAllergen14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Peanuts"#) -}
+e68cec38fa5fd0bc7b42716f9b50b6c7
+  $fShowAllergen15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Allergies.$fShowAllergen16) -}
+d750ee0f322cade167fb7e99d2ce9bde
+  $fShowAllergen16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Eggs"#) -}
+a89a1a0afce6ac979fee866064e9d9c3
+  $fShowAllergen2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Cats"#) -}
+b0613c5fb08f90825b100069a22d7583
+  $fShowAllergen3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Allergies.$fShowAllergen4) -}
+18aa5a6057719c0014d3e52be4733cc6
+  $fShowAllergen4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Pollen"#) -}
+7ca8a168eeb56db6623e2e1267385087
+  $fShowAllergen5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Allergies.$fShowAllergen6) -}
+1740544bfb858f4fbc58bbab72bb01c7
+  $fShowAllergen6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Chocolate"#) -}
+a892568342eeaca42fbdd3d08cd68a5d
+  $fShowAllergen7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Allergies.$fShowAllergen8) -}
+dd39a2b7794f63d35eb778c816bbf8aa
+  $fShowAllergen8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Tomatoes"#) -}
+2a89b9daf7932621073cd671b9f39824
+  $fShowAllergen9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Allergies.$fShowAllergen10) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fShowAllergen_$cshow :: Allergies.Allergen -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Allergies.Allergen) ->
+                 case x of wild {
+                   Allergies.Eggs -> Allergies.$fShowAllergen15
+                   Allergies.Peanuts -> Allergies.$fShowAllergen13
+                   Allergies.Shellfish -> Allergies.$fShowAllergen11
+                   Allergies.Strawberries -> Allergies.$fShowAllergen9
+                   Allergies.Tomatoes -> Allergies.$fShowAllergen7
+                   Allergies.Chocolate -> Allergies.$fShowAllergen5
+                   Allergies.Pollen -> Allergies.$fShowAllergen3
+                   Allergies.Cats -> Allergies.$fShowAllergen1 }) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fShowAllergen_$cshowList :: [Allergies.Allergen] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Allergies.Allergen]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Allergies.Allergen
+                   Allergies.$w$cshowsPrec
+                   ls
+                   s) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $fShowAllergen_$cshowsPrec ::
+    GHC.Types.Int -> Allergies.Allergen -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Allergies.Allergen)
+                   (w2 :: GHC.Base.String) ->
+                 Allergies.$w$cshowsPrec w1 w2) -}
+81d729cda77cbf8490acdcb6d4d58a6e
+  $tc'Cats :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9547482313289266091##
+                   6287126902164006311##
+                   Allergies.$trModule
+                   Allergies.$tc'Cats2
+                   0#
+                   Allergies.$tc'Cats1) -}
+8375960204bde18c49dbc80d3f78bc91
+  $tc'Cats1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+8efaa9663362e018d42f039c0f31bc1c
+  $tc'Cats2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Allergies.$tc'Cats3) -}
+68134acb3e0f56dd71b2ae2f2ed50250
+  $tc'Cats3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Cats"#) -}
+7998083892602c1a1dcfc4daa7d74107
+  $tc'Chocolate :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16651121374824525253##
+                   8943021539179842360##
+                   Allergies.$trModule
+                   Allergies.$tc'Chocolate1
+                   0#
+                   Allergies.$tc'Cats1) -}
+17974ad7405f93dba5fe60484e1f24fe
+  $tc'Chocolate1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Allergies.$tc'Chocolate2) -}
+cb0f86217b0c79e0305012fa63faa2f6
+  $tc'Chocolate2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Chocolate"#) -}
+316d729ac0c18c10585fed458f5d5d95
+  $tc'Eggs :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15418081198400319370##
+                   6643900851903274304##
+                   Allergies.$trModule
+                   Allergies.$tc'Eggs1
+                   0#
+                   Allergies.$tc'Cats1) -}
+0fd5000c690e141ae85de24c91ed0076
+  $tc'Eggs1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Allergies.$tc'Eggs2) -}
+4f5d47c42d94d61c0582dc5195198f80
+  $tc'Eggs2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Eggs"#) -}
+7c85f8e82d46317cbee3b8fb0c119492
+  $tc'Peanuts :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10954980068840620210##
+                   4391536713251485428##
+                   Allergies.$trModule
+                   Allergies.$tc'Peanuts1
+                   0#
+                   Allergies.$tc'Cats1) -}
+a218c3d7e438fd8e3a3bd6d2978c18a2
+  $tc'Peanuts1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Allergies.$tc'Peanuts2) -}
+18d57a5f7097dc6de6ff4ec061bec41e
+  $tc'Peanuts2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Peanuts"#) -}
+07444422920f2412c60790e5c99aedee
+  $tc'Pollen :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16426087721474321850##
+                   7102446036919359006##
+                   Allergies.$trModule
+                   Allergies.$tc'Pollen1
+                   0#
+                   Allergies.$tc'Cats1) -}
+09e5f4fa16f5440a45b42c7ec5773ae3
+  $tc'Pollen1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Allergies.$tc'Pollen2) -}
+6ae1f0ff43e7edd5c10bd18572495dcd
+  $tc'Pollen2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Pollen"#) -}
+c05d367198ad51d6e5081d69955e9911
+  $tc'Shellfish :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12732453498339580656##
+                   13067335635874783828##
+                   Allergies.$trModule
+                   Allergies.$tc'Shellfish1
+                   0#
+                   Allergies.$tc'Cats1) -}
+82bc37b6134b1268f79895b30587fcfd
+  $tc'Shellfish1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Allergies.$tc'Shellfish2) -}
+9a7301ad6e5c7807026aa32729e9ab25
+  $tc'Shellfish2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Shellfish"#) -}
+282a7ec89223d0892f422ab38d794f32
+  $tc'Strawberries :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1019428899268857258##
+                   12048661819639574991##
+                   Allergies.$trModule
+                   Allergies.$tc'Strawberries1
+                   0#
+                   Allergies.$tc'Cats1) -}
+aaa5e77f0a89ef12b6c9349365f8e41c
+  $tc'Strawberries1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Allergies.$tc'Strawberries2) -}
+78731a61df5d66d4978c447367f6e9e6
+  $tc'Strawberries2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Strawberries"#) -}
+12b0ea4a73ccb70d0030e9f6f0d46c98
+  $tc'Tomatoes :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   276220950550057469##
+                   12212504118364242533##
+                   Allergies.$trModule
+                   Allergies.$tc'Tomatoes1
+                   0#
+                   Allergies.$tc'Cats1) -}
+9400a91fda7882ddb7dd5f482a0e0a26
+  $tc'Tomatoes1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Allergies.$tc'Tomatoes2) -}
+188b00052924f5732fa5826f50eeda26
+  $tc'Tomatoes2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Tomatoes"#) -}
+60b0bc72057ca7fa32bc36eea81f6693
+  $tcAllergen :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12645304737472233394##
+                   5479091231328537814##
+                   Allergies.$trModule
+                   Allergies.$tcAllergen1
+                   0#
+                   GHC.Types.krep$*) -}
+f81acaf700199a8f315fba41117f145c
+  $tcAllergen1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Allergies.$tcAllergen2) -}
+adff850582aac7828e82d73d7ba5f21b
+  $tcAllergen2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Allergen"#) -}
+04bde5fc84c96397ab38c7bb70d3fa0e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Allergies.$trModule3
+                   Allergies.$trModule1) -}
+274ae6ed23777f6f1c9da9b6fe215ea8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Allergies.$trModule2) -}
+cd35850aaf5cfc194b1648cc8950c7cc
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Allergies"#) -}
+a05a45cd76958b089e1ea6e8a7a3f17e
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Allergies.$trModule4) -}
+cd161261b1ad7ed916091fdc3c4b3717
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("allergies-1.2.0.7-DeKr8ley4OV1IMbaQh7AR0"#) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $w$cshowsPrec ::
+    Allergies.Allergen -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Allergies.Allergen) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Allergies.Eggs
+                   -> GHC.Base.++ @ GHC.Types.Char Allergies.$fShowAllergen15 w1
+                   Allergies.Peanuts
+                   -> GHC.Base.++ @ GHC.Types.Char Allergies.$fShowAllergen13 w1
+                   Allergies.Shellfish
+                   -> GHC.Base.++ @ GHC.Types.Char Allergies.$fShowAllergen11 w1
+                   Allergies.Strawberries
+                   -> GHC.Base.++ @ GHC.Types.Char Allergies.$fShowAllergen9 w1
+                   Allergies.Tomatoes
+                   -> GHC.Base.++ @ GHC.Types.Char Allergies.$fShowAllergen7 w1
+                   Allergies.Chocolate
+                   -> GHC.Base.++ @ GHC.Types.Char Allergies.$fShowAllergen5 w1
+                   Allergies.Pollen
+                   -> GHC.Base.++ @ GHC.Types.Char Allergies.$fShowAllergen3 w1
+                   Allergies.Cats
+                   -> GHC.Base.++ @ GHC.Types.Char Allergies.$fShowAllergen1 w1 }) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $w$ctoEnum :: GHC.Prim.Int# -> Allergies.Allergen
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> Allergies.$wlvl ww
+                   1#
+                   -> case GHC.Prim.<=# ww 7# of lwild1 {
+                        DEFAULT -> Allergies.$wlvl ww
+                        1# -> GHC.Prim.tagToEnum# @ Allergies.Allergen ww } }) -}
+18c0895efef48409e13e6292efb38319
+  $wisAllergicTo ::
+    Allergies.Allergen -> GHC.Prim.Int# -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U>, Inline: [0],
+     Unfolding: (\ (w :: Allergies.Allergen) (ww :: GHC.Prim.Int#) ->
+                 case w of wild {
+                   Allergies.Eggs
+                   -> case GHC.Prim.andI# ww 1# of wild1 {
+                        DEFAULT -> GHC.Types.True 0# -> GHC.Types.False }
+                   Allergies.Peanuts
+                   -> case GHC.Prim.andI# ww 2# of wild1 {
+                        DEFAULT -> GHC.Types.True 0# -> GHC.Types.False }
+                   Allergies.Shellfish
+                   -> case GHC.Prim.andI# ww 4# of wild1 {
+                        DEFAULT -> GHC.Types.True 0# -> GHC.Types.False }
+                   Allergies.Strawberries
+                   -> case GHC.Prim.andI# ww 8# of wild1 {
+                        DEFAULT -> GHC.Types.True 0# -> GHC.Types.False }
+                   Allergies.Tomatoes
+                   -> case GHC.Prim.andI# ww 16# of wild1 {
+                        DEFAULT -> GHC.Types.True 0# -> GHC.Types.False }
+                   Allergies.Chocolate
+                   -> case GHC.Prim.andI# ww 32# of wild1 {
+                        DEFAULT -> GHC.Types.True 0# -> GHC.Types.False }
+                   Allergies.Pollen
+                   -> case GHC.Prim.andI# ww 64# of wild1 {
+                        DEFAULT -> GHC.Types.True 0# -> GHC.Types.False }
+                   Allergies.Cats
+                   -> case GHC.Prim.andI# ww 128# of wild1 {
+                        DEFAULT -> GHC.Types.True 0# -> GHC.Types.False } }) -}
+6532af4dee1cb9b0787cc0039e8f7779
+  $wlvl :: GHC.Prim.Int# -> Allergies.Allergen
+  {- Arity: 1, Strictness: <B,U>x, Inline: [0] -}
+6532af4dee1cb9b0787cc0039e8f7779
+  data Allergen
+    = Eggs
+    | Peanuts
+    | Shellfish
+    | Strawberries
+    | Tomatoes
+    | Chocolate
+    | Pollen
+    | Cats
+efd3f2b93839ba155ac577f1909b36cd
+  allergies :: GHC.Types.Int -> [Allergies.Allergen]
+  {- Arity: 1, Strictness: <L,U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (score :: GHC.Types.Int) ->
+                 GHC.Base.build
+                   @ Allergies.Allergen
+                   (\ @ b
+                      (c :: Allergies.Allergen -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ Allergies.Allergen
+                      @ b
+                      (GHC.List.filterFB
+                         @ Allergies.Allergen
+                         @ b
+                         c
+                         (\ (allergen :: Allergies.Allergen) ->
+                          Allergies.isAllergicTo allergen score))
+                      n
+                      Allergies.allergies1)) -}
+3d3d107afa9d5cc81ea3dc495ea7370e
+  allergies1 :: [Allergies.Allergen]
+  {- Unfolding: (Allergies.$fEnumAllergen_go 0#) -}
+4313cf2328fc4e37afea0c82fcc31b85
+  isAllergicTo ::
+    Allergies.Allergen -> GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Allergies.Allergen) (w1 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 Allergies.$wisAllergicTo w ww1 }) -}
+instance [safe] GHC.Enum.Bounded [Allergies.Allergen]
+  = Allergies.$fBoundedAllergen
+instance [safe] GHC.Enum.Enum [Allergies.Allergen]
+  = Allergies.$fEnumAllergen
+instance [safe] GHC.Classes.Eq [Allergies.Allergen]
+  = Allergies.$fEqAllergen
+instance [safe] GHC.Show.Show [Allergies.Allergen]
+  = Allergies.$fShowAllergen
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
