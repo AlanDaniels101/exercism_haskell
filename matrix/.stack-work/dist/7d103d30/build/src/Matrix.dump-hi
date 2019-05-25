@@ -1,0 +1,750 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-23 17:03:10.1185288 UTC
+
+interface matrix-1.0.0.6-4UBc5Zc1ediBRbRdwmV5J0:Matrix 8043
+  interface hash: 69154a77de444ed5167af6b3a5d7ed13
+  ABI hash: 598b47844e9f9fa7b1ab92a31007bb05
+  export-list hash: 6aaf9b2acff6675330559a65337c7ee4
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Matrix.column
+  Matrix.flatten
+  Matrix.fromList
+  Matrix.fromString
+  Matrix.reshape
+  Matrix.row
+  Matrix.shape
+  Matrix.transpose
+  Matrix.Matrix{cols rows}
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.11.1.0 deepseq-1.4.3.0
+                      ghc-prim-0.5.2.0 integer-gmp-1.0.2.0 primitive-0.6.3.0
+                      transformers-0.5.5.0 vector-0.12.0.1
+orphans: vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array vector-0.12.0.1:Data.Vector
+import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
+import  -/  base-4.11.1.0:Data.OldList 3987872d5de68d40c22cd1c30825ad08
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:GHC.Read da2c5f0cb256fac757eee7bfe86b3935
+import  -/  base-4.11.1.0:GHC.Show 6211aec7cccd267a5ee999e4414d7b90
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  base-4.11.1.0:Text.Read 5c288a0919cb418cf58278e23fdb845d
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+import  -/  vector-0.12.0.1:Data.Vector 136e29dd913b307387c1c07459bacd27
+df68ded5d8275e265a0623253c273127
+  $fEqMatrix :: GHC.Classes.Eq a => GHC.Classes.Eq (Matrix.Matrix a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a (v1 :: GHC.Classes.Eq a).
+                  @ (Matrix.Matrix a)
+                  (Matrix.$fEqMatrix_$c== @ a v1)
+                  (Matrix.$fEqMatrix_$c/= @ a v1) -}
+df68ded5d8275e265a0623253c273127
+  $fEqMatrix_$c/= ::
+    GHC.Classes.Eq a =>
+    Matrix.Matrix a -> Matrix.Matrix a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(1*C(C1(U)),A)><S(S(S)LL),1*U(1*U(U),1*U(U),1*U(U,U,U))><S(S(S)LL),1*U(1*U(U),1*U(U),1*U(U,U,U))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x :: Matrix.Matrix a)
+                   (y :: Matrix.Matrix a) ->
+                 case Matrix.$fEqMatrix_$c== @ a $dEq x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+df68ded5d8275e265a0623253c273127
+  $fEqMatrix_$c== ::
+    GHC.Classes.Eq a =>
+    Matrix.Matrix a -> Matrix.Matrix a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S(S(S)LL),1*U(1*U(U),1*U(U),1*U(U,U,U))><S(S(S)LL),1*U(1*U(U),1*U(U),1*U(U,U,U))>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Classes.Eq a)
+                   (w1 :: Matrix.Matrix a)
+                   (w2 :: Matrix.Matrix a) ->
+                 case w1 of ww { Matrix.Matrix ww1 ww2 ww3 ->
+                 case ww1 of ww4 { GHC.Types.I# ww5 ->
+                 case w2 of ww6 { Matrix.Matrix ww7 ww8 ww9 ->
+                 case ww7 of ww10 { GHC.Types.I# ww11 ->
+                 Matrix.$w$c== @ a w ww5 ww2 ww3 ww11 ww8 ww9 } } } }) -}
+df68ded5d8275e265a0623253c273127
+  $fShowMatrix :: GHC.Show.Show a => GHC.Show.Show (Matrix.Matrix a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(A,A,C(C(U)))>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v1 :: GHC.Show.Show a).
+                  @ (Matrix.Matrix a)
+                  (Matrix.$fShowMatrix_$cshowsPrec @ a v1)
+                  (Matrix.$fShowMatrix_$cshow @ a v1)
+                  (Matrix.$fShowMatrix_$cshowList @ a v1) -}
+af6859675e428ff2320ebf90ff9c9485
+  $fShowMatrix1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+538857049c6432a76b21883bff83431e
+  $fShowMatrix2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("}"#) -}
+6d13e6cfb4cde7470d72de87094fde29
+  $fShowMatrix3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("v = "#) -}
+28a8bb28990634f28acb639b5cd1db09
+  $fShowMatrix4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("cols = "#) -}
+90b5940a718396674998c0b6f1a62ac7
+  $fShowMatrix5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("rows = "#) -}
+6f0018038a07acedd0283268fd3077ca
+  $fShowMatrix6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Matrix {"#) -}
+df68ded5d8275e265a0623253c273127
+  $fShowMatrix_$cshow ::
+    GHC.Show.Show a => Matrix.Matrix a -> GHC.Base.String
+  {- Arity: 2,
+     Strictness: <L,1*U(A,A,1*C1(C(U)))><S,1*U(U(U),U(U),1*U(U,U,U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (x :: Matrix.Matrix a) ->
+                 Matrix.$fShowMatrix_$cshowsPrec
+                   @ a
+                   $dShow
+                   Matrix.$fShowMatrix1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+df68ded5d8275e265a0623253c273127
+  $fShowMatrix_$cshowList ::
+    GHC.Show.Show a => [Matrix.Matrix a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(A,A,C(C(U)))><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [Matrix.Matrix a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Matrix.Matrix a)
+                   (Matrix.$fShowMatrix_$cshowsPrec @ a $dShow Matrix.$fShowMatrix1)
+                   ls
+                   s) -}
+df68ded5d8275e265a0623253c273127
+  $fShowMatrix_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> Matrix.Matrix a -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,1*U(A,A,1*C1(C(U)))><S(S),1*U(U)><S,1*U(U(U),U(U),1*U(U,U,U))>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Matrix.Matrix a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { Matrix.Matrix ww3 ww4 ww5 ->
+                 Matrix.$w$cshowsPrec @ a w ww1 ww3 ww4 ww5 } }) -}
+b00b51de0fe8c138a5bfc3c3abb77080
+  $tc'Matrix :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12235231670796643099##
+                   14906485318921948191##
+                   Matrix.$trModule
+                   Matrix.$tc'Matrix2
+                   1#
+                   Matrix.$tc'Matrix1) -}
+8eaecc1036692de4a0634576349b792e
+  $tc'Matrix1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+97f3959f3ac2d8bf9c4f61a5b1b0abba
+  $tc'Matrix2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Matrix.$tc'Matrix3) -}
+3f66d82e2063e9f50f8dfb844d5e8870
+  $tc'Matrix3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Matrix"#) -}
+3692702b96809ee65de9baeb018d2fc5
+  $tcMatrix :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5291566451052445886##
+                   18374119059988940444##
+                   Matrix.$trModule
+                   Matrix.$trModule1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+9efc4c22d068c2833bed19482d0cf1d6
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Matrix.$trModule3
+                   Matrix.$trModule1) -}
+72323902e2bd53ea888efd4d669501f7
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Matrix.$trModule2) -}
+ad13be0ff09f5f1d7ea27de0dc9b4e85
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Matrix"#) -}
+58d944e3bee4f00a09ca9b37f40b8a74
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Matrix.$trModule4) -}
+cfb873ef7a3bb71646cd50afa90ff9bb
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("matrix-1.0.0.6-4UBc5Zc1ediBRbRdwmV5J0"#) -}
+6501403a757e058f6db5d56abccedaed
+  $w$c== ::
+    GHC.Classes.Eq a =>
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> Data.Vector.Vector a
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> Data.Vector.Vector a
+    -> GHC.Types.Bool
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,U><L,1*U(U)><L,1*U(U,U,U)><S,U><L,1*U(U)><L,1*U(U,U,U)>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Classes.Eq a)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: Data.Vector.Vector a)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Types.Int)
+                   (ww5 :: Data.Vector.Vector a) ->
+                 case GHC.Prim.==# ww ww3 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case ww1 of wild { GHC.Types.I# x ->
+                      case ww4 of wild1 { GHC.Types.I# y ->
+                      case GHC.Prim.==# x y of lwild1 {
+                        DEFAULT -> GHC.Types.False
+                        1# -> Data.Vector.$fEqVector_$c== @ a w ww2 ww5 } } } }) -}
+7756e0b1d589592ab29cd327197a392c
+  $w$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Data.Vector.Vector a
+    -> GHC.Show.ShowS
+  {- Arity: 5,
+     Strictness: <L,1*U(A,A,1*C1(C(U)))><S,U><L,U(U)><L,U(U)><L,1*U(U,U,U)>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Types.Int)
+                   (ww3 :: Data.Vector.Vector a) ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showList
+                       @ a
+                       w
+                       (case ww3 of v2 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                        letrec {
+                          $wgo :: GHC.Prim.Int# -> [a]
+                            {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                          = \ (ww4 :: GHC.Prim.Int#) ->
+                            case GHC.Prim.>=# ww4 ipv1 of lwild {
+                              DEFAULT
+                              -> case GHC.Prim.indexArray#
+                                        @ a
+                                        ipv2
+                                        (GHC.Prim.+# ipv ww4) of ds3 { Unit# ipv3 ->
+                                 GHC.Types.: @ a ipv3 ($wgo (GHC.Prim.+# ww4 1#)) }
+                              1# -> GHC.Types.[] @ a }
+                        } in
+                        $wgo 0# })
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     GHC.CString.unpackAppendCString#
+                       Matrix.$fShowMatrix6
+                       (GHC.CString.unpackAppendCString#
+                          Matrix.$fShowMatrix5
+                          (case ww1 of ww4 { GHC.Types.I# ww5 ->
+                           case GHC.Show.$wshowSignedInt
+                                  0#
+                                  ww5
+                                  (GHC.Base.++
+                                     @ GHC.Types.Char
+                                     GHC.Show.showCommaSpace1
+                                     (GHC.CString.unpackAppendCString#
+                                        Matrix.$fShowMatrix4
+                                        (case ww2 of ww6 { GHC.Types.I# ww7 ->
+                                         case GHC.Show.$wshowSignedInt
+                                                0#
+                                                ww7
+                                                (GHC.Base.++
+                                                   @ GHC.Types.Char
+                                                   GHC.Show.showCommaSpace1
+                                                   (GHC.CString.unpackAppendCString#
+                                                      Matrix.$fShowMatrix3
+                                                      (f (GHC.CString.unpackAppendCString#
+                                                            Matrix.$fShowMatrix2
+                                                            x)))) of ww8 { (#,#) ww9 ww10 ->
+                                         GHC.Types.:
+                                           @ GHC.Types.Char
+                                           ww9
+                                           ww10 } }))) of ww6 { (#,#) ww7 ww8 ->
+                           GHC.Types.: @ GHC.Types.Char ww7 ww8 } }))
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT -> p
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x)) }) -}
+0648b326be843111a67cb915a8797d15
+  $wcolumn ::
+    GHC.Prim.Int#
+    -> Matrix.Matrix a
+    -> (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Array# a #)
+  {- Arity: 2, Strictness: <S,U><L,U(U,U(U),U(U,U,U))>, Inline: [0],
+     Unfolding: (\ @ a (ww :: GHC.Prim.Int#) (w :: Matrix.Matrix a) ->
+                 case Matrix.$wtranspose @ a w of ww1 { (#,,#) ww2 ww3 ww4 ->
+                 case ww3 of wild1 { GHC.Types.I# y ->
+                 case ww4 of wild { Data.Vector.Vector dt dt1 dt2 ->
+                 let {
+                   i :: GHC.Prim.Int# = GHC.Prim.*# ww y
+                 } in
+                 case GHC.Prim.>=# i 0# of lwild {
+                   DEFAULT
+                   -> case Matrix.column1 @ a y i dt1
+                      ret_ty (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Array# a #)
+                      of {}
+                   1#
+                   -> case GHC.Prim.>=# y 0# of lwild1 {
+                        DEFAULT
+                        -> case Matrix.column1 @ a y i dt1
+                           ret_ty (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Array# a #)
+                           of {}
+                        1#
+                        -> case GHC.Prim.<=# (GHC.Prim.+# i y) dt1 of lwild2 {
+                             DEFAULT
+                             -> case Matrix.column1 @ a y i dt1
+                                ret_ty (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Array# a #)
+                                of {}
+                             1# -> (# GHC.Prim.+# dt i, y, dt2 #) } } } } } }) -}
+60883dd499547e8c5ec8ceb141767fa2
+  $wfromList ::
+    [[a]] -> (# GHC.Types.Int, GHC.Types.Int, Data.Vector.Vector a #)
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ @ a (w :: [[a]]) ->
+                 let {
+                   fail :: GHC.Prim.Void#
+                           -> (# GHC.Types.Int, GHC.Types.Int, Data.Vector.Vector a #)
+                     <join 1> {- Arity: 1, Strictness: <L,A> -}
+                   = \ (ds :: GHC.Prim.Void#)[OneShot] ->
+                     (# case GHC.List.$wlenAcc @ [a] w 0# of ww2 { DEFAULT ->
+                        GHC.Types.I# ww2 },
+                        case GHC.List.$wlenAcc
+                               @ a
+                               (GHC.List.$w!! @ [a] w 0#)
+                               0# of ww2 { DEFAULT ->
+                        GHC.Types.I# ww2 },
+                        case GHC.Magic.runRW#
+                               @ ('GHC.Types.TupleRep
+                                    '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                               @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Vector.Vector a #)
+                               (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                case GHC.Prim.newArray#
+                                       @ a
+                                       @ (Control.Monad.Primitive.PrimState
+                                            (GHC.ST.ST GHC.Prim.RealWorld))
+                                       0#
+                                       (Data.Vector.Mutable.uninitialised @ a)
+                                       s1
+                                         `cast`
+                                       (GHC.Prim.State#
+                                          (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                    <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv ipv1 ->
+                                Matrix.column3
+                                  @ a
+                                  GHC.Types.SPEC
+                                  0#
+                                  0#
+                                  ipv1
+                                    `cast`
+                                  (GHC.Prim.MutableArray#
+                                     (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                          <GHC.Prim.RealWorld>_N)
+                                     <a>_R)_R
+                                  0#
+                                  (Matrix.column2 @ a w)
+                                  ipv
+                                    `cast`
+                                  (GHC.Prim.State#
+                                     (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                          <GHC.Prim.RealWorld>_N))_R }) of ds1 { (#,#) ipv1 ipv2 ->
+                        ipv2 } #)
+                 } in
+                 case w of wild {
+                   [] -> fail GHC.Prim.void#
+                   : ds ds1
+                   -> case ds of wild1 {
+                        []
+                        -> case ds1 of wild2 {
+                             []
+                             -> (# Matrix.$fShowMatrix1, Matrix.$fShowMatrix1,
+                                   Matrix.fromList1 @ a #)
+                             : ipv ipv1 -> fail GHC.Prim.void# }
+                        : ipv ipv1 -> fail GHC.Prim.void# } }) -}
+0ccbe470ef31df92143684c66715b576
+  $wrow ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# a
+    -> (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Array# a #)
+  {- Arity: 5, Strictness: <S,U><S,U><S,U><S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Array# a) ->
+                 let {
+                   i :: GHC.Prim.Int# = GHC.Prim.*# ww ww1
+                 } in
+                 case GHC.Prim.>=# i 0# of lwild {
+                   DEFAULT
+                   -> case Matrix.column1 @ a ww1 i ww3
+                      ret_ty (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Array# a #)
+                      of {}
+                   1#
+                   -> case GHC.Prim.>=# ww1 0# of lwild1 {
+                        DEFAULT
+                        -> case Matrix.column1 @ a ww1 i ww3
+                           ret_ty (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Array# a #)
+                           of {}
+                        1#
+                        -> case GHC.Prim.<=# (GHC.Prim.+# i ww1) ww3 of lwild2 {
+                             DEFAULT
+                             -> case Matrix.column1 @ a ww1 i ww3
+                                ret_ty (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Array# a #)
+                                of {}
+                             1# -> (# GHC.Prim.+# ww2 i, ww1, ww4 #) } } }) -}
+aa66af9a0cffbd20ec4ba96062f5a0d2
+  $wtranspose ::
+    Matrix.Matrix a
+    -> (# GHC.Types.Int, GHC.Types.Int, Data.Vector.Vector a #)
+  {- Arity: 1, Strictness: <L,U(1*U,U(U),1*U(U,U,U))>, Inline: [0],
+     Unfolding: (\ @ a (w :: Matrix.Matrix a) ->
+                 (# case w of wild { Matrix.Matrix ds ds1 ds2 -> ds1 },
+                    case w of wild { Matrix.Matrix ds ds1 ds2 -> ds },
+                    case GHC.Magic.runRW#
+                           @ ('GHC.Types.TupleRep
+                                '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                           @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Vector.Vector a #)
+                           (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case GHC.Prim.newArray#
+                                   @ a
+                                   @ (Control.Monad.Primitive.PrimState
+                                        (GHC.ST.ST GHC.Prim.RealWorld))
+                                   0#
+                                   (Data.Vector.Mutable.uninitialised @ a)
+                                   s1
+                                     `cast`
+                                   (GHC.Prim.State#
+                                      (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv ipv1 ->
+                            case w of wild { Matrix.Matrix ds ds1 ds3 ->
+                            case ds3 of v2 { Data.Vector.Vector ipv2 ipv3 ipv4 ->
+                            letrec {
+                              $wgo :: GHC.Prim.Int# -> [a]
+                                {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                              = \ (ww :: GHC.Prim.Int#) ->
+                                case GHC.Prim.>=# ww ipv3 of lwild {
+                                  DEFAULT
+                                  -> case GHC.Prim.indexArray#
+                                            @ a
+                                            ipv4
+                                            (GHC.Prim.+# ipv2 ww) of ds4 { Unit# ipv5 ->
+                                     GHC.Types.: @ a ipv5 ($wgo (GHC.Prim.+# ww 1#)) }
+                                  1# -> GHC.Types.[] @ a }
+                            } in
+                            Matrix.column3
+                              @ a
+                              GHC.Types.SPEC
+                              0#
+                              0#
+                              ipv1
+                                `cast`
+                              (GHC.Prim.MutableArray#
+                                 (Control.Monad.Primitive.D:R:PrimStateST[0] <GHC.Prim.RealWorld>_N)
+                                 <a>_R)_R
+                              0#
+                              (Matrix.column2
+                                 @ a
+                                 (Matrix.tpose @ a (Matrix.groupN @ a ds1 ($wgo 0#))))
+                              ipv
+                                `cast`
+                              (GHC.Prim.State#
+                                 (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                      <GHC.Prim.RealWorld>_N))_R } } }) of ds1 { (#,#) ipv1 ipv2 ->
+                    ipv2 } #)) -}
+df68ded5d8275e265a0623253c273127
+  data Matrix a
+    = Matrix {rows :: GHC.Types.Int,
+              cols :: GHC.Types.Int,
+              v :: Data.Vector.Vector a}
+df68ded5d8275e265a0623253c273127
+  cols :: Matrix.Matrix a -> GHC.Types.Int
+  RecSel Left Matrix.Matrix
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Matrix.Matrix a) ->
+                 case ds of wild { Matrix.Matrix ds1 ds2 ds3 -> ds2 }) -}
+cee103c358502d2a9d509229f26d71ef
+  column :: GHC.Types.Int -> Matrix.Matrix a -> Data.Vector.Vector a
+  {- Arity: 2, Strictness: <S(S),1*U(U)><L,U(U,U(U),U(U,U,U))>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Types.Int) (w1 :: Matrix.Matrix a) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case Matrix.$wcolumn @ a ww1 w1 of ww2 { (#,,#) ww3 ww4 ww5 ->
+                 Data.Vector.Vector @ a ww3 ww4 ww5 } }) -}
+f10ed96d6efd690b39bc2eff615eb5dc
+  column1 ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int# -> GHC.Prim.Int# -> Data.Vector.Vector a
+  {- Arity: 3, Strictness: <B,U><B,U><B,U>x -}
+0d748d56605461071f8e885574eebf03
+  column2 :: [[a]] -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+9baea3282c3b61f2f58dfac6ecb72b5e
+  column3 ::
+    GHC.Types.SPEC
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.MutableArray# GHC.Prim.RealWorld a
+    -> GHC.Prim.Int#
+    -> [a]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Vector.Vector a #)
+  {- Arity: 7, Strictness: <S,1*U><L,U><L,U><S,U><L,U><S,1*U><S,U>,
+     Inline: [0] -}
+1d2239c2bc92ae05862ea345512ca6ae
+  flatten :: Matrix.Matrix a -> Data.Vector.Vector a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLS),1*U(A,A,1*U(U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (matrix :: Matrix.Matrix a) ->
+                 case matrix of wild { Matrix.Matrix ds ds1 ds2 -> ds2 }) -}
+ee8acdd66dcdfd5aa9238d0148c914ec
+  fromList :: [[a]] -> Matrix.Matrix a
+  {- Arity: 1, Strictness: <S,U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: [[a]]) ->
+                 case Matrix.$wfromList @ a w of ww { (#,,#) ww1 ww2 ww3 ->
+                 Matrix.Matrix @ a ww1 ww2 ww3 }) -}
+19419061e23791a7482a615af6a1c7fb
+  fromList1 :: Data.Vector.Vector a
+  {- Unfolding: (\ @ a ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Vector.Vector a #)
+                        (Matrix.fromList2 @ a) of ds1 { (#,#) ipv1 ipv2 ->
+                 ipv2 }) -}
+5753024c9b83d1c2701f5d0b4f15ac7a
+  fromList2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Vector.Vector a #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ @ a
+                   (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newArray#
+                        @ a
+                        @ (Control.Monad.Primitive.PrimState
+                             (GHC.ST.ST GHC.Prim.RealWorld))
+                        0#
+                        (Data.Vector.Mutable.uninitialised @ a)
+                        s1
+                          `cast`
+                        (GHC.Prim.State#
+                           (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                     <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv ipv1 ->
+                 Matrix.column3
+                   @ a
+                   GHC.Types.SPEC
+                   0#
+                   0#
+                   ipv1
+                     `cast`
+                   (GHC.Prim.MutableArray#
+                      (Control.Monad.Primitive.D:R:PrimStateST[0] <GHC.Prim.RealWorld>_N)
+                      <a>_R)_R
+                   0#
+                   (GHC.Types.[] @ a)
+                   ipv
+                     `cast`
+                   (GHC.Prim.State#
+                      (Control.Monad.Primitive.D:R:PrimStateST[0]
+                           <GHC.Prim.RealWorld>_N))_R }) -}
+ef3b5e4793eebdc2bb6c9d31516089d8
+  fromString :: GHC.Read.Read a => GHC.Base.String -> Matrix.Matrix a
+  {- Arity: 2, Strictness: <L,U(A,A,C(C1(U)),A)><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dRead :: GHC.Read.Read a)
+                   (ds :: [GHC.Types.Char]) ->
+                 case ds of wild {
+                   [] -> Matrix.fromString1 @ a
+                   : ipv ipv1
+                   -> letrec {
+                        go :: [GHC.Types.Char] -> [a] {- Arity: 1, Strictness: <S,1*U> -}
+                        = \ (s :: [GHC.Types.Char]) ->
+                          case GHC.List.dropWhile
+                                 @ GHC.Types.Char
+                                 GHC.Unicode.isSpace
+                                 s of wild1 {
+                            [] -> GHC.Types.[] @ a
+                            : ipv2 ipv3
+                            -> let {
+                                 ds1 :: ([GHC.Types.Char], [GHC.Types.Char])
+                                 = case GHC.List.$wbreak
+                                          @ GHC.Types.Char
+                                          GHC.Unicode.isSpace
+                                          wild1 of ww { (#,#) ww1 ww2 ->
+                                   (ww1, ww2) }
+                               } in
+                               GHC.Types.:
+                                 @ a
+                                 (case Text.Read.readEither
+                                         @ a
+                                         $dRead
+                                         (case ds1 of wild2 { (,) w s'' -> w }) of wild2 {
+                                    Data.Either.Left x
+                                    -> GHC.Err.errorWithoutStackTrace @ 'GHC.Types.LiftedRep @ a x
+                                    Data.Either.Right y -> y })
+                                 (case ds1 of wild2 { (,) w s'' -> go s'' }) }
+                      } in
+                      case Matrix.$wfromList
+                             @ a
+                             (GHC.Base.map
+                                @ [GHC.Types.Char]
+                                @ [a]
+                                (\ (x :: GHC.Base.String) -> go x)
+                                (Data.OldList.lines wild)) of ww { (#,,#) ww1 ww2 ww3 ->
+                      Matrix.Matrix @ a ww1 ww2 ww3 } }) -}
+fcc0102d6546b3d10f87a0c8e1e788e7
+  fromString1 :: Matrix.Matrix a
+  {- Unfolding: (\ @ a ->
+                 case Matrix.$wfromList
+                        @ a
+                        (Matrix.fromString2 @ a) of ww { (#,,#) ww1 ww2 ww3 ->
+                 Matrix.Matrix @ a ww1 ww2 ww3 }) -}
+d0e954409ab0f436011beca638484c79
+  fromString2 :: [[a]]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ a ->
+                 GHC.Types.: @ [a] (GHC.Types.[] @ a) (GHC.Types.[] @ [a])) -}
+925af28da7ef723676eaab4ce9e5bd81
+  groupN :: GHC.Types.Int -> [a] -> [[a]]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S,1*U> -}
+2e16ec8cf2866e4f4741bc60c7a44c97
+  reshape ::
+    (GHC.Types.Int, GHC.Types.Int)
+    -> Matrix.Matrix a -> Matrix.Matrix a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(U,U)><L,1*U(A,A,1*U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (ds :: (GHC.Types.Int, GHC.Types.Int))
+                   (matrix :: Matrix.Matrix a) ->
+                 case ds of wild { (,) newRows newCols ->
+                 Matrix.Matrix
+                   @ a
+                   newRows
+                   newCols
+                   (case matrix of wild1 { Matrix.Matrix ds1 ds2 ds3 -> ds3 }) }) -}
+4b2deece4e54aa9dbdc2c9b3f5c5ebe8
+  row :: GHC.Types.Int -> Matrix.Matrix a -> Data.Vector.Vector a
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S(LS(S)S(SSS)),1*U(A,1*U(U),1*U(U,U,U))>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Types.Int) (w1 :: Matrix.Matrix a) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Matrix.Matrix ww3 ww4 ww5 ->
+                 case ww4 of ww6 { GHC.Types.I# ww7 ->
+                 case ww5 of ww8 { Data.Vector.Vector ww9 ww10 ww11 ->
+                 case Matrix.$wrow
+                        @ a
+                        ww1
+                        ww7
+                        ww9
+                        ww10
+                        ww11 of ww12 { (#,,#) ww13 ww14 ww15 ->
+                 Data.Vector.Vector @ a ww13 ww14 ww15 } } } } }) -}
+df68ded5d8275e265a0623253c273127
+  rows :: Matrix.Matrix a -> GHC.Types.Int
+  RecSel Left Matrix.Matrix
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Matrix.Matrix a) ->
+                 case ds of wild { Matrix.Matrix ds1 ds2 ds3 -> ds1 }) -}
+2eaffc15b6a00f374584e4f6f20ba4ac
+  shape :: Matrix.Matrix a -> (GHC.Types.Int, GHC.Types.Int)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(1*U,1*U,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (matrix :: Matrix.Matrix a) ->
+                 (case matrix of wild { Matrix.Matrix ds ds1 ds2 -> ds },
+                  case matrix of wild { Matrix.Matrix ds ds1 ds2 -> ds1 })) -}
+94240f7fa9fa8a894a1180f1e89e40f0
+  tpose :: [[a]] -> [[a]]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+fd81bb5b497b0fede0597f58bf2809f4
+  transpose :: Matrix.Matrix a -> Matrix.Matrix a
+  {- Arity: 1, Strictness: <L,U(U,U(U),U(U,U,U))>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Matrix.Matrix a) ->
+                 case Matrix.$wtranspose @ a w of ww { (#,,#) ww1 ww2 ww3 ->
+                 Matrix.Matrix @ a ww1 ww2 ww3 }) -}
+df68ded5d8275e265a0623253c273127
+  v :: Matrix.Matrix a -> Data.Vector.Vector a
+  RecSel Left Matrix.Matrix
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLS),1*U(A,A,1*U(U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Matrix.Matrix a) ->
+                 case ds of wild { Matrix.Matrix ds1 ds2 ds3 -> ds3 }) -}
+instance GHC.Classes.Eq [Matrix.Matrix] = Matrix.$fEqMatrix
+instance GHC.Show.Show [Matrix.Matrix] = Matrix.$fShowMatrix
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
