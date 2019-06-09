@@ -1,0 +1,131 @@
+
+==================== FINAL INTERFACE ====================
+2019-05-27 23:15:59.1235567 UTC
+
+interface pythagorean-triplet-1.0.0.4-FNDJslWYpNU3jHyJzjnkWR:Triplet 8043
+  interface hash: aad0cb1b1aae7f2e96a374ca3ce22476
+  ABI hash: eff07a373424accbe34e44a2507a45a6
+  export-list hash: 3fb6a1e9e8df737956cc4571e449fc8c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Triplet.tripletsWithSum
+module dependencies:
+package dependencies: arithmoi-0.7.0.0 array-0.5.2.0 base-4.11.1.0
+                      ghc-prim-0.5.2.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.1
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:GHC.Exts base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  arithmoi-0.7.0.0:Math.NumberTheory.Powers.Squares 496825ec208834bba4edddd58a0517a3
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:GHC.Real 032ed0a1053f878238d78e95e75f2edf
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+c0046007f7a900259adfac7dc92cce77
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Triplet.$trModule3
+                   Triplet.$trModule1) -}
+2f4bcf6200dd9a4d65641b3623a7e95f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Triplet.$trModule2) -}
+86f538887c08d715227211bcab0283d3
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Triplet"#) -}
+68c26dd63eb2ce32e17ca203da6bed19
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Triplet.$trModule4) -}
+b4e3d3a16838b67147ac260cca770fd7
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("pythagorean-triplet-1.0.0.4-FNDJslWYpNU3jHyJzjnkWR"#) -}
+491afb0a4a0794eb4775294870f4c34c
+  $wtripletsWithSum ::
+    GHC.Prim.Int# -> [(GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Classes.divInt# ww 3# of ww4 { DEFAULT ->
+                 case GHC.Prim.># 1# ww4 of lwild {
+                   DEFAULT
+                   -> let {
+                        limB :: GHC.Prim.Int# = GHC.Prim.uncheckedIShiftRA# ww 1#
+                      } in
+                      letrec {
+                        go :: GHC.Prim.Int#
+                              -> [(GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)]
+                          {- Arity: 1, Strictness: <S,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          let {
+                            x0 :: GHC.Prim.Int# = GHC.Prim.+# x 1#
+                          } in
+                          let {
+                            n :: [(GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)]
+                            = case GHC.Prim.==# x ww4 of lwild1 {
+                                DEFAULT -> go x0
+                                1#
+                                -> GHC.Types.[] @ (GHC.Types.Int, GHC.Types.Int, GHC.Types.Int) }
+                          } in
+                          case GHC.Prim.># x0 limB of lwild1 {
+                            DEFAULT
+                            -> let {
+                                 ds :: GHC.Types.Int = GHC.Types.I# x
+                               } in
+                               let {
+                                 lvl :: GHC.Prim.Int# = GHC.Prim.*# x x
+                               } in
+                               letrec {
+                                 go1 :: GHC.Prim.Int#
+                                        -> [(GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)]
+                                   {- Arity: 1, Strictness: <S,U> -}
+                                 = \ (x1 :: GHC.Prim.Int#) ->
+                                   let {
+                                     x2 :: GHC.Prim.Int# = GHC.Prim.-# (GHC.Prim.-# ww x1) x
+                                   } in
+                                   case GHC.Prim.==#
+                                          (GHC.Prim.+# lvl (GHC.Prim.*# x1 x1))
+                                          (GHC.Prim.*# x2 x2) of lwild2 {
+                                     DEFAULT
+                                     -> case GHC.Prim.==# x1 limB of lwild3 {
+                                          DEFAULT -> go1 (GHC.Prim.+# x1 1#) 1# -> n }
+                                     1#
+                                     -> GHC.Types.:
+                                          @ (GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)
+                                          (ds, GHC.Types.I# x1, GHC.Types.I# x2)
+                                          (case GHC.Prim.==# x1 limB of lwild3 {
+                                             DEFAULT -> go1 (GHC.Prim.+# x1 1#) 1# -> n }) }
+                               } in
+                               go1 x0
+                            1# -> n }
+                      } in
+                      go 1#
+                   1#
+                   -> GHC.Types.[]
+                        @ (GHC.Types.Int, GHC.Types.Int, GHC.Types.Int) } }) -}
+be45157cd20d7f9249aa8c17e968dcba
+  tripletsWithSum ::
+    GHC.Types.Int -> [(GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Triplet.$wtripletsWithSum ww1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

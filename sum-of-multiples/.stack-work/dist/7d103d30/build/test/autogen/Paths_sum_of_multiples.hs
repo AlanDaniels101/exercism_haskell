@@ -30,7 +30,7 @@ version = Version [1,5,0,10] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "C:\\Users\\aland\\Exercism\\haskell\\sum-of-multiples\\.stack-work\\install\\dbe016db\\bin"
-libdir     = "C:\\Users\\aland\\Exercism\\haskell\\sum-of-multiples\\.stack-work\\install\\dbe016db\\lib\\x86_64-windows-ghc-8.4.3\\sum-of-multiples-1.5.0.10-A1VrQaqYrt97wr61ThVQ3K-test"
+libdir     = "C:\\Users\\aland\\Exercism\\haskell\\sum-of-multiples\\.stack-work\\install\\dbe016db\\lib\\x86_64-windows-ghc-8.4.3\\sum-of-multiples-1.5.0.10-8uFlnh7EP4cFNjs5B1SA7J-test"
 dynlibdir  = "C:\\Users\\aland\\Exercism\\haskell\\sum-of-multiples\\.stack-work\\install\\dbe016db\\lib\\x86_64-windows-ghc-8.4.3"
 datadir    = "C:\\Users\\aland\\Exercism\\haskell\\sum-of-multiples\\.stack-work\\install\\dbe016db\\share\\x86_64-windows-ghc-8.4.3\\sum-of-multiples-1.5.0.10"
 libexecdir = "C:\\Users\\aland\\Exercism\\haskell\\sum-of-multiples\\.stack-work\\install\\dbe016db\\libexec\\x86_64-windows-ghc-8.4.3\\sum-of-multiples-1.5.0.10"

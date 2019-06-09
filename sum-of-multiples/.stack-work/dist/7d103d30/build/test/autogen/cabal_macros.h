@@ -166,7 +166,7 @@
 #endif /* MIN_TOOL_VERSION_strip */
 
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "sum-of-multiples-1.5.0.10-A1VrQaqYrt97wr61ThVQ3K-test"
+#define CURRENT_COMPONENT_ID "sum-of-multiples-1.5.0.10-8uFlnh7EP4cFNjs5B1SA7J-test"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "1.5.0.10"

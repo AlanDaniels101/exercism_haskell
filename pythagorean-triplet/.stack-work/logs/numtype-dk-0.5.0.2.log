@@ -1,0 +1,8 @@
+Configuring numtype-dk-0.5.0.2...
+Preprocessing library for numtype-dk-0.5.0.2..
+Building library for numtype-dk-0.5.0.2..
+[1 of 2] Compiling Numeric.NumType.DK.Integers ( Numeric\NumType\DK\Integers.hs, .stack-work\dist\7d103d30\build\Numeric\NumType\DK\Integers.o )
+[2 of 2] Compiling Numeric.NumType.DK.Naturals ( Numeric\NumType\DK\Naturals.hs, .stack-work\dist\7d103d30\build\Numeric\NumType\DK\Naturals.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in C:\sr\snapshots\0206bb5d\lib\x86_64-windows-ghc-8.4.3\numtype-dk-0.5.0.2-DnJ3fOW43J15u6pfz9siiy
+Registering library for numtype-dk-0.5.0.2..

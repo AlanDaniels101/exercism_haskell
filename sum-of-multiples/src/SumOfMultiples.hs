@@ -1,11 +1,11 @@
 module SumOfMultiples (sumOfMultiples) where
 
 import Data.List
+import Data.Set
 
 sumOfMultiples :: [Integer] -> Integer -> Integer
-sumOfMultiples factors limit = sum . nub . concat $ map (multiples limit) factors
+sumOfMultiples factors limit = sum . unions . Data.List.map (multiples limit) $ factors
 
-multiples :: Integer -> Integer -> [Integer]
-multiples limit 0 = [0]
-multiples limit n = unfoldr (\x -> if (x >= limit) then Nothing else Just (x, x+n)) n 
- 
+multiples :: Integer -> Integer -> Set Integer
+multiples _ 0 = fromDistinctAscList  [0]
+multiples limit n = fromDistinctAscList [n, 2*n..limit-1] 

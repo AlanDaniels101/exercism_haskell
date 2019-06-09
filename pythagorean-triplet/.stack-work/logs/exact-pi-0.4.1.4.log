@@ -1,0 +1,8 @@
+Configuring exact-pi-0.4.1.4...
+Preprocessing library for exact-pi-0.4.1.4..
+Building library for exact-pi-0.4.1.4..
+[1 of 2] Compiling Data.ExactPi     ( src\Data\ExactPi.hs, .stack-work\dist\7d103d30\build\Data\ExactPi.o )
+[2 of 2] Compiling Data.ExactPi.TypeLevel ( src\Data\ExactPi\TypeLevel.hs, .stack-work\dist\7d103d30\build\Data\ExactPi\TypeLevel.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in C:\sr\snapshots\0206bb5d\lib\x86_64-windows-ghc-8.4.3\exact-pi-0.4.1.4-4sad8MycZEhDZtmgUsK8TF
+Registering library for exact-pi-0.4.1.4..

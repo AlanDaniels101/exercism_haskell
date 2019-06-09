@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2019-04-24 01:01:57.7655857 UTC
+2019-06-04 02:24:49.8477975 UTC
 
-interface sum-of-multiples-1.5.0.10-LMCgRGpNUYy3CU9F0MjcmC:SumOfMultiples 8043
-  interface hash: 7d337f3c36274c1d517d37fe286afdec
-  ABI hash: e520c98c8795fb18f550570baa6760a3
-  export-list hash: 1c99015f9763d914d942bc9b6ce28959
-  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+interface sum-of-multiples-1.5.0.10-5XKcXYQZwWa9ykNdIEZWDC:SumOfMultiples 8043
+  interface hash: f0d4de15fa998804bff86b6794d43916
+  ABI hash: ff2540c56caf82f93a2734206c5a8939
+  export-list hash: 3777f5b90a0b8c207f8f9b4cfa66e393
+  orphan hash: 79ba66b38c47b121360d979a697364d8
   flag hash: 0527c515cada2cc2079fef10aa370e66
   opt_hash: 14e536840aca4e889cad654e6f9b79c1
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
@@ -16,95 +16,169 @@ interface sum-of-multiples-1.5.0.10-LMCgRGpNUYy3CU9F0MjcmC:SumOfMultiples 8043
 exports:
   SumOfMultiples.sumOfMultiples
 module dependencies:
-package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+package dependencies: array-0.5.2.0 base-4.11.1.0*
+                      containers-0.5.11.0 deepseq-1.4.3.0 ghc-prim-0.5.2.0
                       integer-gmp-1.0.2.0
 orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
 family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
                          base-4.11.1.0:Data.Functor.Const
-                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
-                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
-                         base-4.11.1.0:GHC.IO.Exception
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Set.Internal
 import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
 import  -/  base-4.11.1.0:Data.List cb78ca5eace70fd310936fda86b3e611
-import  -/  base-4.11.1.0:Data.OldList 3987872d5de68d40c22cd1c30825ad08
 import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
 import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
 import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
-import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+import  -/  containers-0.5.11.0:Data.Set eb0fbc743d474b13246bc4dbf4a83977
+import  -/  containers-0.5.11.0:Data.Set.Internal 0672c19b08cec68fbd0f1408b7c182d5
 import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 6713f4457912bac968474ebbf062cd01
-122766082817c38c4f62a777b696cd85
+a375df2bcf5c8857fdff52b7bd15d99d
+  $s$fFoldableSet_$csum1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+d9e86af638b9023073d3fd0ad7cfd0c0
+  $s$fFoldableSet_$csum_go3 ::
+    GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+de911de1edc98346075bab9d8bb3d2ec
+  $s$wsplitS ::
+    GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> (# Data.Set.Internal.Set GHC.Integer.Type.Integer,
+          Data.Set.Internal.Set GHC.Integer.Type.Integer #)
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [~] -}
+5f3e38ad4226eb213142f1f0313e4aea
+  $sinsertR_$sgo3 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U> -}
+0e2a8c3cdc9a1b07bda79b5f47fb06da
+  $sinsert_$sgo3 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U> -}
+5070f6341cbbbb75b96a5b6300be4ad4
+  $sunion ::
+    Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
+b7da6783eb1cb146d3d70119338afa23
+  $sunions_go3 ::
+    Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> [Data.Set.Internal.Set GHC.Integer.Type.Integer]
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+c6e71e139b4142c3ccdb5b89e430d41a
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    SumOfMultiples.$trModule3
                    SumOfMultiples.$trModule1) -}
-cf3b037b3680f14336918ac6aa9e9313
+145a27d97cedf8e3d154d9d178f331dd
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS SumOfMultiples.$trModule2) -}
-937cec3c03d5a4b676481dceeded508e
+6432beb73619dc75506c193799590520
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("SumOfMultiples"#) -}
-f382ae5056aa1be7bd434ca5d8781c7c
+3af98dba574d3202b7f7fcd9ff5706b4
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS SumOfMultiples.$trModule4) -}
-c234591f1138e0a5837ab15e3fae3711
+1cc8a1fd3031a939a9d7061a915ea151
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("sum-of-multiples-1.5.0.10-LMCgRGpNUYy3CU9F0MjcmC"#) -}
-b2384618e746009b1802ada8f70c3133
+     Unfolding: ("sum-of-multiples-1.5.0.10-5XKcXYQZwWa9ykNdIEZWDC"#) -}
+7cb6c753b541cd008ae13e328393078e
   sumOfMultiples ::
     [GHC.Integer.Type.Integer]
     -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
-  {- Arity: 2, Strictness: <S,1*U><L,U>,
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
      Unfolding: (\ (factors :: [GHC.Integer.Type.Integer])
                    (limit :: GHC.Integer.Type.Integer) ->
-                 letrec {
-                   go :: [GHC.Integer.Type.Integer] -> [GHC.Integer.Type.Integer]
-                     {- Arity: 1, Strictness: <S,1*U> -}
-                   = \ (ds :: [GHC.Integer.Type.Integer]) ->
-                     case ds of wild {
-                       [] -> GHC.Types.[] @ GHC.Integer.Type.Integer
-                       : y ys
-                       -> case GHC.Integer.Type.eqInteger#
-                                 y
-                                 SumOfMultiples.sumOfMultiples1 of wild1 {
-                            DEFAULT
-                            -> letrec {
-                                 go1 :: GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
-                                   {- Arity: 1, Strictness: <S,U> -}
-                                 = \ (b2 :: GHC.Integer.Type.Integer) ->
-                                   case GHC.Integer.Type.geInteger# b2 limit of wild2 {
-                                     DEFAULT
-                                     -> GHC.Types.:
-                                          @ GHC.Integer.Type.Integer
-                                          b2
-                                          (go1 (GHC.Integer.Type.plusInteger b2 y))
-                                     1# -> GHC.Types.[] @ GHC.Integer.Type.Integer }
-                               } in
-                               GHC.Base.++ @ GHC.Integer.Type.Integer (go1 y) (go ys)
-                            1#
-                            -> GHC.Base.++_$s++
-                                 @ GHC.Integer.Type.Integer
-                                 (go ys)
-                                 SumOfMultiples.sumOfMultiples1
-                                 (GHC.Types.[] @ GHC.Integer.Type.Integer) } }
+                 let {
+                   lvl :: GHC.Integer.Type.Integer
+                   = GHC.Integer.Type.minusInteger
+                       limit
+                       SumOfMultiples.sumOfMultiples4
                  } in
-                 SumOfMultiples.sumOfMultiples_go
-                   (Data.OldList.nubBy
-                      @ GHC.Integer.Type.Integer
-                      GHC.Integer.Type.eqInteger
-                      (go factors))
-                   SumOfMultiples.sumOfMultiples1) -}
-62fe4aafff369f8a7c03301d96c9b3c0
-  sumOfMultiples1 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (0) -}
-3062e400559a7d9a7efd4f2f25642c1f
-  sumOfMultiples_go ::
-    [GHC.Integer.Type.Integer]
-    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
-  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+                 SumOfMultiples.$s$fFoldableSet_$csum_go3
+                   SumOfMultiples.$s$fFoldableSet_$csum1
+                   (SumOfMultiples.$sunions_go3
+                      (Data.Set.Internal.Tip @ GHC.Integer.Type.Integer)
+                      (GHC.Base.map
+                         @ GHC.Integer.Type.Integer
+                         @ (Data.Set.Internal.Set GHC.Integer.Type.Integer)
+                         (\ (ds :: GHC.Integer.Type.Integer) ->
+                          case GHC.Integer.Type.eqInteger#
+                                 ds
+                                 SumOfMultiples.$s$fFoldableSet_$csum1 of wild {
+                            DEFAULT
+                            -> case GHC.Enum.enumDeltaToInteger
+                                      ds
+                                      (GHC.Integer.Type.minusInteger
+                                         (GHC.Integer.Type.timesInteger
+                                            SumOfMultiples.sumOfMultiples3
+                                            ds)
+                                         ds)
+                                      lvl of wild1 {
+                                 [] -> Data.Set.Internal.Tip @ GHC.Integer.Type.Integer
+                                 : x0 xs0
+                                 -> case x0 of dt { DEFAULT ->
+                                    Data.Set.Internal.$wpoly_go
+                                      @ GHC.Integer.Type.Integer
+                                      1#
+                                      (Data.Set.Internal.Bin
+                                         @ GHC.Integer.Type.Integer
+                                         1#
+                                         dt
+                                         (Data.Set.Internal.Tip @ GHC.Integer.Type.Integer)
+                                         (Data.Set.Internal.Tip @ GHC.Integer.Type.Integer))
+                                      xs0 } }
+                            1# -> SumOfMultiples.sumOfMultiples1 })
+                         factors))) -}
+c4c79e906bce62a5862a0f5d9990a45e
+  sumOfMultiples1 :: Data.Set.Internal.Set GHC.Integer.Type.Integer
+  {- Unfolding: (Data.Set.Internal.$wpoly_go
+                   @ GHC.Integer.Type.Integer
+                   1#
+                   SumOfMultiples.sumOfMultiples2
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+71c606adad3cb0c76eebf5c9eab00178
+  sumOfMultiples2 :: Data.Set.Internal.Set GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Data.Set.Internal.Bin
+                   @ GHC.Integer.Type.Integer
+                   1#
+                   SumOfMultiples.$s$fFoldableSet_$csum1
+                   (Data.Set.Internal.Tip @ GHC.Integer.Type.Integer)
+                   (Data.Set.Internal.Tip @ GHC.Integer.Type.Integer)) -}
+7577c8c5574ee7c48c3f91c966e2b556
+  sumOfMultiples3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+9617e7a2d821865ddef693c996d3f33b
+  sumOfMultiples4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+"SPEC/SumOfMultiples $wsplitS @ Integer" [orphan] [0] forall (w :: GHC.Classes.Ord
+                                                                     GHC.Integer.Type.Integer)
+  Data.Set.Internal.$wsplitS @ GHC.Integer.Type.Integer w
+  = SumOfMultiples.$s$wsplitS
+"SPEC/SumOfMultiples union @ Integer" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                  GHC.Integer.Type.Integer)
+  Data.Set.Internal.union @ GHC.Integer.Type.Integer $dOrd
+  = SumOfMultiples.$sunion
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

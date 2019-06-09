@@ -22,6 +22,17 @@
   (major1) == 4 && (major2) == 11 && (minor) <= 1)
 #endif /* MIN_VERSION_base */
 
+/* package containers-0.5.11.0 */
+#ifndef VERSION_containers
+#define VERSION_containers "0.5.11.0"
+#endif /* VERSION_containers */
+#ifndef MIN_VERSION_containers
+#define MIN_VERSION_containers(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  5 || \
+  (major1) == 0 && (major2) == 5 && (minor) <= 11)
+#endif /* MIN_VERSION_containers */
+
 /* tool cpphs-1.20.8 */
 #ifndef TOOL_VERSION_cpphs
 #define TOOL_VERSION_cpphs "1.20.8"
@@ -144,10 +155,10 @@
 #endif /* MIN_TOOL_VERSION_strip */
 
 #ifndef CURRENT_PACKAGE_KEY
-#define CURRENT_PACKAGE_KEY "sum-of-multiples-1.5.0.10-LMCgRGpNUYy3CU9F0MjcmC"
+#define CURRENT_PACKAGE_KEY "sum-of-multiples-1.5.0.10-5XKcXYQZwWa9ykNdIEZWDC"
 #endif /* CURRENT_PACKAGE_KEY */
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "sum-of-multiples-1.5.0.10-LMCgRGpNUYy3CU9F0MjcmC"
+#define CURRENT_COMPONENT_ID "sum-of-multiples-1.5.0.10-5XKcXYQZwWa9ykNdIEZWDC"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "1.5.0.10"
