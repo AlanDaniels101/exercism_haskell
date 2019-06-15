@@ -1,0 +1,7 @@
+Configuring digits-0.3.1...
+Preprocessing library for digits-0.3.1..
+Building library for digits-0.3.1..
+[1 of 1] Compiling Data.Digits      ( src\Data\Digits.hs, .stack-work\dist\7d103d30\build\Data\Digits.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in C:\sr\snapshots\0206bb5d\lib\x86_64-windows-ghc-8.4.3\digits-0.3.1-2LI0uVKNdJxCnKV562poAv
+Registering library for digits-0.3.1..
