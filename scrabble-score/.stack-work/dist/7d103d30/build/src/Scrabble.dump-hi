@@ -1,0 +1,422 @@
+
+==================== FINAL INTERFACE ====================
+2019-06-18 00:44:03.8407303 UTC
+
+interface scrabble-score-1.1.0.5-2w2sOeJE84C70v9wmmyfxF:Scrabble 8043
+  interface hash: d55ecbb4980b7f171b8b5a6b41babdb5
+  ABI hash: 9b0020b9534c89bbc425a8b99df36167
+  export-list hash: 1e08d63c2c692d7704a58c38a0ade783
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Scrabble.scoreLetter
+  Scrabble.scoreWord
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Char c550369827d719df8be8fb1e8cd699c1
+import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.Unicode 875b8e8d21ca0bd8abbb7bede4488443
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 6713f4457912bac968474ebbf062cd01
+c55ac5b0f4234d393c73902fbb2442cd
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Scrabble.$trModule3
+                   Scrabble.$trModule1) -}
+9d89c6e9d22642a76b64a44682ddc560
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Scrabble.$trModule2) -}
+f3dc2e778dd40ae5f9a3d7b98cfd0584
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Scrabble"#) -}
+87530335bb4415bbd0d50b4905f78d06
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Scrabble.$trModule4) -}
+12deae1864a2aa80168e432ffc27a002
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("scrabble-score-1.1.0.5-2w2sOeJE84C70v9wmmyfxF"#) -}
+0107b78d559f4faa3ce1b236d0c58d3b
+  scoreLetter :: GHC.Types.Char -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <L,1*U(U)>,
+     Unfolding: (\ (l :: GHC.Types.Char) ->
+                 let {
+                   letter :: GHC.Types.Char
+                   = case l of ww { GHC.Types.C# ww1 ->
+                     case {__pkg_ccall base-4.11.1.0 GHC.Prim.Int#
+                                                     -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                           GHC.Prim.Int# #)}
+                            (GHC.Prim.ord# ww1)
+                            GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                     case GHC.Prim.leWord# (GHC.Prim.int2Word# ds1) 1114111## of lwild {
+                       DEFAULT -> GHC.Char.$wlvl ds1
+                       1# -> GHC.Types.C# (GHC.Prim.chr# ds1) } } }
+                 } in
+                 case GHC.List.elem
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        letter
+                        Scrabble.scoreLetter41 of wild {
+                   GHC.Types.False
+                   -> case GHC.List.elem
+                             @ GHC.Types.Char
+                             GHC.Classes.$fEqChar
+                             letter
+                             Scrabble.scoreLetter37 of wild1 {
+                        GHC.Types.False
+                        -> case GHC.List.elem
+                                  @ GHC.Types.Char
+                                  GHC.Classes.$fEqChar
+                                  letter
+                                  Scrabble.scoreLetter29 of wild2 {
+                             GHC.Types.False
+                             -> case GHC.List.elem
+                                       @ GHC.Types.Char
+                                       GHC.Classes.$fEqChar
+                                       letter
+                                       Scrabble.scoreLetter19 of wild3 {
+                                  GHC.Types.False
+                                  -> case GHC.List.elem
+                                            @ GHC.Types.Char
+                                            GHC.Classes.$fEqChar
+                                            letter
+                                            Scrabble.scoreLetter17 of wild4 {
+                                       GHC.Types.False
+                                       -> case GHC.List.elem
+                                                 @ GHC.Types.Char
+                                                 GHC.Classes.$fEqChar
+                                                 letter
+                                                 Scrabble.scoreLetter13 of wild5 {
+                                            GHC.Types.False
+                                            -> case GHC.List.elem
+                                                      @ GHC.Types.Char
+                                                      GHC.Classes.$fEqChar
+                                                      letter
+                                                      Scrabble.scoreLetter9 of wild6 {
+                                                 GHC.Types.False -> Scrabble.scoreLetter8
+                                                 GHC.Types.True -> Scrabble.scoreLetter7 }
+                                            GHC.Types.True -> Scrabble.scoreLetter6 }
+                                       GHC.Types.True -> Scrabble.scoreLetter5 }
+                                  GHC.Types.True -> Scrabble.scoreLetter4 }
+                             GHC.Types.True -> Scrabble.scoreLetter3 }
+                        GHC.Types.True -> Scrabble.scoreLetter2 }
+                   GHC.Types.True -> Scrabble.scoreLetter1 }) -}
+ae99f3a7f423e3a086bc9f84b13c5ee5
+  scoreLetter1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+ccb8f1788b099376c11696e0394b39bb
+  scoreLetter10 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter11
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+5e99738cd44e80deb905710960018cee
+  scoreLetter11 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'Z'#) -}
+b39411f3d3b7c84f414df82d63bd0a1e
+  scoreLetter12 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'Q'#) -}
+2665defa7ba53028c477dd9f872a802d
+  scoreLetter13 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter16
+                   Scrabble.scoreLetter14) -}
+32a70029a90cbb3f22cef3cd090106da
+  scoreLetter14 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter15
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+5e8ee4627901f7e7938dc96b73fc6491
+  scoreLetter15 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'X'#) -}
+86a4a1ca7f2c7029333b2927ce4b21a0
+  scoreLetter16 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'J'#) -}
+5d6c641845fe4b8ba02d4b78644ec7e5
+  scoreLetter17 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter18
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+73ac0209d41cd21f8041acca1c5ff32f
+  scoreLetter18 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'K'#) -}
+1bf5213040248fa7f62e5ffc9ef0ef9a
+  scoreLetter19 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter28
+                   Scrabble.scoreLetter20) -}
+48a144c83e063cdae376bd52bdd2fa9c
+  scoreLetter2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+4285b6d325512eacdfc7686a02f699fc
+  scoreLetter20 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter27
+                   Scrabble.scoreLetter21) -}
+77381fdbb8ab236941d95d661a1faf2e
+  scoreLetter21 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter26
+                   Scrabble.scoreLetter22) -}
+a6ae755bd1687e029b38bce9770c7321
+  scoreLetter22 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter25
+                   Scrabble.scoreLetter23) -}
+ee1abaa47f19bf73c9ac8db349de98a3
+  scoreLetter23 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter24
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ad249c546cea91329ca4333e3ff35448
+  scoreLetter24 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'Y'#) -}
+ad52f3354a248f133776083cd9b3b073
+  scoreLetter25 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'W'#) -}
+77f13d62ee7adc8d97b40d3e3deb1f7b
+  scoreLetter26 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'V'#) -}
+7c921a8d6426cc1ae40d2c7a3b977f33
+  scoreLetter27 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'H'#) -}
+06620bce0e8ed85806cf9f9731da8cc9
+  scoreLetter28 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'F'#) -}
+605d6f02680576256d8ec063c63d526e
+  scoreLetter29 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter36
+                   Scrabble.scoreLetter30) -}
+b49f82d7729fee3f0e6a35ab6b2ba462
+  scoreLetter3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+8f823e6dbe0db91e9b89eda7a2c07887
+  scoreLetter30 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter35
+                   Scrabble.scoreLetter31) -}
+cdcf616e8181f0dbc0c89f1684a95ad6
+  scoreLetter31 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter34
+                   Scrabble.scoreLetter32) -}
+d9379ad40020ff0184b1651ee29d739c
+  scoreLetter32 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter33
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+f25b7998b84696fd87ec0f1127714977
+  scoreLetter33 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'P'#) -}
+93c9ba3c439e7862eea88df6d3f8282a
+  scoreLetter34 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'M'#) -}
+44d7d278f898f6b7d004a2fbb4b2b4fe
+  scoreLetter35 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'C'#) -}
+f61347c024fd198827a15a3ad9a948d7
+  scoreLetter36 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'B'#) -}
+cf8d279e140a63c7b3d0c75382f60bfc
+  scoreLetter37 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter40
+                   Scrabble.scoreLetter38) -}
+97c3ed0ba3a249a7038164e4ad7fff6f
+  scoreLetter38 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter39
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a7fab65d4b94b2050923c8cdf43201b6
+  scoreLetter39 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'G'#) -}
+4c0c33f3cd9a56cb2829cf4a8740e269
+  scoreLetter4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (4) -}
+b93b25a29692c0cb9fed149156608d5c
+  scoreLetter40 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'D'#) -}
+08fc4c3eb36af9ec3df216d19afcde8d
+  scoreLetter41 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter60
+                   Scrabble.scoreLetter42) -}
+59a00b07484a40c4792e4483a1e65cef
+  scoreLetter42 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter59
+                   Scrabble.scoreLetter43) -}
+73310f259717cf2c0d336dbb1c5e09da
+  scoreLetter43 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter58
+                   Scrabble.scoreLetter44) -}
+bec7c5241a9d22604ca29880a2e662ec
+  scoreLetter44 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter57
+                   Scrabble.scoreLetter45) -}
+c7dbb953f613888051a64f39c7a88926
+  scoreLetter45 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter56
+                   Scrabble.scoreLetter46) -}
+37354480a6cad88b9cdf7bdf9e8ea57d
+  scoreLetter46 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter55
+                   Scrabble.scoreLetter47) -}
+f28555a4b65ddad3cbfbf684c8a1242f
+  scoreLetter47 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter54
+                   Scrabble.scoreLetter48) -}
+faf2446d69a0e7bead22f64583bb40e5
+  scoreLetter48 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter53
+                   Scrabble.scoreLetter49) -}
+11b3e3f92809214963440b20288547e6
+  scoreLetter49 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter52
+                   Scrabble.scoreLetter50) -}
+b00da9a094294eb756dbba206a0156b3
+  scoreLetter5 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (5) -}
+a79b204a323a62a440bff237dab01b8d
+  scoreLetter50 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter51
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+645c6d4c0250361b9a91f0ebabf09cbf
+  scoreLetter51 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'T'#) -}
+a6feb2ad599bd2df27494c28cef4d5e0
+  scoreLetter52 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'S'#) -}
+04f438bb7d77ae5076a4d808852fbfc9
+  scoreLetter53 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'R'#) -}
+af290f6f9e3e64c59aa053305b3dde46
+  scoreLetter54 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'N'#) -}
+1a1bb76bafd45e8c91c50f6e0c65b9ac
+  scoreLetter55 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'L'#) -}
+b28f473f439553bcbf89377b6e2734fa
+  scoreLetter56 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'U'#) -}
+3d0622e28ae4a9f67b7641cf003a1026
+  scoreLetter57 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'O'#) -}
+76c24155639cc49b55e279d63431c0e5
+  scoreLetter58 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'I'#) -}
+0575949064eb9ebee87c8e827cf7d4eb
+  scoreLetter59 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'E'#) -}
+e7180fc031832212d5adcb24787eebfe
+  scoreLetter6 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (8) -}
+e85ee9a3bb69abd287039d4fa6bd0198
+  scoreLetter60 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'A'#) -}
+6eb8157da49f61f7d231496ace8d264f
+  scoreLetter7 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (10) -}
+958dea29b1bc3af5e30454a654165a80
+  scoreLetter8 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+9a2a51fe2d3f2b97b7c31b39cf1104f2
+  scoreLetter9 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Scrabble.scoreLetter12
+                   Scrabble.scoreLetter10) -}
+c2aff749f3ef278854e96e2e3c3230c7
+  scoreWord :: GHC.Base.String -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: [GHC.Types.Char]) ->
+                 Scrabble.scoreWord_go x Scrabble.scoreLetter8) -}
+2883e50b1faa834ae519785fd34f4244
+  scoreWord_go ::
+    [GHC.Types.Char]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
