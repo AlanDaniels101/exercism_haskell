@@ -1,0 +1,157 @@
+
+==================== FINAL INTERFACE ====================
+2019-06-20 21:30:40.641182 UTC
+
+interface roman-numerals-1.2.0.6-IamEpiX3KjpGBFgt0wXhaa:Roman 8043
+  interface hash: d0adef7c6d07cafb262aacac859d831e
+  ABI hash: 22a018de5ac2da718461cbe77969262a
+  export-list hash: bc02d366b1a85e15f07286d726414c2c
+  orphan hash: 19dbd9b354ee6f6b680fbeefdaeb08c7
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Roman.numerals
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.11.1.0*
+                      containers-0.5.11.0 deepseq-1.4.3.0 ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Set.Internal
+import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
+import  -/  base-4.11.1.0:Data.Functor 920435f8ff93fffe1aec86c79e4fd45f
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  containers-0.5.11.0:Data.Map 1fa9f25d51fe9f60b440e141f6d7bf14
+import  -/  containers-0.5.11.0:Data.Map.Internal a2314ee57e16ff1fe3af08500b455e81
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 6713f4457912bac968474ebbf062cd01
+cd1bd3e75ccbaa3a3084c3db130f7571
+  $sfromList ::
+    [(GHC.Integer.Type.Integer, a)]
+    -> Data.Map.Internal.Map GHC.Integer.Type.Integer a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Integer.Type.Integer, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Internal.Tip @ GHC.Integer.Type.Integer @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Internal.Bin
+                             @ GHC.Integer.Type.Integer
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Internal.Tip @ GHC.Integer.Type.Integer @ a)
+                             (Data.Map.Internal.Tip @ GHC.Integer.Type.Integer @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case GHC.Integer.Type.geInteger# kx ky of wild4 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                Roman.$wpoly_go13
+                                  @ a
+                                  1#
+                                  (Data.Map.Internal.Bin
+                                     @ GHC.Integer.Type.Integer
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ GHC.Integer.Type.Integer @ a)
+                                     (Data.Map.Internal.Tip @ GHC.Integer.Type.Integer @ a))
+                                  wild2 }
+                             1#
+                             -> case kx of dt { DEFAULT ->
+                                Roman.$sfromList1
+                                  @ a
+                                  (Data.Map.Internal.Bin
+                                     @ GHC.Integer.Type.Integer
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ GHC.Integer.Type.Integer @ a)
+                                     (Data.Map.Internal.Tip @ GHC.Integer.Type.Integer @ a))
+                                  wild2 } } } } } }) -}
+9366f8bc50d5c06669d4a45c0326c142
+  $sfromList1 ::
+    Data.Map.Internal.Map GHC.Integer.Type.Integer a
+    -> [(GHC.Integer.Type.Integer, a)]
+    -> Data.Map.Internal.Map GHC.Integer.Type.Integer a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+340138c0bacaaf94a8c9144cf5eb40ae
+  $sinsert_$sgo13 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> a1
+    -> Data.Map.Internal.Map GHC.Integer.Type.Integer a1
+    -> Data.Map.Internal.Map GHC.Integer.Type.Integer a1
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
+2a752d5f0716b0b4f483b7378613850f
+  $slookup1 ::
+    GHC.Integer.Type.Integer
+    -> Data.Map.Internal.Map GHC.Integer.Type.Integer a
+    -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+9dbe0fb05f8bcfdf5b9fedd61f42ff2d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Roman.$trModule3 Roman.$trModule1) -}
+62a142bb07621516fae33cdd5ac77427
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Roman.$trModule2) -}
+b9769ef42b4df91da4ed2cd0456eb2c9
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Roman"#) -}
+af16fb0031a3be8009094dd031c38957
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Roman.$trModule4) -}
+f549ef226207b575fb6c97a4e07e71df
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("roman-numerals-1.2.0.6-IamEpiX3KjpGBFgt0wXhaa"#) -}
+e071f2352a5a425f1e824ff3ac8190d5
+  $wpoly_go13 ::
+    GHC.Prim.Int#
+    -> Data.Map.Internal.Map GHC.Integer.Type.Integer a
+    -> [(GHC.Integer.Type.Integer, a)]
+    -> Data.Map.Internal.Map GHC.Integer.Type.Integer a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+22acf4b03334371a811ac57fa02dbaac
+  numerals ::
+    GHC.Integer.Type.Integer -> GHC.Base.Maybe GHC.Base.String
+  {- Arity: 1, Strictness: <S,U> -}
+"SPEC/Roman fromList @ Integer _" [orphan] forall @ a
+                                                  ($dOrd :: GHC.Classes.Ord
+                                                              GHC.Integer.Type.Integer)
+  Data.Map.Internal.fromList @ GHC.Integer.Type.Integer @ a $dOrd
+  = Roman.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
