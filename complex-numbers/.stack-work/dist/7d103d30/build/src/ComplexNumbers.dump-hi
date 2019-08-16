@@ -1,0 +1,577 @@
+
+==================== FINAL INTERFACE ====================
+2019-08-16 15:54:56.0833182 UTC
+
+interface complex-numbers-1.3.0.6-HIJz4JFqQJqBv4mQmwNunT:ComplexNumbers 8043
+  interface hash: 2fd141ef54072683a3c9bcc1d40f1a12
+  ABI hash: 0a198903e9ae15370053f5f7c8b8bd43
+  export-list hash: a271cd9502b176846a86600069798c0f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ComplexNumbers.abs
+  ComplexNumbers.add
+  ComplexNumbers.complex
+  ComplexNumbers.conjugate
+  ComplexNumbers.div
+  ComplexNumbers.exp
+  ComplexNumbers.imaginary
+  ComplexNumbers.mul
+  ComplexNumbers.real
+  ComplexNumbers.sub
+  ComplexNumbers.Complex
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.Float 99ddb84df6cc12bd84829dd8cd755ac2
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:GHC.Real 032ed0a1053f878238d78e95e75f2edf
+import  -/  base-4.11.1.0:GHC.Show 6211aec7cccd267a5ee999e4414d7b90
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+3aff47893e037161ec0e85874ce24247
+  $fEqComplex ::
+    GHC.Classes.Eq a => GHC.Classes.Eq (ComplexNumbers.Complex a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Classes.Eq a).
+                  @ (ComplexNumbers.Complex a)
+                  (ComplexNumbers.$fEqComplex_$c== @ a v)
+                  (ComplexNumbers.$fEqComplex_$c/= @ a v) -}
+3aff47893e037161ec0e85874ce24247
+  $fEqComplex_$c/= ::
+    GHC.Classes.Eq a =>
+    ComplexNumbers.Complex a
+    -> ComplexNumbers.Complex a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),U(C(C1(U)),A)><S,1*U(U,U)><S,1*U(U,U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x :: ComplexNumbers.Complex a)
+                   (y :: ComplexNumbers.Complex a) ->
+                 case ComplexNumbers.$fEqComplex_$c== @ a $dEq x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+3aff47893e037161ec0e85874ce24247
+  $fEqComplex_$c== ::
+    GHC.Classes.Eq a =>
+    ComplexNumbers.Complex a
+    -> ComplexNumbers.Complex a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),U(C(C1(U)),A)><S,1*U(U,U)><S,1*U(U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Classes.Eq a)
+                   (w1 :: ComplexNumbers.Complex a)
+                   (w2 :: ComplexNumbers.Complex a) ->
+                 case w1 of ww { ComplexNumbers.:+: ww1 ww2 ->
+                 case w2 of ww3 { ComplexNumbers.:+: ww4 ww5 ->
+                 ComplexNumbers.$w$c== @ a w ww1 ww2 ww4 ww5 } }) -}
+3aff47893e037161ec0e85874ce24247
+  $fShowComplex ::
+    GHC.Show.Show a => GHC.Show.Show (ComplexNumbers.Complex a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(C(U))),A,A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (ComplexNumbers.Complex a)
+                  (ComplexNumbers.$fShowComplex_$cshowsPrec @ a v)
+                  (ComplexNumbers.$fShowComplex_$cshow @ a v)
+                  (ComplexNumbers.$fShowComplex_$cshowList @ a v) -}
+3cb20a00a2426c9419be0be3e619ef8e
+  $fShowComplex1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+6f4a0cb29643cfab441fd1e511355c6a
+  $fShowComplex2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" :+: "#) -}
+bbd51fea29f1d075679abe2f38af75fa
+  $fShowComplex3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 10#) -}
+3aff47893e037161ec0e85874ce24247
+  $fShowComplex_$cshow ::
+    GHC.Show.Show a => ComplexNumbers.Complex a -> GHC.Base.String
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(C(C(C(S)))LL),U(C(C1(C1(U))),A,A)><S,1*U(U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Show.Show a) (w1 :: ComplexNumbers.Complex a) ->
+                 case w1 of ww { ComplexNumbers.:+: ww1 ww2 ->
+                 ComplexNumbers.$w$cshow @ a w ww1 ww2 }) -}
+3aff47893e037161ec0e85874ce24247
+  $fShowComplex_$cshowList ::
+    GHC.Show.Show a => [ComplexNumbers.Complex a] -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [ComplexNumbers.Complex a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (ComplexNumbers.Complex a)
+                   (ComplexNumbers.$fShowComplex_$cshowsPrec
+                      @ a
+                      $dShow
+                      ComplexNumbers.$fShowComplex1)
+                   ls
+                   s) -}
+3aff47893e037161ec0e85874ce24247
+  $fShowComplex_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> ComplexNumbers.Complex a -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(C(U))),A,A)><S(S),1*U(U)><S,1*U(U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: ComplexNumbers.Complex a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { ComplexNumbers.:+: ww3 ww4 ->
+                 ComplexNumbers.$w$cshowsPrec @ a w ww1 ww3 ww4 } }) -}
+01c0b2c648e540e442b093460b21fd2e
+  $tc':+: :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4661846544325430860##
+                   4440218906782582547##
+                   ComplexNumbers.$trModule
+                   ComplexNumbers.$tc':+:2
+                   1#
+                   ComplexNumbers.$tc':+:1) -}
+d667507d032aad38cd99b25fb8c0bf20
+  $tc':+:1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+728af993785612c1428db6de1e8506ec
+  $tc':+:2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ComplexNumbers.$tc':+:3) -}
+18f3b65b60fb6645c1f6ad58b55d4bb7
+  $tc':+:3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("':+:"#) -}
+12e590ccb925f8feb254b8fcf5b930d0
+  $tcComplex :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4049599860800930131##
+                   12882533075555396891##
+                   ComplexNumbers.$trModule
+                   ComplexNumbers.$tcComplex1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+14173716a1f77d0b4cea27a94e43c4f2
+  $tcComplex1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ComplexNumbers.$tcComplex2) -}
+3f9439f6fd2c328f3166c9193a2b9122
+  $tcComplex2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Complex"#) -}
+24bc6f990b218e866da61590e5ba7bb4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ComplexNumbers.$trModule3
+                   ComplexNumbers.$trModule1) -}
+ded29d4539d43e5523a206bc3c905ff9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ComplexNumbers.$trModule2) -}
+e5b5cf7b30491a5a1e67a6b38d5ea0f6
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ComplexNumbers"#) -}
+50dcc4ca2f8c58015bc1cd52e90029a1
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ComplexNumbers.$trModule4) -}
+c714e62631ff879ebeaf449d2d1e4160
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("complex-numbers-1.3.0.6-HIJz4JFqQJqBv4mQmwNunT"#) -}
+75ca992bfad4ae0827b9e602381e9ddf
+  $w$c== :: GHC.Classes.Eq a => a -> a -> a -> a -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),U(C(C1(U)),A)><L,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Classes.Eq a)
+                   (ww :: a)
+                   (ww1 :: a)
+                   (ww2 :: a)
+                   (ww3 :: a) ->
+                 case GHC.Classes.== @ a w ww ww2 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True -> GHC.Classes.== @ a w ww1 ww3 }) -}
+ab6e45d56ccd9f0d58b1501599281266
+  $w$cshow :: GHC.Show.Show a => a -> a -> GHC.Base.String
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(C(S)))LL),U(C(C1(C1(U))),A,A)><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a (w :: GHC.Show.Show a) (ww :: a) (ww1 :: a) ->
+                 GHC.Show.showsPrec
+                   @ a
+                   w
+                   ComplexNumbers.$fShowComplex3
+                   ww
+                   (GHC.CString.unpackAppendCString#
+                      ComplexNumbers.$fShowComplex2
+                      (GHC.Show.showsPrec
+                         @ a
+                         w
+                         ComplexNumbers.$fShowComplex3
+                         ww1
+                         (GHC.Types.[] @ GHC.Types.Char)))) -}
+258464fba1a9b6489c19653f1e899090
+  $w$cshowsPrec ::
+    GHC.Show.Show a => GHC.Prim.Int# -> a -> a -> GHC.Show.ShowS
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(C(U))),A,A)><S,U><L,U><L,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: a)
+                   (ww2 :: a) ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec @ a w ComplexNumbers.$fShowComplex3 ww1
+                 } in
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Show.showsPrec @ a w ComplexNumbers.$fShowComplex3 ww2
+                 } in
+                 case GHC.Prim.>=# ww 10# of lwild {
+                   DEFAULT
+                   -> \ (x :: GHC.Base.String) ->
+                      f (GHC.CString.unpackAppendCString#
+                           ComplexNumbers.$fShowComplex2
+                           (g x))
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (f (GHC.CString.unpackAppendCString#
+                              ComplexNumbers.$fShowComplex2
+                              (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x)))) }) -}
+a6dd6a875a46e8b670910581a7097f8a
+  $wabs :: GHC.Float.Floating a => a -> a -> a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLLLLC(C(S))LLLLLLLLLLLLLLLLL),U(1*U(1*U(1*C1(C1(U)),A,A,A,A,A,C(U)),A,A,1*C1(U)),A,A,A,A,C(C1(U)),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Float.Floating a)
+                   (ww :: a)
+                   (ww1 :: a) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional a = GHC.Float.$p1Floating @ a w
+                 } in
+                 GHC.Float.**
+                   @ a
+                   w
+                   (let {
+                      $dNum :: GHC.Num.Num a = GHC.Real.$p1Fractional @ a $dFractional
+                    } in
+                    GHC.Num.+
+                      @ a
+                      $dNum
+                      (GHC.Float.**
+                         @ a
+                         w
+                         ww
+                         (GHC.Num.fromInteger @ a $dNum ComplexNumbers.abs2))
+                      (GHC.Float.**
+                         @ a
+                         w
+                         ww1
+                         (GHC.Num.fromInteger @ a $dNum ComplexNumbers.abs2)))
+                   (GHC.Real.fromRational @ a $dFractional ComplexNumbers.abs1)) -}
+d91f03f0359fa6c2c6fef4b8f834cef3
+  $wdiv :: GHC.Real.Fractional a => a -> a -> a -> a -> (# a, a #)
+  {- Arity: 5,
+     Strictness: <L,U(U(C(C1(U)),1*C1(C1(U)),C(C1(U)),A,A,A,C(U)),C(C1(U)),C(U),A)><L,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Real.Fractional a)
+                   (ww :: a)
+                   (ww1 :: a)
+                   (ww2 :: a)
+                   (ww3 :: a) ->
+                 let {
+                   $dNum :: GHC.Num.Num a = GHC.Real.$p1Fractional @ a w
+                 } in
+                 (# GHC.Real./
+                      @ a
+                      w
+                      (GHC.Num.+
+                         @ a
+                         $dNum
+                         (GHC.Num.* @ a $dNum ww ww2)
+                         (GHC.Num.* @ a $dNum ww1 ww3))
+                      (GHC.Num.+
+                         @ a
+                         $dNum
+                         (GHC.Real.^^
+                            @ a
+                            @ GHC.Integer.Type.Integer
+                            w
+                            GHC.Real.$fIntegralInteger
+                            ww2
+                            ComplexNumbers.abs2)
+                         (GHC.Real.^^
+                            @ a
+                            @ GHC.Integer.Type.Integer
+                            w
+                            GHC.Real.$fIntegralInteger
+                            ww3
+                            ComplexNumbers.abs2)),
+                    GHC.Real./
+                      @ a
+                      w
+                      (GHC.Num.-
+                         @ a
+                         $dNum
+                         (GHC.Num.* @ a $dNum ww1 ww2)
+                         (GHC.Num.* @ a $dNum ww ww3))
+                      (GHC.Num.+
+                         @ a
+                         $dNum
+                         (GHC.Real.^^
+                            @ a
+                            @ GHC.Integer.Type.Integer
+                            w
+                            GHC.Real.$fIntegralInteger
+                            ww2
+                            ComplexNumbers.abs2)
+                         (GHC.Real.^^
+                            @ a
+                            @ GHC.Integer.Type.Integer
+                            w
+                            GHC.Real.$fIntegralInteger
+                            ww3
+                            ComplexNumbers.abs2)) #)) -}
+b06f6d0442425bedea7c4e221fab678c
+  $wexp :: GHC.Float.Floating a => a -> a -> (# a, a #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(1*U(1*U(A,A,C(C1(U)),A,A,A,A),A,A,A),A,C(U),A,A,A,A,1*C1(U),1*C1(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Float.Floating a)
+                   (ww :: a)
+                   (ww1 :: a) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional a = GHC.Float.$p1Floating @ a w
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num a = GHC.Real.$p1Fractional @ a $dFractional
+                 } in
+                 (# GHC.Num.*
+                      @ a
+                      $dNum
+                      (GHC.Float.exp @ a w ww)
+                      (GHC.Float.cos @ a w ww1),
+                    GHC.Num.*
+                      @ a
+                      $dNum
+                      (GHC.Float.exp @ a w ww)
+                      (GHC.Float.sin @ a w ww1) #)) -}
+f6fb71dab24e177be087a2ace8e3fd13
+  $wmul :: GHC.Num.Num a => a -> a -> a -> a -> (# a, a #)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(1*C1(C1(U)),1*C1(C1(U)),C(C1(U)),A,A,A,A)><L,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Num.Num a)
+                   (ww :: a)
+                   (ww1 :: a)
+                   (ww2 :: a)
+                   (ww3 :: a) ->
+                 (# GHC.Num.-
+                      @ a
+                      w
+                      (GHC.Num.* @ a w ww ww2)
+                      (GHC.Num.* @ a w ww1 ww3),
+                    GHC.Num.+
+                      @ a
+                      w
+                      (GHC.Num.* @ a w ww1 ww2)
+                      (GHC.Num.* @ a w ww ww3) #)) -}
+3aff47893e037161ec0e85874ce24247
+  data Complex a = a :+: a
+1c8f584c723252b02ef81c247400fce0
+  abs :: GHC.Float.Floating a => ComplexNumbers.Complex a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLC(C(S))LLLLLLLLLLLLLLLLL),U(U(U(C(C1(U)),A,A,A,A,A,C(U)),A,A,C(U)),A,A,A,A,C(C1(U)),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S,1*U(U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (w :: GHC.Float.Floating a)
+                   (w1 :: ComplexNumbers.Complex a) ->
+                 case w1 of ww { ComplexNumbers.:+: ww1 ww2 ->
+                 ComplexNumbers.$wabs @ a w ww1 ww2 }) -}
+0bf6a8c9d66eaab3196a877be504b157
+  abs1 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   ComplexNumbers.abs3
+                   ComplexNumbers.abs2) -}
+eda2ce58f2891c58e034f466a5da98cd
+  abs2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+940da97c4ace8de94e99968ddce5d63d
+  abs3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+5d94843bced7525cba3be24b720ea268
+  add ::
+    GHC.Num.Num a =>
+    ComplexNumbers.Complex a
+    -> ComplexNumbers.Complex a -> ComplexNumbers.Complex a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A,A,A,A,A)><S,1*U(U,U)><S,1*U(U,U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Num.Num a)
+                   (w1 :: ComplexNumbers.Complex a)
+                   (w2 :: ComplexNumbers.Complex a) ->
+                 case w1 of ww { ComplexNumbers.:+: ww1 ww2 ->
+                 case w2 of ww3 { ComplexNumbers.:+: ww4 ww5 ->
+                 ComplexNumbers.:+:
+                   @ a
+                   (GHC.Num.+ @ a w ww1 ww4)
+                   (GHC.Num.+ @ a w ww2 ww5) } }) -}
+4dfe8ab4c81409dbcf9f30505c23ce09
+  complex :: (a, a) -> ComplexNumbers.Complex a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: (a, a)) ->
+                 case ds of wild { (,) r im -> ComplexNumbers.:+: @ a r im }) -}
+1b6f4eab56dd582cd8896de5da1c8336
+  conjugate ::
+    GHC.Num.Num a =>
+    ComplexNumbers.Complex a -> ComplexNumbers.Complex a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,1*C1(U),A,A,A)><S,1*U(U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) (ds :: ComplexNumbers.Complex a) ->
+                 case ds of wild { ComplexNumbers.:+: r im ->
+                 ComplexNumbers.:+: @ a r (GHC.Num.negate @ a $dNum im) }) -}
+2efac91e4c4992b9ac9ebeddb61fdc62
+  div ::
+    GHC.Real.Fractional a =>
+    ComplexNumbers.Complex a
+    -> ComplexNumbers.Complex a -> ComplexNumbers.Complex a
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),C(C1(U)),C(C1(U)),A,A,A,C(U)),C(C1(U)),C(U),A)><S,1*U(U,U)><S,1*U(U,U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Real.Fractional a)
+                   (w1 :: ComplexNumbers.Complex a)
+                   (w2 :: ComplexNumbers.Complex a) ->
+                 case w1 of ww { ComplexNumbers.:+: ww1 ww2 ->
+                 case w2 of ww3 { ComplexNumbers.:+: ww4 ww5 ->
+                 case ComplexNumbers.$wdiv
+                        @ a
+                        w
+                        ww1
+                        ww2
+                        ww4
+                        ww5 of ww6 { (#,#) ww7 ww8 ->
+                 ComplexNumbers.:+: @ a ww7 ww8 } } }) -}
+2d38364f112461698da74d8a34c3941f
+  exp ::
+    GHC.Float.Floating a =>
+    ComplexNumbers.Complex a -> ComplexNumbers.Complex a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(U(U(A,A,C(C1(U)),A,A,A,A),A,A,A),A,C(U),A,A,A,A,C(U),C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S,1*U(U,U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (w :: GHC.Float.Floating a)
+                   (w1 :: ComplexNumbers.Complex a) ->
+                 case w1 of ww { ComplexNumbers.:+: ww1 ww2 ->
+                 case ComplexNumbers.$wexp @ a w ww1 ww2 of ww3 { (#,#) ww4 ww5 ->
+                 ComplexNumbers.:+: @ a ww4 ww5 } }) -}
+90b32969642adf5dc2aec1a8d361f01b
+  imaginary :: GHC.Num.Num a => ComplexNumbers.Complex a -> a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) (ds :: ComplexNumbers.Complex a) ->
+                 case ds of wild { ComplexNumbers.:+: ds1 im -> im }) -}
+745512f79c246803841b3fcf8347f6a7
+  mul ::
+    GHC.Num.Num a =>
+    ComplexNumbers.Complex a
+    -> ComplexNumbers.Complex a -> ComplexNumbers.Complex a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),C(C1(U)),C(C1(U)),A,A,A,A)><S,1*U(U,U)><S,1*U(U,U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Num.Num a)
+                   (w1 :: ComplexNumbers.Complex a)
+                   (w2 :: ComplexNumbers.Complex a) ->
+                 case w1 of ww { ComplexNumbers.:+: ww1 ww2 ->
+                 case w2 of ww3 { ComplexNumbers.:+: ww4 ww5 ->
+                 case ComplexNumbers.$wmul
+                        @ a
+                        w
+                        ww1
+                        ww2
+                        ww4
+                        ww5 of ww6 { (#,#) ww7 ww8 ->
+                 ComplexNumbers.:+: @ a ww7 ww8 } } }) -}
+5462b3ba21451c19712a035dae458c62
+  real :: GHC.Num.Num a => ComplexNumbers.Complex a -> a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) (ds :: ComplexNumbers.Complex a) ->
+                 case ds of wild { ComplexNumbers.:+: r ds1 -> r }) -}
+fb2765c8a76a2e061dc2476642c274f3
+  sub ::
+    GHC.Num.Num a =>
+    ComplexNumbers.Complex a
+    -> ComplexNumbers.Complex a -> ComplexNumbers.Complex a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,C(C1(U)),A,A,A,A,A)><S,1*U(U,U)><S,1*U(U,U)>m,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Num.Num a)
+                   (w1 :: ComplexNumbers.Complex a)
+                   (w2 :: ComplexNumbers.Complex a) ->
+                 case w1 of ww { ComplexNumbers.:+: ww1 ww2 ->
+                 case w2 of ww3 { ComplexNumbers.:+: ww4 ww5 ->
+                 ComplexNumbers.:+:
+                   @ a
+                   (GHC.Num.- @ a w ww1 ww4)
+                   (GHC.Num.- @ a w ww2 ww5) } }) -}
+instance [safe] GHC.Classes.Eq [ComplexNumbers.Complex]
+  = ComplexNumbers.$fEqComplex
+instance [safe] GHC.Show.Show [ComplexNumbers.Complex]
+  = ComplexNumbers.$fShowComplex
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
