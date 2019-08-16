@@ -1,0 +1,112 @@
+
+==================== FINAL INTERFACE ====================
+2019-07-01 01:14:52.6880411 UTC
+
+interface grains-1.2.0.6-1S9VL8nVu9ILU7SZKRhB9E:Grains 8043
+  interface hash: 200bb604227197b95c384e961468ea9f
+  ABI hash: d3b9c100af16ad9c69385ce6583914f4
+  export-list hash: 49919fdea93900019f80bd85f4c6824b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Grains.square
+  Grains.total
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 6713f4457912bac968474ebbf062cd01
+c174492e188d7f560a8c32dbb2d42385
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Grains.$trModule3
+                   Grains.$trModule1) -}
+b5c83fa4d64917521285da7973f0353c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Grains.$trModule2) -}
+7f74dd59f01bf7bb1d5ab431cac52b8c
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Grains"#) -}
+e53af73761253e13f455125a8358c54f
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Grains.$trModule4) -}
+efa6b7175785b1372d4fd00dd49bd4f0
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("grains-1.2.0.6-1S9VL8nVu9ILU7SZKRhB9E"#) -}
+7064c40bb7667b46499b16d859ace155
+  $wgo2 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Prim.Int#
+    -> (# GHC.Integer.Type.Integer, [GHC.Integer.Type.Integer] #)
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+34d691c92efa0e640231e186bd12a48a
+  $wsquare ::
+    GHC.Prim.Int# -> GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.<# ww 1# of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.># ww 64# of lwild1 {
+                        DEFAULT
+                        -> GHC.Base.Just
+                             @ GHC.Integer.Type.Integer
+                             (GHC.List.$w!!
+                                @ GHC.Integer.Type.Integer
+                                Grains.grains
+                                (GHC.Prim.-# ww 1#))
+                        1# -> GHC.Base.Nothing @ GHC.Integer.Type.Integer }
+                   1# -> GHC.Base.Nothing @ GHC.Integer.Type.Integer }) -}
+05a49048990d203ea2e7d96c881641a3
+  grains :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (case Grains.$wgo2
+                        Grains.square1
+                        64# of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Integer.Type.Integer ww1 ww2 }) -}
+fb84be23f1632e90cdb0fe09d8bdf8fa
+  square :: GHC.Types.Int -> GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Grains.$wsquare ww1 }) -}
+a3563bc6d274a8ee82ed4efa42ce3626
+  square1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+c0df58a906440355a3554d65f6b9eafe
+  total :: GHC.Integer.Type.Integer
+  {- Unfolding: (Grains.total_go Grains.grains Grains.total1) -}
+494688e43831a01b908e2705ef569bd2
+  total1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+f97398bd57c4fe999188326c72e8ab84
+  total_go ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
