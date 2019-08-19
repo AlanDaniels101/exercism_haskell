@@ -1,0 +1,309 @@
+
+==================== FINAL INTERFACE ====================
+2019-08-19 02:12:24.3852652 UTC
+
+interface yacht-1.2.0.0-6f0xDg60HJ03kFZ3BRe9eo:Yacht 8043
+  interface hash: 5dd17e607c4ae84add4308dc61466612
+  ABI hash: 4110b70c02c231554ebdde813704d829
+  export-list hash: 1581eb77cda1e75c3f0f9d8eb01190f8
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Yacht.yacht
+  Yacht.Category{Yacht.BigStraight Yacht.Choice Yacht.Fives Yacht.FourOfAKind Yacht.Fours Yacht.FullHouse Yacht.LittleStraight Yacht.Ones Yacht.Sixes Yacht.Threes Yacht.Twos Yacht.Yacht}
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
+import  -/  base-4.11.1.0:Data.List cb78ca5eace70fd310936fda86b3e611
+import  -/  base-4.11.1.0:Data.OldList 3987872d5de68d40c22cd1c30825ad08
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+391557318c286b3a1b42e75a80452f7a
+  $tc'BigStraight :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13543981791362561280##
+                   15924427309616893557##
+                   Yacht.$trModule
+                   Yacht.$tc'BigStraight2
+                   0#
+                   Yacht.$tc'BigStraight1) -}
+1794af56ab8010575c1599e54d844198
+  $tc'BigStraight1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+b0a85ae19086bab647963b8cd8b1e77c
+  $tc'BigStraight2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tc'BigStraight3) -}
+d19cdebe2e9220d565aaa051a494e772
+  $tc'BigStraight3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BigStraight"#) -}
+87100be36b75c33f6e682c466d04a7e0
+  $tc'Choice :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17059484583169457211##
+                   11578470952194447165##
+                   Yacht.$trModule
+                   Yacht.$tc'Choice1
+                   0#
+                   Yacht.$tc'BigStraight1) -}
+95954d770d582cd1185e41468322f9b9
+  $tc'Choice1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tc'Choice2) -}
+8dc5abb2e22e91acfc2eb4d317eec385
+  $tc'Choice2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Choice"#) -}
+0bf8d38879f6e93259c970db9e5cf5e4
+  $tc'Fives :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4576730793133621321##
+                   18085587669162808801##
+                   Yacht.$trModule
+                   Yacht.$tc'Fives1
+                   0#
+                   Yacht.$tc'BigStraight1) -}
+123ce2d38f7ae8685d614c0c956abff2
+  $tc'Fives1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tc'Fives2) -}
+2e1d4b9c54eb1f686a74eb4044a805c8
+  $tc'Fives2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Fives"#) -}
+afe76228a8452f0588574a4cfa92d2ee
+  $tc'FourOfAKind :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14733611662158810437##
+                   12314448148680986916##
+                   Yacht.$trModule
+                   Yacht.$tc'FourOfAKind1
+                   0#
+                   Yacht.$tc'BigStraight1) -}
+8c1a744ba02cceaf3cb276a04d1aec32
+  $tc'FourOfAKind1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tc'FourOfAKind2) -}
+bc24c2345a546b9441ff31b262d64c33
+  $tc'FourOfAKind2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FourOfAKind"#) -}
+cf78bdad8e14911b3b0d4958643b22e9
+  $tc'Fours :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5341289000153078655##
+                   8406416108759954687##
+                   Yacht.$trModule
+                   Yacht.$tc'Fours1
+                   0#
+                   Yacht.$tc'BigStraight1) -}
+37d536f9a34d3494e26bad3f25c75d9a
+  $tc'Fours1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tc'Fours2) -}
+c0abdbb88a0b25c6f079be68f85f180d
+  $tc'Fours2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Fours"#) -}
+caefe9b850924fc7dbbd120a3899f807
+  $tc'FullHouse :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2292948311080329253##
+                   9469321985218284136##
+                   Yacht.$trModule
+                   Yacht.$tc'FullHouse1
+                   0#
+                   Yacht.$tc'BigStraight1) -}
+0e893cfe04e659b6b9c49038b585006e
+  $tc'FullHouse1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tc'FullHouse2) -}
+1a6d7d3b0f5fe70d300cfcba5747fd13
+  $tc'FullHouse2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FullHouse"#) -}
+ddbbb15fca85b0a7a1e205845cafa93c
+  $tc'LittleStraight :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13658072501615958774##
+                   12341983292081480136##
+                   Yacht.$trModule
+                   Yacht.$tc'LittleStraight1
+                   0#
+                   Yacht.$tc'BigStraight1) -}
+f8f38f859c341d1421825f3adb722ade
+  $tc'LittleStraight1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tc'LittleStraight2) -}
+c9fb652bb6ad3b5cce1d8add213ce54e
+  $tc'LittleStraight2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LittleStraight"#) -}
+f2819f7ef756630a434dd50faf510f8d
+  $tc'Ones :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11426557736273052930##
+                   10076142889279010809##
+                   Yacht.$trModule
+                   Yacht.$tc'Ones1
+                   0#
+                   Yacht.$tc'BigStraight1) -}
+5869054af79342baf72ad90e2a430df8
+  $tc'Ones1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tc'Ones2) -}
+ccac2e160d6cf282e27a629ea1cccda9
+  $tc'Ones2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Ones"#) -}
+64845953acc42d36f22ed98281588d1f
+  $tc'Sixes :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16083223092563294342##
+                   4685207274725023713##
+                   Yacht.$trModule
+                   Yacht.$tc'Sixes1
+                   0#
+                   Yacht.$tc'BigStraight1) -}
+f85a8996c82bfad82dbb5947d1fa5cf4
+  $tc'Sixes1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tc'Sixes2) -}
+f01145633489b49e198fd2c9975e9337
+  $tc'Sixes2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Sixes"#) -}
+e9c6f6120ca4ca7c78b2cee760b14f1c
+  $tc'Threes :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7850060070335546005##
+                   17834192398656643685##
+                   Yacht.$trModule
+                   Yacht.$tc'Threes1
+                   0#
+                   Yacht.$tc'BigStraight1) -}
+3e105076a1189f3588521aeeb8587f41
+  $tc'Threes1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tc'Threes2) -}
+fdf460814220103cb7066df310936e3d
+  $tc'Threes2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Threes"#) -}
+d4f1e2725a77fd81350265ee16a7f5ac
+  $tc'Twos :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14434263173751550787##
+                   242604472530497832##
+                   Yacht.$trModule
+                   Yacht.$tc'Twos1
+                   0#
+                   Yacht.$tc'BigStraight1) -}
+cad82298621b6bf756c74a058aa04844
+  $tc'Twos1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tc'Twos2) -}
+59f54e3a973174178b18d5cbcfcf804c
+  $tc'Twos2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Twos"#) -}
+f09df7337d89b7241bbdd3aabe765921
+  $tc'Yacht :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17654196752703873649##
+                   10979998059357484295##
+                   Yacht.$trModule
+                   Yacht.$tc'Yacht1
+                   0#
+                   Yacht.$tc'BigStraight1) -}
+3f07f8b71b29546a587dfaddb9b36c13
+  $tc'Yacht1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tc'Yacht2) -}
+288b541277804728fa7fdf1bab31c877
+  $tc'Yacht2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Yacht"#) -}
+12f2781f393f13f95912b25658af4545
+  $tcCategory :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2287214222584651987##
+                   13958075814870601613##
+                   Yacht.$trModule
+                   Yacht.$tcCategory1
+                   0#
+                   GHC.Types.krep$*) -}
+c56433615f35be33a6731e37e310415f
+  $tcCategory1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$tcCategory2) -}
+09077024e7620c81cb67b91c6891daf8
+  $tcCategory2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Category"#) -}
+710ac391c5149a7185eb0611ab3f22fc
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Yacht.$trModule3 Yacht.$trModule1) -}
+c324bc2923bbfd93b60101bb048210e3
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$trModule2) -}
+3dffb62f995b44a815cc7fa544530f06
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Yacht"#) -}
+42dc2874b0e8e86fb636dd2806a85c49
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Yacht.$trModule4) -}
+e6c14a3a264fd2f7ec73b7a880b30ed3
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("yacht-1.2.0.0-6f0xDg60HJ03kFZ3BRe9eo"#) -}
+ef8814ebfaf35076b9031560c4afcd55
+  $wyacht :: Yacht.Category -> [GHC.Types.Int] -> GHC.Prim.Int#
+  {- Arity: 2, Strictness: <S,1*U><S,U>, Inline: [0] -}
+4c565f764ae9450774d9a308eb1ac409
+  data Category
+    = Ones
+    | Twos
+    | Threes
+    | Fours
+    | Fives
+    | Sixes
+    | FullHouse
+    | FourOfAKind
+    | LittleStraight
+    | BigStraight
+    | Choice
+    | Yacht
+badbc9455a294617c0708d3b042a8101
+  yacht :: Yacht.Category -> [GHC.Types.Int] -> GHC.Types.Int
+  {- Arity: 2, Strictness: <S,1*U><S,U>m, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Yacht.Category) (w1 :: [GHC.Types.Int]) ->
+                 case Yacht.$wyacht w w1 of ww { DEFAULT -> GHC.Types.I# ww }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
