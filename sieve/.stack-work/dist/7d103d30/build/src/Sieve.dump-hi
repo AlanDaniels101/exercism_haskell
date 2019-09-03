@@ -1,0 +1,194 @@
+
+==================== FINAL INTERFACE ====================
+2019-09-03 18:10:48.1926561 UTC
+
+interface sieve-1.1.0.5-5neIpanWd7xDL7KG6lLnHU:Sieve 8043
+  interface hash: ee9cb5f06fd783746710b197d72cc208
+  ABI hash: 505b4cf85671a1ffa2d68a80436a47dd
+  export-list hash: 61d8217a2c561ec2be9eeaa7a58bac5c
+  orphan hash: bcc95fc988e87bc3093599a293ec9e86
+  flag hash: 0527c515cada2cc2079fef10aa370e66
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Sieve.primesUpTo
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.11.1.0*
+                      containers-0.5.11.0 deepseq-1.4.3.0 ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Complex base-4.11.1.0:Data.Functor.Compose
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         containers-0.5.11.0:Data.Set.Internal
+import  -/  base-4.11.1.0:Data.Foldable 6cf3e918f22d03c0870804f05cd183d1
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:GHC.List 95910b50fba2204d1a3364fe070ebf2b
+import  -/  base-4.11.1.0:GHC.Num 5de8df0185e7e8d8ec29b3c61e2c8606
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+import  -/  containers-0.5.11.0:Data.Set eb0fbc743d474b13246bc4dbf4a83977
+import  -/  containers-0.5.11.0:Data.Set.Internal 0672c19b08cec68fbd0f1408b7c182d5
+import  -/  ghc-prim-0.5.2.0:GHC.Classes f7d67fd97d5a20e9252c9597d1aa387b
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 6713f4457912bac968474ebbf062cd01
+64e497e449db3bffdab97355f9107ef8
+  $s$wsplitS ::
+    GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> (# Data.Set.Internal.Set GHC.Integer.Type.Integer,
+          Data.Set.Internal.Set GHC.Integer.Type.Integer #)
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [~] -}
+497ce9cf90359200b87013722f16cd64
+  $sdifference ::
+    Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [~] -}
+72e656bdb11cef718cd2713bed9347ed
+  $sinsertR_$sgo3 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U> -}
+0cb35f6946a9e5d6b67d43c5ac74711b
+  $sinsert_$sgo3 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U> -}
+718a35d9a06567765a6fdd88bb62f73c
+  $sunion ::
+    Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
+b7bcb238edd6f3ab08d3c1a39ae41645
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Sieve.$trModule3 Sieve.$trModule1) -}
+5861edfe3b27e65c09f66888c07b3a9d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Sieve.$trModule2) -}
+bc302e2c2eefb8aca4b0e324af89dd5e
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Sieve"#) -}
+79990f4b30989aa03fb35c486022895a
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Sieve.$trModule4) -}
+8ce78db5e107f42b810f577097200bfd
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("sieve-1.1.0.5-5neIpanWd7xDL7KG6lLnHU"#) -}
+c72266e6a3f48438074af4cd0b1a9375
+  primesUpTo ::
+    GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (n :: GHC.Integer.Type.Integer) ->
+                 letrec {
+                   go :: GHC.Integer.Type.Integer -> [[GHC.Integer.Type.Integer]]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x :: GHC.Integer.Type.Integer) ->
+                     case GHC.Integer.Type.gtInteger# x n of wild {
+                       DEFAULT
+                       -> GHC.Types.:
+                            @ [GHC.Integer.Type.Integer]
+                            (let {
+                               d :: GHC.Integer.Type.Integer
+                               = GHC.Integer.Type.minusInteger
+                                   (GHC.Integer.Type.timesInteger Sieve.primesUpTo2 x)
+                                   x
+                             } in
+                             letrec {
+                               go1 :: GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+                                 {- Arity: 1, Strictness: <S,U> -}
+                               = \ (x1 :: GHC.Integer.Type.Integer) ->
+                                 case GHC.Integer.Type.leInteger# x1 n of wild1 {
+                                   DEFAULT -> GHC.Types.[] @ GHC.Integer.Type.Integer
+                                   1#
+                                   -> GHC.Types.:
+                                        @ GHC.Integer.Type.Integer
+                                        x1
+                                        (go1 (GHC.Integer.Type.plusInteger x1 d)) }
+                             } in
+                             go1 x)
+                            (go (GHC.Integer.Type.plusInteger x Sieve.primesUpTo1))
+                       1# -> GHC.Types.[] @ [GHC.Integer.Type.Integer] }
+                 } in
+                 let {
+                   m :: [[GHC.Integer.Type.Integer]] = go Sieve.primesUpTo2
+                 } in
+                 case Data.Set.Internal.combineEq
+                        @ GHC.Integer.Type.Integer
+                        GHC.Integer.Type.$fEqInteger
+                        (GHC.Base.map
+                           @ [GHC.Integer.Type.Integer]
+                           @ GHC.Integer.Type.Integer
+                           (GHC.List.head @ GHC.Integer.Type.Integer)
+                           m) of wild {
+                   []
+                   -> Data.Set.Internal.$fDataSet_go
+                        @ GHC.Integer.Type.Integer
+                        (GHC.Types.[] @ GHC.Integer.Type.Integer)
+                        (Sieve.$sdifference
+                           (Data.Set.Internal.Tip @ GHC.Integer.Type.Integer)
+                           (Sieve.primesUpTo_go m))
+                   : x0 xs0
+                   -> case x0 of dt { DEFAULT ->
+                      Data.Set.Internal.$fDataSet_go
+                        @ GHC.Integer.Type.Integer
+                        (GHC.Types.[] @ GHC.Integer.Type.Integer)
+                        (Sieve.$sdifference
+                           (Data.Set.Internal.$wpoly_go
+                              @ GHC.Integer.Type.Integer
+                              1#
+                              (Data.Set.Internal.Bin
+                                 @ GHC.Integer.Type.Integer
+                                 1#
+                                 dt
+                                 (Data.Set.Internal.Tip @ GHC.Integer.Type.Integer)
+                                 (Data.Set.Internal.Tip @ GHC.Integer.Type.Integer))
+                              xs0)
+                           (Sieve.primesUpTo_go m)) } }) -}
+fedf2d1cd2d0a54a693451e2d373a2aa
+  primesUpTo1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+0da4871bd2d993c63a0e4552e8393cb4
+  primesUpTo2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+55e559f7cbcd3fc0694b5c697fef7aff
+  primesUpTo_go ::
+    [[GHC.Integer.Type.Integer]]
+    -> Data.Set.Internal.Set GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,1*U> -}
+"SPEC/Sieve $wsplitS @ Integer" [orphan] [0] forall (w :: GHC.Classes.Ord
+                                                            GHC.Integer.Type.Integer)
+  Data.Set.Internal.$wsplitS @ GHC.Integer.Type.Integer w
+  = Sieve.$s$wsplitS
+"SPEC/Sieve difference @ Integer" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                              GHC.Integer.Type.Integer)
+  Data.Set.Internal.difference @ GHC.Integer.Type.Integer $dOrd
+  = Sieve.$sdifference
+"SPEC/Sieve union @ Integer" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                         GHC.Integer.Type.Integer)
+  Data.Set.Internal.union @ GHC.Integer.Type.Integer $dOrd
+  = Sieve.$sunion
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
