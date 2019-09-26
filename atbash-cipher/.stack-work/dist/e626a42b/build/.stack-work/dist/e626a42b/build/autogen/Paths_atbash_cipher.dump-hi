@@ -1,0 +1,666 @@
+
+==================== FINAL INTERFACE ====================
+2019-09-26 23:36:28.4398481 UTC
+
+interface atbash-cipher-1.2.0.6-Cu519mjcJM8DLqQblcMY3o:Paths_atbash_cipher 8065
+  interface hash: 98e8ab3bcc33844f17f246992067fdce
+  ABI hash: fa930f4851e171faff170f96b3e836e7
+  export-list hash: c1c81975f981edecda99b731bef856de
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8008335b6c7f9184fc3749d6bfa27766
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Paths_atbash_cipher.getBinDir
+  Paths_atbash_cipher.getDataDir
+  Paths_atbash_cipher.getDataFileName
+  Paths_atbash_cipher.getDynLibDir
+  Paths_atbash_cipher.getLibDir
+  Paths_atbash_cipher.getLibexecDir
+  Paths_atbash_cipher.getSysconfDir
+  Paths_atbash_cipher.version
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Control.Exception 68d632685955b01899aa782b05b79cdf
+import  -/  base-4.12.0.0:Data.Version 3fc9a28dff258573273513c608375452
+import  -/  base-4.12.0.0:GHC.Base fbe365a916ebeeeb4bc1f895dbe83e42
+import  -/  base-4.12.0.0:GHC.IO caa7ca94733978776c4f954a05ccc347
+import  -/  base-4.12.0.0:GHC.IO.Exception 99271e07ec0e09b76d45c79794dad266
+import  -/  base-4.12.0.0:Prelude 80c668cb99fbafebd524c5e897f8c982
+import  -/  base-4.12.0.0:System.Environment 045df705c1f205b31d24a0f6340ea2db
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+addDependentFile "C:\Users\aland\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.5\lib\include\ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work\dist\e626a42b\build\autogen\cabal_macros.h" db196f6adeff0894c59864d2c425b71a
+48d60b62ce70daaf6117908a83642c9d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Paths_atbash_cipher.$trModule3
+                   Paths_atbash_cipher.$trModule1) -}
+b937ad8b4c694de36c13c68849d2ce3c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Paths_atbash_cipher.$trModule2) -}
+95315c762734fbf3f672a06bd9f3e327
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Paths_atbash_cipher"#) -}
+1f62e6c00d4c74c42767fdc02830badf
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Paths_atbash_cipher.$trModule4) -}
+90867798406d90239b9bb7a53deb91f2
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("atbash-cipher-1.2.0.6-Cu519mjcJM8DLqQblcMY3o"#) -}
+5674b4816eda2006a7289f4a89a100c6
+  getBinDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_atbash_cipher.getBinDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+aa3d843fe3d701b3eacd97f521b04228
+  getBinDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.Type.SomeException
+                   Paths_atbash_cipher.getBinDir5
+                   Paths_atbash_cipher.getBinDir2
+                   eta) -}
+f13078c7a47b8165605f9121a788d21b
+  getBinDir2 ::
+    GHC.Exception.Type.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.sameTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.Type.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True -> (# eta, Paths_atbash_cipher.getBinDir3 #) } }) -}
+07371ec6e97a3b2a8651de58f5168a81
+  getBinDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_atbash_cipher.getBinDir4) -}
+e162ff7abe2a3e8dcb784a066dfc5e5f
+  getBinDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("C:\\Users\\aland\\Exercism\\haskell\\atbash-cipher\\.stack-work\\install\\072e9945\\bin"#) -}
+4f6ba6ba12361f1c2c54650ad6a44536
+  getBinDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case System.Environment.getEnv5
+                        Paths_atbash_cipher.getBinDir6
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   GHC.Maybe.Nothing
+                   -> case {__pkg_ccall base-4.12.0.0 GHC.Prim.State#
+                                                        GHC.Prim.RealWorld
+                                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                            GHC.Prim.Word# #)}
+                             ipv of wild1 { (#,#) ds ds2 ->
+                      case GHC.Prim.narrow32Word# ds2 of wild2 {
+                        DEFAULT
+                        -> GHC.Windows.failIf2
+                             @ GHC.Base.String
+                             System.Environment.getEnv3
+                             ds
+                        203##
+                        -> System.Environment.getEnv2 Paths_atbash_cipher.getBinDir6 ds } }
+                   GHC.Maybe.Just x -> (# ipv, x #) } }) -}
+b3a129387282f5303f4ae51675246252
+  getBinDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_atbash_cipher.getBinDir7) -}
+58a674d2afadcc50c1c0cffbb1cc5e8c
+  getBinDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("atbash_cipher_bindir"#) -}
+b67e96d0ec7d050060ca57a2133b92b4
+  getDataDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_atbash_cipher.getDataDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+fb466c55125f3c9f7c2c6b72844a7b89
+  getDataDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.Type.SomeException
+                   Paths_atbash_cipher.getDataDir5
+                   Paths_atbash_cipher.getDataDir2
+                   eta) -}
+7be5d247b46dddc75bf155c98e2d7b15
+  getDataDir2 ::
+    GHC.Exception.Type.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.sameTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.Type.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> (# eta, Paths_atbash_cipher.getDataDir3 #) } }) -}
+8166a698a44d210309b8b8eff40732d9
+  getDataDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_atbash_cipher.getDataDir4) -}
+6fa7b7bdbf93970052947ae049df57df
+  getDataDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("C:\\Users\\aland\\Exercism\\haskell\\atbash-cipher\\.stack-work\\install\\072e9945\\share\\x86_64-windows-ghc-8.6.5\\atbash-cipher-1.2.0.6"#) -}
+f482c195e82cf4d96378c3d79738f10c
+  getDataDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case System.Environment.getEnv5
+                        Paths_atbash_cipher.getDataDir6
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   GHC.Maybe.Nothing
+                   -> case {__pkg_ccall base-4.12.0.0 GHC.Prim.State#
+                                                        GHC.Prim.RealWorld
+                                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                            GHC.Prim.Word# #)}
+                             ipv of wild1 { (#,#) ds ds2 ->
+                      case GHC.Prim.narrow32Word# ds2 of wild2 {
+                        DEFAULT
+                        -> GHC.Windows.failIf2
+                             @ GHC.Base.String
+                             System.Environment.getEnv3
+                             ds
+                        203##
+                        -> System.Environment.getEnv2
+                             Paths_atbash_cipher.getDataDir6
+                             ds } }
+                   GHC.Maybe.Just x -> (# ipv, x #) } }) -}
+216ed7e5b2e7a2fb850a3c0e9d3ef413
+  getDataDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_atbash_cipher.getDataDir7) -}
+5bf7bdd92ee7031e6636e0446630e1e0
+  getDataDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("atbash_cipher_datadir"#) -}
+e184dbf490a4e1481f388bbf22793499
+  getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_atbash_cipher.getDataFileName1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
+7436acd287399c4393890cb209b4738c
+  getDataFileName1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (name :: GHC.IO.FilePath)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.catch#
+                        @ GHC.Base.String
+                        @ GHC.Exception.Type.SomeException
+                        Paths_atbash_cipher.getDataDir5
+                        Paths_atbash_cipher.getDataDir2
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      ipv1
+                      (GHC.CString.unpackAppendCString#
+                         Paths_atbash_cipher.getDataFileName2
+                         name) #) }) -}
+5ab00b05dd462067a5f8bde2535c6ed0
+  getDataFileName2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\\"#) -}
+5d5b8842c0cbe86499803682284a0612
+  getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_atbash_cipher.getDynLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+965f434997ada5c9d423928a2e243aa4
+  getDynLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.Type.SomeException
+                   Paths_atbash_cipher.getDynLibDir5
+                   Paths_atbash_cipher.getDynLibDir2
+                   eta) -}
+cf8473514b14bab8243ffcbb59afea98
+  getDynLibDir2 ::
+    GHC.Exception.Type.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.sameTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.Type.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> (# eta, Paths_atbash_cipher.getDynLibDir3 #) } }) -}
+ba79417348c5a7a54fb8ed3acebca322
+  getDynLibDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_atbash_cipher.getDynLibDir4) -}
+6646076e5e7c07f8e8779f5c8d685eb9
+  getDynLibDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("C:\\Users\\aland\\Exercism\\haskell\\atbash-cipher\\.stack-work\\install\\072e9945\\lib\\x86_64-windows-ghc-8.6.5"#) -}
+0e02e7179db3153ba24ded729e2530a4
+  getDynLibDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case System.Environment.getEnv5
+                        Paths_atbash_cipher.getDynLibDir6
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   GHC.Maybe.Nothing
+                   -> case {__pkg_ccall base-4.12.0.0 GHC.Prim.State#
+                                                        GHC.Prim.RealWorld
+                                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                            GHC.Prim.Word# #)}
+                             ipv of wild1 { (#,#) ds ds2 ->
+                      case GHC.Prim.narrow32Word# ds2 of wild2 {
+                        DEFAULT
+                        -> GHC.Windows.failIf2
+                             @ GHC.Base.String
+                             System.Environment.getEnv3
+                             ds
+                        203##
+                        -> System.Environment.getEnv2
+                             Paths_atbash_cipher.getDynLibDir6
+                             ds } }
+                   GHC.Maybe.Just x -> (# ipv, x #) } }) -}
+f66da72c862a97bb495a79dc247038a0
+  getDynLibDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_atbash_cipher.getDynLibDir7) -}
+0fccb3a93ab5b8796c8d576c80797a11
+  getDynLibDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("atbash_cipher_dynlibdir"#) -}
+a286efd66214c97484fff45e94009d26
+  getLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_atbash_cipher.getLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+f441b6e3098f83de88802f7bb3640d2d
+  getLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.Type.SomeException
+                   Paths_atbash_cipher.getLibDir5
+                   Paths_atbash_cipher.getLibDir2
+                   eta) -}
+327d10d4ccdc737f32614ac2fdc9b461
+  getLibDir2 ::
+    GHC.Exception.Type.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.sameTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.Type.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True -> (# eta, Paths_atbash_cipher.getLibDir3 #) } }) -}
+5c0dcc689637a5b611b80a27a27df12a
+  getLibDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_atbash_cipher.getLibDir4) -}
+27f449ffa20f137d8ad1ba0546c0b442
+  getLibDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("C:\\Users\\aland\\Exercism\\haskell\\atbash-cipher\\.stack-work\\install\\072e9945\\lib\\x86_64-windows-ghc-8.6.5\\atbash-cipher-1.2.0.6-Cu519mjcJM8DLqQblcMY3o"#) -}
+756b13508d84e5d8f43adc8af6f5e6b5
+  getLibDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case System.Environment.getEnv5
+                        Paths_atbash_cipher.getLibDir6
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   GHC.Maybe.Nothing
+                   -> case {__pkg_ccall base-4.12.0.0 GHC.Prim.State#
+                                                        GHC.Prim.RealWorld
+                                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                            GHC.Prim.Word# #)}
+                             ipv of wild1 { (#,#) ds ds2 ->
+                      case GHC.Prim.narrow32Word# ds2 of wild2 {
+                        DEFAULT
+                        -> GHC.Windows.failIf2
+                             @ GHC.Base.String
+                             System.Environment.getEnv3
+                             ds
+                        203##
+                        -> System.Environment.getEnv2 Paths_atbash_cipher.getLibDir6 ds } }
+                   GHC.Maybe.Just x -> (# ipv, x #) } }) -}
+0130ab0d9b5136cc23e1fd39f4d221c9
+  getLibDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_atbash_cipher.getLibDir7) -}
+ddda14109856db88704da8a65799907c
+  getLibDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("atbash_cipher_libdir"#) -}
+7caf980658d447a43e8adc8d3758ee66
+  getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_atbash_cipher.getLibexecDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+f047db27935978f98301da116436d5d2
+  getLibexecDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.Type.SomeException
+                   Paths_atbash_cipher.getLibexecDir5
+                   Paths_atbash_cipher.getLibexecDir2
+                   eta) -}
+75d26e023e0dcef013bd9c395fa0a1ee
+  getLibexecDir2 ::
+    GHC.Exception.Type.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.sameTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.Type.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> (# eta, Paths_atbash_cipher.getLibexecDir3 #) } }) -}
+30785c759d3051c62a80b2c83d7759b5
+  getLibexecDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_atbash_cipher.getLibexecDir4) -}
+0326dc4921c53c2b09179397076819bf
+  getLibexecDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("C:\\Users\\aland\\Exercism\\haskell\\atbash-cipher\\.stack-work\\install\\072e9945\\libexec\\x86_64-windows-ghc-8.6.5\\atbash-cipher-1.2.0.6"#) -}
+b6afeaedbc8c1016c71983a4b9619c42
+  getLibexecDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case System.Environment.getEnv5
+                        Paths_atbash_cipher.getLibexecDir6
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   GHC.Maybe.Nothing
+                   -> case {__pkg_ccall base-4.12.0.0 GHC.Prim.State#
+                                                        GHC.Prim.RealWorld
+                                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                            GHC.Prim.Word# #)}
+                             ipv of wild1 { (#,#) ds ds2 ->
+                      case GHC.Prim.narrow32Word# ds2 of wild2 {
+                        DEFAULT
+                        -> GHC.Windows.failIf2
+                             @ GHC.Base.String
+                             System.Environment.getEnv3
+                             ds
+                        203##
+                        -> System.Environment.getEnv2
+                             Paths_atbash_cipher.getLibexecDir6
+                             ds } }
+                   GHC.Maybe.Just x -> (# ipv, x #) } }) -}
+6c3f0c80394788508aad1a5bd14c8665
+  getLibexecDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_atbash_cipher.getLibexecDir7) -}
+050ac073e6ddfe3d45d75f95c9f373c4
+  getLibexecDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("atbash_cipher_libexecdir"#) -}
+8831bee21340a451dea1468036dff8cc
+  getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_atbash_cipher.getSysconfDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+2617fb6a95479caba5cd8729aed9f260
+  getSysconfDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.Type.SomeException
+                   Paths_atbash_cipher.getSysconfDir5
+                   Paths_atbash_cipher.getSysconfDir2
+                   eta) -}
+227665a05da76f69c24ec8fe7aa262da
+  getSysconfDir2 ::
+    GHC.Exception.Type.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.sameTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.Type.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> (# eta, Paths_atbash_cipher.getSysconfDir3 #) } }) -}
+51c49671d96863196fae860d5aa3588a
+  getSysconfDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_atbash_cipher.getSysconfDir4) -}
+72e6ee6742faab1e6b20fdd67c44dc15
+  getSysconfDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("C:\\Users\\aland\\Exercism\\haskell\\atbash-cipher\\.stack-work\\install\\072e9945\\etc"#) -}
+30e4dfcaf471212fefe609f2cbe9d0eb
+  getSysconfDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case System.Environment.getEnv5
+                        Paths_atbash_cipher.getSysconfDir6
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   GHC.Maybe.Nothing
+                   -> case {__pkg_ccall base-4.12.0.0 GHC.Prim.State#
+                                                        GHC.Prim.RealWorld
+                                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                            GHC.Prim.Word# #)}
+                             ipv of wild1 { (#,#) ds ds2 ->
+                      case GHC.Prim.narrow32Word# ds2 of wild2 {
+                        DEFAULT
+                        -> GHC.Windows.failIf2
+                             @ GHC.Base.String
+                             System.Environment.getEnv3
+                             ds
+                        203##
+                        -> System.Environment.getEnv2
+                             Paths_atbash_cipher.getSysconfDir6
+                             ds } }
+                   GHC.Maybe.Just x -> (# ipv, x #) } }) -}
+1e922a0def04a1295b201d4e2230c222
+  getSysconfDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_atbash_cipher.getSysconfDir7) -}
+7ccf37e767e2b8d9b32614e4f7de7766
+  getSysconfDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("atbash_cipher_sysconfdir"#) -}
+0802e8650ae4ff85804ac5999648aca9
+  version :: Data.Version.Version
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Data.Version.Version
+                   Paths_atbash_cipher.version1
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+60f55661af785a2c88f2a451016cf111
+  version1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_atbash_cipher.version8
+                   Paths_atbash_cipher.version2) -}
+cd791bebe1c91035c7bbdb6f18eb4f20
+  version2 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_atbash_cipher.version7
+                   Paths_atbash_cipher.version3) -}
+d0a5bafaa5aa198a21fda7de38aa360c
+  version3 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_atbash_cipher.version6
+                   Paths_atbash_cipher.version4) -}
+658ccbdd493dd82eeffd02ba9337bb17
+  version4 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_atbash_cipher.version5
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+c1bf289d06fdb93db11412a6ebba9e57
+  version5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 6#) -}
+1abc8a69dc5383e85268d82c2e78082f
+  version6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+a0a8e2be2a98ae5e518121b61e2e19c3
+  version7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
+0737c9c5d7c916e2f19accbf5cf3b4c4
+  version8 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

@@ -1,0 +1,181 @@
+
+==================== FINAL INTERFACE ====================
+2019-09-26 23:39:45.1808621 UTC
+
+interface atbash-cipher-1.2.0.6-Cu519mjcJM8DLqQblcMY3o:Atbash 8065
+  interface hash: 9cd5c00eb53d5505377c7f1fc996a1c7
+  ABI hash: 6f71104649e57aaf0e814342063cd8b7
+  export-list hash: 616cd5f4c9657dce92eeb2144b9f70f1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f5f279ca9ba2d95eb058fe365944f930
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Atbash.decode
+  Atbash.encode
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Char 1b375a88c42d83fdb0075d9bd7d91b40
+import  -/  base-4.12.0.0:Data.List 6c60559263db7cf0f22549b9673785b9
+import  -/  base-4.12.0.0:Data.OldList 9c79c2259344fa5285ac49797d9c5db1
+import  -/  base-4.12.0.0:GHC.Base fbe365a916ebeeeb4bc1f895dbe83e42
+import  -/  base-4.12.0.0:GHC.Char 40d70b663474dcc0f4166e27f2759e41
+import  -/  base-4.12.0.0:GHC.Err 3a680f55541fe399f95f794018fc3593
+import  -/  base-4.12.0.0:GHC.List bb56c56a8dc21963b5824914872db158
+import  -/  base-4.12.0.0:GHC.Num 8203d3fee487126cffd5e55ba5d0e8c3
+import  -/  base-4.12.0.0:GHC.Unicode 83c3eb852482283851a887a8599902d0
+import  -/  base-4.12.0.0:Prelude 80c668cb99fbafebd524c5e897f8c982
+5dd9437f102a5a23fe9995987ea55028
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Atbash.$trModule3
+                   Atbash.$trModule1) -}
+f89b428e9519f07264f34ed012610a9f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Atbash.$trModule2) -}
+9cbef00371210e3305514003351bdd97
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Atbash"#) -}
+c054c0ee1d4f33d4aa83a81ab0adec5b
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Atbash.$trModule4) -}
+de4c7cc7c9610df39bf5f0447a77a138
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("atbash-cipher-1.2.0.6-Cu519mjcJM8DLqQblcMY3o"#) -}
+3447e4cc1ea18bded7037b65564568c6
+  $wconvert :: GHC.Prim.Char# -> GHC.Prim.Char#
+  {- Arity: 1, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Char#) ->
+                 let {
+                   x :: GHC.Prim.Word# = GHC.Prim.int2Word# (GHC.Prim.ord# ww)
+                 } in
+                 let {
+                   $j :: GHC.Prim.Char# <join 0>
+                   = case GHC.Prim.leWord#
+                            (GHC.Prim.int2Word# (GHC.Prim.-# (GHC.Prim.ord# ww) 48#))
+                            9## of lwild {
+                       DEFAULT
+                       -> case {__pkg_ccall base-4.12.0.0 GHC.Prim.Int#
+                                                          -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                          -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                GHC.Prim.Int# #)}
+                                 (GHC.Prim.ord# ww)
+                                 GHC.Prim.realWorld# of wild1 { (#,#) ds ds1 ->
+                          case ds1 of wild2 {
+                            DEFAULT
+                            -> case {__pkg_ccall base-4.12.0.0 GHC.Prim.Int#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld,
+                                                                     GHC.Prim.Int# #)}
+                                      (GHC.Prim.ord# ww)
+                                      GHC.Prim.realWorld# of wild { (#,#) ds2 ds3 ->
+                               case GHC.Prim.leWord#
+                                      (GHC.Prim.int2Word# ds3)
+                                      1114111## of lwild1 {
+                                 DEFAULT -> case GHC.Char.$wlvl ds3 ret_ty GHC.Prim.Char# of {}
+                                 1#
+                                 -> let {
+                                      i# :: GHC.Prim.Int# = GHC.Prim.-# 219# ds3
+                                    } in
+                                    case GHC.Prim.leWord#
+                                           (GHC.Prim.int2Word# i#)
+                                           1114111## of lwild2 {
+                                      DEFAULT -> case GHC.Char.$wlvl i# ret_ty GHC.Prim.Char# of {}
+                                      1# -> GHC.Prim.chr# i# } } }
+                            0# -> case Atbash.encode2 ret_ty GHC.Prim.Char# of {} } }
+                       1# -> ww }
+                 } in
+                 case GHC.Prim.leWord# x 887## of lwild {
+                   DEFAULT
+                   -> case {__pkg_ccall base-4.12.0.0 GHC.Prim.Int#
+                                                      -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                            GHC.Prim.Int# #)}
+                             (GHC.Prim.ord# ww)
+                             GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                      case ds1 of wild1 { DEFAULT -> ww 0# -> $j } }
+                   1#
+                   -> case x of wild {
+                        DEFAULT
+                        -> case GHC.Prim.leWord#
+                                  (GHC.Prim.minusWord# wild 9##)
+                                  4## of lwild1 {
+                             DEFAULT -> case wild of wild1 { DEFAULT -> $j 160## -> ww }
+                             1# -> ww }
+                        32## -> ww } }) -}
+75cbef5e572321e02b7283d34161e562
+  convert :: GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 1, Strictness: <S(S),1*U(U)>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Char) ->
+                 case w of ww { GHC.Types.C# ww1 ->
+                 case Atbash.$wconvert ww1 of ww2 { DEFAULT ->
+                 GHC.Types.C# ww2 } }) -}
+307ab42375009320ab11e7853cf40105
+  decode :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: [GHC.Types.Char]) -> Atbash.decode_go x) -}
+97ec51bbe666029e66a1c69fe1d2263f
+  decode_go :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+c6322881953b17d4be1b893f2b347a1f
+  encode :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: [GHC.Types.Char]) ->
+                 case Atbash.groupN
+                        Atbash.encode3
+                        (GHC.List.filter
+                           @ GHC.Types.Char
+                           GHC.Unicode.isAlphaNum
+                           x) of wild {
+                   [] -> GHC.Types.[] @ GHC.Types.Char
+                   : x1 xs1
+                   -> GHC.Base.map
+                        @ GHC.Types.Char
+                        @ GHC.Types.Char
+                        Atbash.convert
+                        (Data.OldList.intercalate_$spoly_go
+                           @ GHC.Types.Char
+                           x1
+                           (Data.OldList.prependToAll
+                              @ [GHC.Types.Char]
+                              Atbash.encode_xs
+                              xs1)) }) -}
+75458a1b225644ad97c42aa104b125ba
+  encode1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" "#) -}
+b78f741972f81bd30a7f1c4edb20dc49
+  encode2 :: GHC.Types.Char
+  {- Strictness: x -}
+16cfacd46562f12c3d91b400d06186e9
+  encode3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 5#) -}
+59e8a8104ade41c8cc41214c28a7c62b
+  encode_xs :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Atbash.encode1) -}
+c6f1b40c8230a1622e97331c2f1bd8c7
+  groupN :: GHC.Types.Int -> GHC.Base.String -> [GHC.Base.String]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S,1*U> -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
