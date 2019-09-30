@@ -1,0 +1,144 @@
+
+==================== FINAL INTERFACE ====================
+2019-09-30 02:11:39.4150492 UTC
+
+interface crypto-square-3.2.0.6-GnlaEhIRhPxLu3p5zRy3gM:CryptoSquare 8065
+  interface hash: 8514480d35c8c1ca39bea08d57e5c766
+  ABI hash: f2b5b3f1a0ff534433c9986d59a25409
+  export-list hash: 015fc29716980cdd3e93f821aa8ed6eb
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f5f279ca9ba2d95eb058fe365944f930
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  CryptoSquare.encode
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Char 1b375a88c42d83fdb0075d9bd7d91b40
+import  -/  base-4.12.0.0:Data.Foldable bdeac546b12282c8986759606b9295a5
+import  -/  base-4.12.0.0:Data.List 6c60559263db7cf0f22549b9673785b9
+import  -/  base-4.12.0.0:Data.OldList 9c79c2259344fa5285ac49797d9c5db1
+import  -/  base-4.12.0.0:GHC.Base fbe365a916ebeeeb4bc1f895dbe83e42
+import  -/  base-4.12.0.0:GHC.Float 465066e9b470b2f5c867f7b1c40e758b
+import  -/  base-4.12.0.0:GHC.List bb56c56a8dc21963b5824914872db158
+import  -/  base-4.12.0.0:GHC.Num 8203d3fee487126cffd5e55ba5d0e8c3
+import  -/  base-4.12.0.0:GHC.Real 3b42f3125c1d17d4e4b4437a3c97310f
+import  -/  base-4.12.0.0:GHC.Unicode 83c3eb852482283851a887a8599902d0
+import  -/  base-4.12.0.0:Prelude 80c668cb99fbafebd524c5e897f8c982
+import  -/  ghc-prim-0.5.3:GHC.Classes 6002495dc43e58d28c87e5e5e058752a
+01a07fb884baec355b90f8a5bb118fe1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   CryptoSquare.$trModule3
+                   CryptoSquare.$trModule1) -}
+5bc44d150b158eac343c96ab2959e565
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CryptoSquare.$trModule2) -}
+4183886451005e911f98c73697380b5d
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CryptoSquare"#) -}
+26ef8ce384a95c98d82ea895d1ff22aa
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CryptoSquare.$trModule4) -}
+109ac8809c99b40988e3521c5767a378
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("crypto-square-3.2.0.6-GnlaEhIRhPxLu3p5zRy3gM"#) -}
+cc2090a2972d206f4c9c9bcfc68b477e
+  $wxs :: GHC.Prim.Int# -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m2, Inline: [2] -}
+770ce8c53d1e5f21508f86ad6dbfe844
+  encode :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: GHC.Base.String) ->
+                 let {
+                   n :: GHC.Base.String = CryptoSquare.encode_go xs
+                 } in
+                 let {
+                   ds :: (GHC.Types.Int, GHC.Types.Int)
+                   = case GHC.List.$wlenAcc @ GHC.Types.Char n 0# of ww2 { DEFAULT ->
+                     let {
+                       x :: GHC.Prim.Double#
+                       = GHC.Prim.sqrtDouble# (GHC.Prim.int2Double# ww2)
+                     } in
+                     let {
+                       n1 :: GHC.Prim.Int# = GHC.Prim.double2Int# x
+                     } in
+                     case GHC.Prim.<## x (GHC.Prim.int2Double# n1) of lwild {
+                       DEFAULT
+                       -> let {
+                            wild :: GHC.Types.Int = GHC.Types.I# n1
+                          } in
+                          case GHC.Prim.<# (GHC.Prim.*# n1 n1) ww2 of lwild1 {
+                            DEFAULT -> (wild, wild)
+                            1# -> (wild, GHC.Types.I# (GHC.Prim.+# n1 1#)) }
+                       1#
+                       -> let {
+                            x1 :: GHC.Prim.Int# = GHC.Prim.-# n1 1#
+                          } in
+                          let {
+                            wild :: GHC.Types.Int = GHC.Types.I# x1
+                          } in
+                          case GHC.Prim.<# (GHC.Prim.*# x1 x1) ww2 of lwild1 {
+                            DEFAULT -> (wild, wild)
+                            1# -> (wild, GHC.Types.I# (GHC.Prim.+# x1 1#)) } } }
+                 } in
+                 case Data.OldList.transpose
+                        @ GHC.Types.Char
+                        (CryptoSquare.groupN
+                           (case ds of wild { (,) r c -> c })
+                           (GHC.Base.++
+                              @ GHC.Types.Char
+                              n
+                              (case ds of wild { (,) r c ->
+                               case r of wild1 { GHC.Types.I# x ->
+                               case c of wild2 { GHC.Types.I# y ->
+                               case GHC.List.$wlenAcc @ GHC.Types.Char n 0# of ww2 { DEFAULT ->
+                               let {
+                                 y1 :: GHC.Prim.Int# = GHC.Prim.-# (GHC.Prim.*# x y) ww2
+                               } in
+                               case GHC.Prim.<# 0# y1 of lwild {
+                                 DEFAULT -> GHC.Types.[] @ GHC.Types.Char
+                                 1# -> CryptoSquare.$wxs y1 } } } } }))) of wild {
+                   [] -> GHC.Types.[] @ GHC.Types.Char
+                   : x xs1
+                   -> Data.OldList.intercalate_$spoly_go
+                        @ GHC.Types.Char
+                        x
+                        (Data.OldList.prependToAll
+                           @ [GHC.Types.Char]
+                           CryptoSquare.encode1
+                           xs1) }) -}
+3e6deedb003aff13c03635a0f703de38
+  encode1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# CryptoSquare.encode2) -}
+80de730d94303c5698a09f98dbae2f1d
+  encode2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" "#) -}
+a98537d147923034839c41bcad902826
+  encode_go :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+9424698f59b57fd07ad409fb165c6f8b
+  groupN :: GHC.Types.Int -> GHC.Base.String -> [GHC.Base.String]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S,1*U> -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
