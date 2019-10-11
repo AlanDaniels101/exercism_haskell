@@ -1,0 +1,122 @@
+
+==================== FINAL INTERFACE ====================
+2019-10-11 15:59:26.5751746 UTC
+
+interface word-count-1.4.0.8-4hdWMQILt19KJoL1oqYF1v:WordCount 8065
+  interface hash: 49e96180cb56b1fab40d41909bb16d69
+  ABI hash: beae7619d89e7eff1a1359942e07b7bf
+  export-list hash: 59157f3efac65b6ac4abfa9e6ff250e1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f5f279ca9ba2d95eb058fe365944f930
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  WordCount.wordCount
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Char 1b375a88c42d83fdb0075d9bd7d91b40
+import  -/  base-4.12.0.0:Data.Foldable bdeac546b12282c8986759606b9295a5
+import  -/  base-4.12.0.0:Data.List 6c60559263db7cf0f22549b9673785b9
+import  -/  base-4.12.0.0:Data.OldList 9c79c2259344fa5285ac49797d9c5db1
+import  -/  base-4.12.0.0:GHC.Base fbe365a916ebeeeb4bc1f895dbe83e42
+import  -/  base-4.12.0.0:GHC.List bb56c56a8dc21963b5824914872db158
+import  -/  base-4.12.0.0:GHC.Unicode 83c3eb852482283851a887a8599902d0
+import  -/  base-4.12.0.0:Prelude 80c668cb99fbafebd524c5e897f8c982
+import  -/  ghc-prim-0.5.3:GHC.Classes 6002495dc43e58d28c87e5e5e058752a
+04d9e2306816a4bb4606ece8fb7684c7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   WordCount.$trModule3
+                   WordCount.$trModule1) -}
+f9e2c5fe32bff855cad2ef72679b5517
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS WordCount.$trModule2) -}
+4b32bc8f6c5f0be9055e99d08646bec2
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("WordCount"#) -}
+5e36b9f3fa58b83ae81fcc6486c21d6b
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS WordCount.$trModule4) -}
+0c30679110e0f9dc6c9ab68b74aa7bfc
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("word-count-1.4.0.8-4hdWMQILt19KJoL1oqYF1v"#) -}
+923cbeb034ba267c5f4919d2ea47afbb
+  $wlvl :: GHC.Prim.Char# -> GHC.Prim.Char#
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Char#) ->
+                 case ww of wild {
+                   DEFAULT
+                   -> case {__pkg_ccall base-4.12.0.0 GHC.Prim.Int#
+                                                      -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                            GHC.Prim.Int# #)}
+                             (GHC.Prim.ord# wild)
+                             GHC.Prim.realWorld# of wild1 { (#,#) ds ds1 ->
+                      case GHC.Prim.leWord# (GHC.Prim.int2Word# ds1) 1114111## of lwild {
+                        DEFAULT -> case GHC.Char.$wlvl ds1 ret_ty GHC.Prim.Char# of {}
+                        1# -> GHC.Prim.chr# ds1 } }
+                   ','# -> ' '# }) -}
+dd26e12700b0eece82d3ef1e0e2c9b48
+  wordCount :: GHC.Base.String -> [(GHC.Base.String, GHC.Types.Int)]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: GHC.Base.String) ->
+                 let {
+                   l :: [GHC.Base.String]
+                   = WordCount.wordCount_go
+                       (GHC.Base.map
+                          @ GHC.Types.Char
+                          @ GHC.Types.Char
+                          WordCount.wordCount1
+                          xs)
+                 } in
+                 GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ (GHC.Base.String, GHC.Types.Int)
+                   (\ (word :: GHC.Base.String) ->
+                    (word,
+                     letrec {
+                       $wgo :: [[GHC.Types.Char]] -> GHC.Prim.Int# -> GHC.Types.Int
+                         <join 2> {- Arity: 2, Strictness: <S,1*U><S,U>m, Inline: [2] -}
+                       = \ (w :: [[GHC.Types.Char]]) (ww :: GHC.Prim.Int#) ->
+                         case w of wild {
+                           [] -> GHC.Types.I# ww
+                           : y ys
+                           -> case GHC.Base.eqString y word of wild1 {
+                                GHC.Types.False -> $wgo ys ww
+                                GHC.Types.True -> $wgo ys (GHC.Prim.+# ww 1#) } }
+                     } in
+                     $wgo l 0#))
+                   (Data.OldList.nubBy @ GHC.Base.String GHC.Base.eqString l)) -}
+0912dd31a6e7c7a477dcd193ef449c0d
+  wordCount1 :: GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 1, Strictness: <S(S),1*U(1*U)>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Char) ->
+                 case w of ww { GHC.Types.C# ww1 ->
+                 case WordCount.$wlvl ww1 of ww2 { DEFAULT ->
+                 GHC.Types.C# ww2 } }) -}
+9452561d967492d3c86fb04630ca2325
+  wordCount_go :: [GHC.Types.Char] -> [[GHC.Types.Char]]
+  {- Arity: 1, Strictness: <S,1*U> -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
