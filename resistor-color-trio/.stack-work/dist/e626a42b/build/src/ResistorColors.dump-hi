@@ -1,0 +1,1246 @@
+
+==================== FINAL INTERFACE ====================
+2020-06-12 20:15:52.2474622 UTC
+
+interface resistor-color-trio-1.0.0.0-LDN9kvL85k8Dzl4VWBpD95:ResistorColors 8065
+  interface hash: 4604f0065a4278b6ca030db666b77621
+  ABI hash: c9391c279d0a8da1b04158db905a7d89
+  export-list hash: b4db065a89903389132fdf5fd223e6c5
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f5f279ca9ba2d95eb058fe365944f930
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ResistorColors.label
+  ResistorColors.ohms
+  ResistorColors.Color{ResistorColors.Black ResistorColors.Blue ResistorColors.Brown ResistorColors.Green ResistorColors.Grey ResistorColors.Orange ResistorColors.Red ResistorColors.Violet ResistorColors.White ResistorColors.Yellow}
+  ResistorColors.Resistor{ResistorColors.Resistor bands}
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Char 1b375a88c42d83fdb0075d9bd7d91b40
+import  -/  base-4.12.0.0:Data.Foldable bdeac546b12282c8986759606b9295a5
+import  -/  base-4.12.0.0:GHC.Base fbe365a916ebeeeb4bc1f895dbe83e42
+import  -/  base-4.12.0.0:GHC.Enum 07ff38948a30c3c15c2b16176a7aba4f
+import  -/  base-4.12.0.0:GHC.Err 3a680f55541fe399f95f794018fc3593
+import  -/  base-4.12.0.0:GHC.Num 8203d3fee487126cffd5e55ba5d0e8c3
+import  -/  base-4.12.0.0:GHC.Real 3b42f3125c1d17d4e4b4437a3c97310f
+import  -/  base-4.12.0.0:GHC.Show fa6032f3f820e8e8ec87b97bdca4e160
+import  -/  base-4.12.0.0:GHC.Unicode 83c3eb852482283851a887a8599902d0
+import  -/  base-4.12.0.0:Prelude 80c668cb99fbafebd524c5e897f8c982
+import  -/  ghc-prim-0.5.3:GHC.Classes 6002495dc43e58d28c87e5e5e058752a
+2d2aee6df81f8986202c6109b5be25c3
+  $fBoundedColor :: GHC.Enum.Bounded ResistorColors.Color
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ResistorColors.Color ResistorColors.Black ResistorColors.White -}
+962aea07391d05c334760e60bf3eecba
+  $fBoundedPrefix :: GHC.Enum.Bounded ResistorColors.Prefix
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ResistorColors.Prefix ResistorColors.Kilo ResistorColors.Giga -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fEnumColor :: GHC.Enum.Enum ResistorColors.Color
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ResistorColors.Color
+                  ResistorColors.$fEnumColor_$csucc
+                  ResistorColors.$fEnumColor_$cpred
+                  ResistorColors.$fEnumColor_$ctoEnum
+                  ResistorColors.$fEnumColor_$cfromEnum
+                  ResistorColors.$fEnumColor_$cenumFrom
+                  ResistorColors.$fEnumColor_$cenumFromThen
+                  ResistorColors.$fEnumColor_$cenumFromTo
+                  ResistorColors.$fEnumColor_$cenumFromThenTo -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fEnumColor1 :: ResistorColors.Color
+  {- Strictness: x -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fEnumColor2 :: ResistorColors.Color
+  {- Strictness: x -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fEnumColor_$cenumFrom ::
+    ResistorColors.Color -> [ResistorColors.Color]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (a :: ResistorColors.Color) ->
+                 case GHC.Prim.dataToTag#
+                        @ ResistorColors.Color
+                        a of a# { DEFAULT ->
+                 case GHC.Prim.># a# 9# of lwild {
+                   DEFAULT -> ResistorColors.$fEnumColor_go a#
+                   1# -> GHC.Types.[] @ ResistorColors.Color } }) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fEnumColor_$cenumFromThen ::
+    ResistorColors.Color
+    -> ResistorColors.Color -> [ResistorColors.Color]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: (\ (a :: ResistorColors.Color)
+                   (b :: ResistorColors.Color) ->
+                 case GHC.Prim.dataToTag#
+                        @ ResistorColors.Color
+                        a of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ ResistorColors.Color
+                        b of b# { DEFAULT ->
+                 case GHC.Prim.># a# b# of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.>=# b# a# of lwild1 {
+                        DEFAULT
+                        -> case GHC.Prim.># 9# b# of lwild2 {
+                             DEFAULT
+                             -> GHC.Types.:
+                                  @ ResistorColors.Color
+                                  (GHC.Prim.tagToEnum# @ ResistorColors.Color a#)
+                                  (let {
+                                     delta :: GHC.Prim.Int# = GHC.Prim.-# b# a#
+                                   } in
+                                   let {
+                                     y' :: GHC.Prim.Int# = GHC.Prim.-# 9# delta
+                                   } in
+                                   letrec {
+                                     go_dn :: GHC.Prim.Int# -> [ResistorColors.Color]
+                                       {- Arity: 1, Strictness: <S,U> -}
+                                     = \ (x :: GHC.Prim.Int#) ->
+                                       case GHC.Prim.<# x y' of lwild3 {
+                                         DEFAULT
+                                         -> GHC.Types.:
+                                              @ ResistorColors.Color
+                                              (GHC.Prim.tagToEnum# @ ResistorColors.Color x)
+                                              (go_dn (GHC.Prim.+# x delta))
+                                         1#
+                                         -> GHC.Types.:
+                                              @ ResistorColors.Color
+                                              (GHC.Prim.tagToEnum# @ ResistorColors.Color x)
+                                              (GHC.Types.[] @ ResistorColors.Color) }
+                                   } in
+                                   go_dn b#)
+                             1#
+                             -> case GHC.Prim.># 9# a# of lwild3 {
+                                  DEFAULT
+                                  -> GHC.Types.:
+                                       @ ResistorColors.Color
+                                       (GHC.Prim.tagToEnum# @ ResistorColors.Color a#)
+                                       (GHC.Types.[] @ ResistorColors.Color)
+                                  1# -> GHC.Types.[] @ ResistorColors.Color } }
+                        1#
+                        -> case GHC.Prim.<# 9# b# of lwild2 {
+                             DEFAULT
+                             -> GHC.Types.:
+                                  @ ResistorColors.Color
+                                  (GHC.Prim.tagToEnum# @ ResistorColors.Color a#)
+                                  (let {
+                                     delta :: GHC.Prim.Int# = GHC.Prim.-# b# a#
+                                   } in
+                                   let {
+                                     y' :: GHC.Prim.Int# = GHC.Prim.-# 9# delta
+                                   } in
+                                   letrec {
+                                     go_up :: GHC.Prim.Int# -> [ResistorColors.Color]
+                                       {- Arity: 1, Strictness: <S,U> -}
+                                     = \ (x :: GHC.Prim.Int#) ->
+                                       case GHC.Prim.># x y' of lwild3 {
+                                         DEFAULT
+                                         -> GHC.Types.:
+                                              @ ResistorColors.Color
+                                              (GHC.Prim.tagToEnum# @ ResistorColors.Color x)
+                                              (go_up (GHC.Prim.+# x delta))
+                                         1#
+                                         -> GHC.Types.:
+                                              @ ResistorColors.Color
+                                              (GHC.Prim.tagToEnum# @ ResistorColors.Color x)
+                                              (GHC.Types.[] @ ResistorColors.Color) }
+                                   } in
+                                   go_up b#)
+                             1#
+                             -> case GHC.Prim.<# 9# a# of lwild3 {
+                                  DEFAULT
+                                  -> GHC.Types.:
+                                       @ ResistorColors.Color
+                                       (GHC.Prim.tagToEnum# @ ResistorColors.Color a#)
+                                       (GHC.Types.[] @ ResistorColors.Color)
+                                  1# -> GHC.Types.[] @ ResistorColors.Color } } }
+                   1#
+                   -> case GHC.Prim.>=# b# a# of lwild1 {
+                        DEFAULT
+                        -> case GHC.Prim.># 0# b# of lwild2 {
+                             DEFAULT
+                             -> GHC.Types.:
+                                  @ ResistorColors.Color
+                                  (GHC.Prim.tagToEnum# @ ResistorColors.Color a#)
+                                  (let {
+                                     delta :: GHC.Prim.Int# = GHC.Prim.-# b# a#
+                                   } in
+                                   let {
+                                     y' :: GHC.Prim.Int# = GHC.Prim.-# 0# delta
+                                   } in
+                                   letrec {
+                                     go_dn :: GHC.Prim.Int# -> [ResistorColors.Color]
+                                       {- Arity: 1, Strictness: <S,U> -}
+                                     = \ (x :: GHC.Prim.Int#) ->
+                                       case GHC.Prim.<# x y' of lwild3 {
+                                         DEFAULT
+                                         -> GHC.Types.:
+                                              @ ResistorColors.Color
+                                              (GHC.Prim.tagToEnum# @ ResistorColors.Color x)
+                                              (go_dn (GHC.Prim.+# x delta))
+                                         1#
+                                         -> GHC.Types.:
+                                              @ ResistorColors.Color
+                                              (GHC.Prim.tagToEnum# @ ResistorColors.Color x)
+                                              (GHC.Types.[] @ ResistorColors.Color) }
+                                   } in
+                                   go_dn b#)
+                             1#
+                             -> case GHC.Prim.># 0# a# of lwild3 {
+                                  DEFAULT
+                                  -> GHC.Types.:
+                                       @ ResistorColors.Color
+                                       (GHC.Prim.tagToEnum# @ ResistorColors.Color a#)
+                                       (GHC.Types.[] @ ResistorColors.Color)
+                                  1# -> GHC.Types.[] @ ResistorColors.Color } }
+                        1#
+                        -> case GHC.Prim.<# 0# b# of lwild2 {
+                             DEFAULT
+                             -> GHC.Types.:
+                                  @ ResistorColors.Color
+                                  (GHC.Prim.tagToEnum# @ ResistorColors.Color a#)
+                                  (let {
+                                     delta :: GHC.Prim.Int# = GHC.Prim.-# b# a#
+                                   } in
+                                   let {
+                                     y' :: GHC.Prim.Int# = GHC.Prim.-# 0# delta
+                                   } in
+                                   letrec {
+                                     go_up :: GHC.Prim.Int# -> [ResistorColors.Color]
+                                       {- Arity: 1, Strictness: <S,U> -}
+                                     = \ (x :: GHC.Prim.Int#) ->
+                                       case GHC.Prim.># x y' of lwild3 {
+                                         DEFAULT
+                                         -> GHC.Types.:
+                                              @ ResistorColors.Color
+                                              (GHC.Prim.tagToEnum# @ ResistorColors.Color x)
+                                              (go_up (GHC.Prim.+# x delta))
+                                         1#
+                                         -> GHC.Types.:
+                                              @ ResistorColors.Color
+                                              (GHC.Prim.tagToEnum# @ ResistorColors.Color x)
+                                              (GHC.Types.[] @ ResistorColors.Color) }
+                                   } in
+                                   go_up b#)
+                             1#
+                             -> case GHC.Prim.<# 0# a# of lwild3 {
+                                  DEFAULT
+                                  -> GHC.Types.:
+                                       @ ResistorColors.Color
+                                       (GHC.Prim.tagToEnum# @ ResistorColors.Color a#)
+                                       (GHC.Types.[] @ ResistorColors.Color)
+                                  1# -> GHC.Types.[] @ ResistorColors.Color } } } } } }) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fEnumColor_$cenumFromThenTo ::
+    ResistorColors.Color
+    -> ResistorColors.Color
+    -> ResistorColors.Color
+    -> [ResistorColors.Color]
+  {- Arity: 3, Strictness: <S,U><S,U><S,U> -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fEnumColor_$cenumFromTo ::
+    ResistorColors.Color
+    -> ResistorColors.Color -> [ResistorColors.Color]
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (x :: ResistorColors.Color)
+                   (y :: ResistorColors.Color) ->
+                 case GHC.Prim.dataToTag#
+                        @ ResistorColors.Color
+                        x of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ ResistorColors.Color
+                        y of a#1 { DEFAULT ->
+                 case GHC.Prim.># a# a#1 of lwild {
+                   DEFAULT
+                   -> letrec {
+                        go1 :: GHC.Prim.Int# -> [ResistorColors.Color]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x1 :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ ResistorColors.Color
+                            (case GHC.Prim.>=# x1 0# of lwild1 {
+                               DEFAULT -> ResistorColors.$wlvl x1
+                               1#
+                               -> case GHC.Prim.<=# x1 9# of lwild2 {
+                                    DEFAULT -> ResistorColors.$wlvl x1
+                                    1# -> GHC.Prim.tagToEnum# @ ResistorColors.Color x1 } })
+                            (case GHC.Prim.==# x1 a#1 of lwild1 {
+                               DEFAULT -> go1 (GHC.Prim.+# x1 1#)
+                               1# -> GHC.Types.[] @ ResistorColors.Color })
+                      } in
+                      go1 a#
+                   1# -> GHC.Types.[] @ ResistorColors.Color } } }) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fEnumColor_$cfromEnum :: ResistorColors.Color -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ResistorColors.Color) ->
+                 case GHC.Prim.dataToTag#
+                        @ ResistorColors.Color
+                        a of a# { DEFAULT ->
+                 GHC.Types.I# a# }) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fEnumColor_$cpred :: ResistorColors.Color -> ResistorColors.Color
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ResistorColors.Color) ->
+                 case a of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.dataToTag#
+                             @ ResistorColors.Color
+                             lwild of a# { DEFAULT ->
+                      GHC.Prim.tagToEnum# @ ResistorColors.Color (GHC.Prim.+# a# -1#) }
+                   ResistorColors.Black -> ResistorColors.$fEnumColor1 }) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fEnumColor_$csucc :: ResistorColors.Color -> ResistorColors.Color
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ResistorColors.Color) ->
+                 case a of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.dataToTag#
+                             @ ResistorColors.Color
+                             lwild of a# { DEFAULT ->
+                      GHC.Prim.tagToEnum# @ ResistorColors.Color (GHC.Prim.+# a# 1#) }
+                   ResistorColors.White -> ResistorColors.$fEnumColor2 }) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fEnumColor_$ctoEnum :: GHC.Types.Int -> ResistorColors.Color
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 ResistorColors.$w$ctoEnum ww1 }) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fEnumColor_go :: GHC.Prim.Int# -> [ResistorColors.Color]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix :: GHC.Enum.Enum ResistorColors.Prefix
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ResistorColors.Prefix
+                  ResistorColors.$fEnumPrefix_$csucc
+                  ResistorColors.$fEnumPrefix_$cpred
+                  ResistorColors.$fEnumPrefix_$ctoEnum
+                  ResistorColors.$fEnumPrefix_$cfromEnum
+                  ResistorColors.$fEnumPrefix_$cenumFrom
+                  ResistorColors.$fEnumPrefix_$cenumFromThen
+                  ResistorColors.$fEnumPrefix_$cenumFromTo
+                  ResistorColors.$fEnumPrefix_$cenumFromThenTo -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix1 :: [ResistorColors.Prefix]
+  {- Unfolding: (ResistorColors.$fEnumPrefix_go3 2#) -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix2 :: [ResistorColors.Prefix]
+  {- Unfolding: (ResistorColors.$fEnumPrefix_go3 1#) -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix3 :: [ResistorColors.Prefix]
+  {- Unfolding: (ResistorColors.$fEnumPrefix_go3 0#) -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix4 :: ResistorColors.Prefix
+  {- Strictness: x -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix5 :: ResistorColors.Prefix
+  {- Strictness: x -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix_$cenumFrom ::
+    ResistorColors.Prefix -> [ResistorColors.Prefix]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: ResistorColors.Prefix) ->
+                 case a of wild {
+                   ResistorColors.Kilo -> ResistorColors.$fEnumPrefix3
+                   ResistorColors.Mega -> ResistorColors.$fEnumPrefix2
+                   ResistorColors.Giga -> ResistorColors.$fEnumPrefix1 }) -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix_$cenumFromThen ::
+    ResistorColors.Prefix
+    -> ResistorColors.Prefix -> [ResistorColors.Prefix]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix_$cenumFromThenTo ::
+    ResistorColors.Prefix
+    -> ResistorColors.Prefix
+    -> ResistorColors.Prefix
+    -> [ResistorColors.Prefix]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix_$cenumFromTo ::
+    ResistorColors.Prefix
+    -> ResistorColors.Prefix -> [ResistorColors.Prefix]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: ResistorColors.Prefix)
+                   (y :: ResistorColors.Prefix) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [ResistorColors.Prefix]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       ResistorColors.Kilo
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT -> ResistorColors.$fEnumPrefix_go2 x1
+                            1# -> GHC.Types.[] @ ResistorColors.Prefix }
+                       ResistorColors.Mega
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT -> ResistorColors.$fEnumPrefix_go1 x1
+                            1# -> GHC.Types.[] @ ResistorColors.Prefix }
+                       ResistorColors.Giga
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT -> ResistorColors.$fEnumPrefix_go x1
+                            1# -> GHC.Types.[] @ ResistorColors.Prefix } }
+                 } in
+                 case x of wild {
+                   ResistorColors.Kilo -> $j 0#
+                   ResistorColors.Mega -> $j 1#
+                   ResistorColors.Giga -> $j 2# }) -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix_$cfromEnum :: ResistorColors.Prefix -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ResistorColors.Prefix) ->
+                 case a of wild {
+                   ResistorColors.Kilo -> GHC.Types.I# 0#
+                   ResistorColors.Mega -> GHC.Types.I# 1#
+                   ResistorColors.Giga -> GHC.Types.I# 2# }) -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix_$cpred ::
+    ResistorColors.Prefix -> ResistorColors.Prefix
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ResistorColors.Prefix) ->
+                 case a of wild {
+                   ResistorColors.Kilo -> ResistorColors.$fEnumPrefix4
+                   ResistorColors.Mega -> ResistorColors.Kilo
+                   ResistorColors.Giga -> ResistorColors.Mega }) -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix_$csucc ::
+    ResistorColors.Prefix -> ResistorColors.Prefix
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ResistorColors.Prefix) ->
+                 case a of wild {
+                   ResistorColors.Kilo -> ResistorColors.Mega
+                   ResistorColors.Mega -> ResistorColors.Giga
+                   ResistorColors.Giga -> ResistorColors.$fEnumPrefix5 }) -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix_$ctoEnum :: GHC.Types.Int -> ResistorColors.Prefix
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 ResistorColors.$w$ctoEnum1 ww1 }) -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix_go :: GHC.Prim.Int# -> [ResistorColors.Prefix]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix_go1 :: GHC.Prim.Int# -> [ResistorColors.Prefix]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix_go2 :: GHC.Prim.Int# -> [ResistorColors.Prefix]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+962aea07391d05c334760e60bf3eecba
+  $fEnumPrefix_go3 :: GHC.Prim.Int# -> [ResistorColors.Prefix]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fShowColor :: GHC.Show.Show ResistorColors.Color
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ResistorColors.Color
+                  ResistorColors.$fShowColor_$cshowsPrec
+                  ResistorColors.$fShowColor_$cshow
+                  ResistorColors.$fShowColor_$cshowList -}
+054740229dfaacaebc0f600b381e6615
+  $fShowColor1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowColor2) -}
+83be78873a39fd8b956b3ff554f11611
+  $fShowColor10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Green"#) -}
+f4c25122e299504a281a272b782891ef
+  $fShowColor11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowColor12) -}
+7a6248cef668cc001e9e1a8a3392e4d0
+  $fShowColor12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Yellow"#) -}
+1173595e27f491039926e602d6c2a458
+  $fShowColor13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowColor14) -}
+6d3ca3df7f5a0d39c0b43c4394f96262
+  $fShowColor14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Orange"#) -}
+7bd6d2c06dceb2ca27ac4844cfb550c7
+  $fShowColor15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowColor16) -}
+82f3c0a3bceac2279c3e512867f21ba6
+  $fShowColor16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Red"#) -}
+0926af70914dc2d6bcdd5c587d499d89
+  $fShowColor17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowColor18) -}
+b29d134d19c9cef5f8fe4a9febf41c2a
+  $fShowColor18 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Brown"#) -}
+8fcc0cc8a8e752a030c1e7cf36a576df
+  $fShowColor19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowColor20) -}
+d367b726e9a2e394f7698328f2e452f4
+  $fShowColor2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("White"#) -}
+b0d5a628d7d0ab9d80b118778f7acc80
+  $fShowColor20 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Black"#) -}
+ade7601eb099e43c8a4a189a005dc18b
+  $fShowColor3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowColor4) -}
+0d764a1933d26708829e83bc1aa19e7c
+  $fShowColor4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Grey"#) -}
+04de4c29e5f18d34b6b23ef104ca7157
+  $fShowColor5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowColor6) -}
+9efca8f2db627e2ad32090c9e136fe42
+  $fShowColor6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Violet"#) -}
+10d9afd865d075a98d1951b73562f37d
+  $fShowColor7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowColor8) -}
+ded64ebbee90b9621637122f1e3887f8
+  $fShowColor8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Blue"#) -}
+0d805e362403d0e311272fa50cbfd841
+  $fShowColor9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowColor10) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fShowColor_$cshow :: ResistorColors.Color -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: ResistorColors.Color) ->
+                 case x of wild {
+                   ResistorColors.Black -> ResistorColors.$fShowColor19
+                   ResistorColors.Brown -> ResistorColors.$fShowColor17
+                   ResistorColors.Red -> ResistorColors.$fShowColor15
+                   ResistorColors.Orange -> ResistorColors.$fShowColor13
+                   ResistorColors.Yellow -> ResistorColors.$fShowColor11
+                   ResistorColors.Green -> ResistorColors.$fShowColor9
+                   ResistorColors.Blue -> ResistorColors.$fShowColor7
+                   ResistorColors.Violet -> ResistorColors.$fShowColor5
+                   ResistorColors.Grey -> ResistorColors.$fShowColor3
+                   ResistorColors.White -> ResistorColors.$fShowColor1 }) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fShowColor_$cshowList :: [ResistorColors.Color] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [ResistorColors.Color]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ResistorColors.Color
+                   ResistorColors.$w$cshowsPrec
+                   ls
+                   s) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $fShowColor_$cshowsPrec ::
+    GHC.Types.Int -> ResistorColors.Color -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: ResistorColors.Color)
+                   (w2 :: GHC.Base.String) ->
+                 ResistorColors.$w$cshowsPrec w1 w2) -}
+962aea07391d05c334760e60bf3eecba
+  $fShowPrefix :: GHC.Show.Show ResistorColors.Prefix
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ResistorColors.Prefix
+                  ResistorColors.$fShowPrefix_$cshowsPrec
+                  ResistorColors.$fShowPrefix_$cshow
+                  ResistorColors.$fShowPrefix_$cshowList -}
+d1f0e09591e967a4134d6542b851cb85
+  $fShowPrefix1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowPrefix2) -}
+bd619076159e9d8edb6da8630598abc2
+  $fShowPrefix2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Giga"#) -}
+271f3efe5acb5fe0e02140447b0f00cc
+  $fShowPrefix3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowPrefix4) -}
+5b6b7e176e1772a874599d882a7cad7f
+  $fShowPrefix4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Mega"#) -}
+5fea3b1e332cc74ee4ff8331373f0bee
+  $fShowPrefix5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fShowPrefix6) -}
+935cb1ff3322c838f3b2c9391a611e2b
+  $fShowPrefix6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Kilo"#) -}
+962aea07391d05c334760e60bf3eecba
+  $fShowPrefix_$cshow :: ResistorColors.Prefix -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ResistorColors.Prefix) ->
+                 case x of wild {
+                   ResistorColors.Kilo -> ResistorColors.$fShowPrefix5
+                   ResistorColors.Mega -> ResistorColors.$fShowPrefix3
+                   ResistorColors.Giga -> ResistorColors.$fShowPrefix1 }) -}
+962aea07391d05c334760e60bf3eecba
+  $fShowPrefix_$cshowList ::
+    [ResistorColors.Prefix] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [ResistorColors.Prefix]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ResistorColors.Prefix
+                   ResistorColors.$w$cshowsPrec1
+                   ls
+                   s) -}
+962aea07391d05c334760e60bf3eecba
+  $fShowPrefix_$cshowsPrec ::
+    GHC.Types.Int -> ResistorColors.Prefix -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: ResistorColors.Prefix)
+                   (w2 :: GHC.Base.String) ->
+                 ResistorColors.$w$cshowsPrec1 w1 w2) -}
+a86c73b365a1d5dbb4d1b9a744bd4965
+  $fShowResistor :: GHC.Show.Show ResistorColors.Resistor
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ResistorColors.Resistor
+                  ResistorColors.$fShowResistor_$cshowsPrec
+                  ResistorColors.$fShowResistor_$cshow
+                  ResistorColors.$fShowResistor_$cshowList -}
+a86c73b365a1d5dbb4d1b9a744bd4965
+  $fShowResistor1 :: ResistorColors.Resistor -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U(1*U,1*U,U)><L,U>,
+     Unfolding: (\ (w :: ResistorColors.Resistor)
+                   (w1 :: GHC.Base.String) ->
+                 ResistorColors.$w$cshowsPrec2 0# w w1) -}
+f6cb9419d95f91bf6ac7d6fa71eb0c49
+  $fShowResistor2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("}"#) -}
+29993507985cc7d98f26e0b3748c55e4
+  $fShowResistor3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("bands = "#) -}
+0d01e2ad95957d52a328343eb4cb2a47
+  $fShowResistor4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Resistor {"#) -}
+67ccde6fbd8e87fe5e1436c449db5b48
+  $fShowResistor5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+a86c73b365a1d5dbb4d1b9a744bd4965
+  $fShowResistor_$cshow :: ResistorColors.Resistor -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U(1*U,1*U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ResistorColors.Resistor) ->
+                 ResistorColors.$fShowResistor_$cshowsPrec
+                   ResistorColors.$fShowResistor5
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a86c73b365a1d5dbb4d1b9a744bd4965
+  $fShowResistor_$cshowList ::
+    [ResistorColors.Resistor] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [ResistorColors.Resistor]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ResistorColors.Resistor
+                   ResistorColors.$fShowResistor1
+                   ls
+                   s) -}
+a86c73b365a1d5dbb4d1b9a744bd4965
+  $fShowResistor_$cshowsPrec ::
+    GHC.Types.Int -> ResistorColors.Resistor -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><L,1*U(1*U,1*U,U)><L,U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: ResistorColors.Resistor)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 ResistorColors.$w$cshowsPrec2 ww1 w1 w2 }) -}
+d86de2eca448d6ff899be60d7a87b62a
+  $tc'Black :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14886139239996438179##
+                   507270358894102454##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Black2
+                   0#
+                   ResistorColors.$tc'Black1) -}
+8fb23eb8d60e13755011dbc47135e2e6
+  $tc'Black1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+2d78d74fb0849e754f4e6242309af26f
+  $tc'Black2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Black3) -}
+a0ea1813ce11af5b7e9da0448bc2d2c5
+  $tc'Black3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Black"#) -}
+a4fdb820e1eb1ccfd58ecf90ffa87ba2
+  $tc'Blue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12407869125316900364##
+                   12432880677457707877##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Blue1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+76049ffc957c92df9e8c4aa6c2c7b09a
+  $tc'Blue1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Blue2) -}
+f38cbe4d8b6373e014895186b769ae9a
+  $tc'Blue2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Blue"#) -}
+102debc7ed3e860dc6f01733913ec9c4
+  $tc'Brown :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16590850656641724857##
+                   11612208312477260783##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Brown1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+7288e58bbaaf4dede420aa3363fdb8b5
+  $tc'Brown1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Brown2) -}
+f404c864a963f09b4b21aa442908a261
+  $tc'Brown2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Brown"#) -}
+f32a3230527fd675dccb5c7bcd8aea98
+  $tc'Giga :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16392792597701204101##
+                   603334075766523751##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Giga2
+                   0#
+                   ResistorColors.$tc'Giga1) -}
+0bd0c0ea9e667de9096dda28f231ab8a
+  $tc'Giga1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+983c4146d35a0043223dd9ff49ff9993
+  $tc'Giga2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Giga3) -}
+2d70d96a28eb3922e99f0b2fa2eae99e
+  $tc'Giga3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Giga"#) -}
+3bdcac355dc2cd661a3f03dbc7ed922e
+  $tc'Green :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2320178246803304510##
+                   11810824793609483500##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Green1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+45651cbdd4b1418a21892c198831ab78
+  $tc'Green1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Green2) -}
+38b1698200517bb82e1a01cfc9ee950c
+  $tc'Green2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Green"#) -}
+be2c383ab685d7bf60f6a8c665d273cc
+  $tc'Grey :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16151814811894122160##
+                   1806179731311399050##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Grey1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+fb467fbfd78b5c7e0aa7b30b77923423
+  $tc'Grey1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Grey2) -}
+8bf42fb769775eb6e39038dcf0e54873
+  $tc'Grey2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Grey"#) -}
+d312570f35904736608ab9b4f2e07958
+  $tc'Kilo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11437666441977622518##
+                   12632645290050500735##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Kilo1
+                   0#
+                   ResistorColors.$tc'Giga1) -}
+db3d827a86d886fb32c8b27426507a67
+  $tc'Kilo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Kilo2) -}
+bc37b72dcb661450252c9801196a42d1
+  $tc'Kilo2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Kilo"#) -}
+9ab32fc87085f57d8fd2cbfcd38fa6dc
+  $tc'Mega :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   491470149631350157##
+                   6683919072819137087##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Mega1
+                   0#
+                   ResistorColors.$tc'Giga1) -}
+a5e4e1c7a40b0f286307c5a989a54b7b
+  $tc'Mega1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Mega2) -}
+8236200ff8fbe2a30fb73c8335ed0302
+  $tc'Mega2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Mega"#) -}
+85342f56ca172cd001fad59c51137e1a
+  $tc'Orange :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1218305821243057381##
+                   10632911688273397449##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Orange1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+e404f649646881874177b4455ff884fd
+  $tc'Orange1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Orange2) -}
+0e943a2355721da955b365f202609b6a
+  $tc'Orange2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Orange"#) -}
+6db8a1964fc10a7c5fcbec80dc9f96ea
+  $tc'Red :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8813463117985183438##
+                   13302600039573138530##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Red1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+82396cd85df402418921fef1407708f2
+  $tc'Red1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Red2) -}
+d4448681fcc19c378476ceaa72c162ff
+  $tc'Red2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Red"#) -}
+3d46c937d2bb375cbb044ed3fe9ad31c
+  $tc'Resistor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   455253915011281782##
+                   12954006983595754704##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Resistor2
+                   0#
+                   ResistorColors.$tc'Resistor1) -}
+1e3aa4418e480239c2dfd06991725158
+  $tc'Resistor1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+55937fd928801e980859df877d5b5e7e
+  $tc'Resistor2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Resistor3) -}
+8093f3416fb2a5595369079ddbb3d441
+  $tc'Resistor3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Resistor"#) -}
+ebb2f3229e9c3a7a1f4b4447088fbdee
+  $tc'Violet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11977277243496537234##
+                   803848799396184450##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Violet1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+e8f5ce288906af0dc231e2c6cfbff8a4
+  $tc'Violet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Violet2) -}
+9ea4219bbe68137b8f456b25f33bcd4d
+  $tc'Violet2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Violet"#) -}
+958e4dc10fd88e7120b9d84903d15756
+  $tc'White :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2434910355899503815##
+                   9137409505082299887##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'White1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+90f3635fe7509a58ad01233fdcbf72dd
+  $tc'White1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'White2) -}
+65941e45b3712d4f7a602b521a587944
+  $tc'White2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'White"#) -}
+f5be4ed0c990420cb57e5b9c257ba720
+  $tc'Yellow :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17311184336700767019##
+                   13566214233204072769##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Yellow1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+4413207bc4f5024720de1305f4196126
+  $tc'Yellow1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Yellow2) -}
+9a0b4cf1e15e133cfe391b6582471b5e
+  $tc'Yellow2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Yellow"#) -}
+698a4df0ed7c9dfeea368e30c3663fb1
+  $tcColor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4009507828561455163##
+                   8320406011289048161##
+                   ResistorColors.$trModule
+                   ResistorColors.$tcColor1
+                   0#
+                   GHC.Types.krep$*) -}
+7fb1702e56a2598907ddd85987b4fe2b
+  $tcColor1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tcColor2) -}
+0ed0ed54b690a11cc3262381b8f94c56
+  $tcColor2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Color"#) -}
+50e250f67dc762425383960c1f29cd9e
+  $tcPrefix :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   506616920625610032##
+                   10832325932780833156##
+                   ResistorColors.$trModule
+                   ResistorColors.$tcPrefix1
+                   0#
+                   GHC.Types.krep$*) -}
+ff5f91be01aad87912576076043698d5
+  $tcPrefix1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tcPrefix2) -}
+0c9eef0fe641d92b1e7c6417c47d3233
+  $tcPrefix2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Prefix"#) -}
+574e068bc75564b969740607d1261f2f
+  $tcResistor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15105491572661116988##
+                   2353875353977574114##
+                   ResistorColors.$trModule
+                   ResistorColors.$tcResistor1
+                   0#
+                   GHC.Types.krep$*) -}
+b96c7afcc76c00edf0aa358ee9181c62
+  $tcResistor1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tcResistor2) -}
+dd502f9318d8897ee61fbfd81b723951
+  $tcResistor2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Resistor"#) -}
+ffa590e459f832d70558b64b95693fdf
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ResistorColors.$trModule3
+                   ResistorColors.$trModule1) -}
+ab0185f4c7288639ce9d1f600bfc0c0d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$trModule2) -}
+f6ab12f2c8e0e5dddee7853411734d49
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ResistorColors"#) -}
+1fbcf993fc758954d2324cbc78728d56
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$trModule4) -}
+2468f47bb33bb4e166c0f4f1393c43dd
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("resistor-color-trio-1.0.0.0-LDN9kvL85k8Dzl4VWBpD95"#) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $w$cshowsPrec ::
+    ResistorColors.Color -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (w :: ResistorColors.Color)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   ResistorColors.Black
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fShowColor19 w1
+                   ResistorColors.Brown
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fShowColor17 w1
+                   ResistorColors.Red
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fShowColor15 w1
+                   ResistorColors.Orange
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fShowColor13 w1
+                   ResistorColors.Yellow
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fShowColor11 w1
+                   ResistorColors.Green
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fShowColor9 w1
+                   ResistorColors.Blue
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fShowColor7 w1
+                   ResistorColors.Violet
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fShowColor5 w1
+                   ResistorColors.Grey
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fShowColor3 w1
+                   ResistorColors.White
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        ResistorColors.$fShowColor1
+                        w1 }) -}
+962aea07391d05c334760e60bf3eecba
+  $w$cshowsPrec1 ::
+    ResistorColors.Prefix -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (w :: ResistorColors.Prefix)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   ResistorColors.Kilo
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fShowPrefix5 w1
+                   ResistorColors.Mega
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fShowPrefix3 w1
+                   ResistorColors.Giga
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        ResistorColors.$fShowPrefix1
+                        w1 }) -}
+a86c73b365a1d5dbb4d1b9a744bd4965
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int#
+    -> ResistorColors.Resistor -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U(1*U,1*U,U)><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: ResistorColors.Resistor)
+                   (w1 :: GHC.Base.String) ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.CString.unpackAppendCString#
+                       ResistorColors.$fShowResistor4
+                       (GHC.CString.unpackAppendCString#
+                          ResistorColors.$fShowResistor3
+                          (case w `cast`
+                                (ResistorColors.N:Resistor[0]) of ww1 { (,,) ww2 ww3 ww4 ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (ResistorColors.$w$cshowsPrec
+                                ww2
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.showList__1
+                                   (GHC.Show.$fShow(,,)_$sgo2
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.$fShow(,)2
+                                         (GHC.CString.unpackAppendCString#
+                                            ResistorColors.$fShowResistor2
+                                            x))
+                                      (\ (w2 :: GHC.Base.String)[OneShot] ->
+                                       ResistorColors.$w$cshowsPrec ww3 w2)
+                                      (GHC.Types.:
+                                         @ GHC.Show.ShowS
+                                         (\ (w2 :: GHC.Base.String) ->
+                                          ResistorColors.$w$cshowsPrec ww4 w2)
+                                         (GHC.Types.[] @ GHC.Show.ShowS))))) }))
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT -> p w1
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w1)) }) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $w$ctoEnum :: GHC.Prim.Int# -> ResistorColors.Color
+  {- Arity: 1, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> ResistorColors.$wlvl ww
+                   1#
+                   -> case GHC.Prim.<=# ww 9# of lwild1 {
+                        DEFAULT -> ResistorColors.$wlvl ww
+                        1# -> GHC.Prim.tagToEnum# @ ResistorColors.Color ww } }) -}
+962aea07391d05c334760e60bf3eecba
+  $w$ctoEnum1 :: GHC.Prim.Int# -> ResistorColors.Prefix
+  {- Arity: 1, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> ResistorColors.$wlvl1 ww
+                   1#
+                   -> case GHC.Prim.<=# ww 2# of lwild1 {
+                        DEFAULT -> ResistorColors.$wlvl1 ww
+                        1# -> GHC.Prim.tagToEnum# @ ResistorColors.Prefix ww } }) -}
+a9e8b2690976e03cd355f3b8b3227163
+  $wlabel ::
+    ResistorColors.Color
+    -> ResistorColors.Color -> ResistorColors.Color -> [GHC.Types.Char]
+  {- Arity: 3, Strictness: <S,U><S,U><S,U>, Inline: [2],
+     Unfolding: (\ (ww :: ResistorColors.Color)
+                   (ww1 :: ResistorColors.Color)
+                   (ww2 :: ResistorColors.Color) ->
+                 case GHC.Prim.dataToTag#
+                        @ ResistorColors.Color
+                        ww of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ ResistorColors.Color
+                        ww1 of a#1 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ ResistorColors.Color
+                        ww2 of a#2 { DEFAULT ->
+                 case GHC.Prim.<# a#2 0# of lwild {
+                   DEFAULT
+                   -> case a#2 of wild1 {
+                        DEFAULT
+                        -> case GHC.Real.$wf1 10# wild1 of ww3 { DEFAULT ->
+                           ResistorColors.label1
+                             (GHC.Prim.*# (GHC.Prim.+# (GHC.Prim.*# 10# a#) a#1) ww3) }
+                        0#
+                        -> ResistorColors.label1 (GHC.Prim.+# (GHC.Prim.*# 10# a#) a#1) }
+                   1# -> case GHC.Real.^2 ret_ty [GHC.Types.Char] of {} } } } }) -}
+2d2aee6df81f8986202c6109b5be25c3
+  $wlvl :: GHC.Prim.Int# -> ResistorColors.Color
+  {- Arity: 1, Strictness: <B,U>x, Inline: [2] -}
+962aea07391d05c334760e60bf3eecba
+  $wlvl1 :: GHC.Prim.Int# -> ResistorColors.Prefix
+  {- Arity: 1, Strictness: <B,U>x, Inline: [2] -}
+2d2aee6df81f8986202c6109b5be25c3
+  data Color
+    = Black
+    | Brown
+    | Red
+    | Orange
+    | Yellow
+    | Green
+    | Blue
+    | Violet
+    | Grey
+    | White
+962aea07391d05c334760e60bf3eecba
+  data Prefix = Kilo | Mega | Giga
+a86c73b365a1d5dbb4d1b9a744bd4965
+  newtype Resistor
+    = Resistor {bands :: (ResistorColors.Color, ResistorColors.Color,
+                          ResistorColors.Color)}
+a86c73b365a1d5dbb4d1b9a744bd4965
+  bands ::
+    ResistorColors.Resistor
+    -> (ResistorColors.Color, ResistorColors.Color,
+        ResistorColors.Color)
+  RecSel Left ResistorColors.Resistor
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U)>m,
+     Unfolding: InlineRule (0, True, True)
+                ResistorColors.bands1
+                  `cast`
+                (<ResistorColors.Resistor>_R ->_R ResistorColors.N:Resistor[0]) -}
+a86c73b365a1d5dbb4d1b9a744bd4965
+  bands1 :: ResistorColors.Resistor -> ResistorColors.Resistor
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U)>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: ResistorColors.Resistor) -> ds) -}
+d60d96a5a101d3299f09ab93619a36cc
+  label :: ResistorColors.Resistor -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: ResistorColors.Resistor) ->
+                 case w `cast`
+                      (ResistorColors.N:Resistor[0]) of ww { (,,) ww1 ww2 ww3 ->
+                 ResistorColors.$wlabel ww1 ww2 ww3 }) -}
+1ceaa99c776ff7e4c4a45aac3d2fc813
+  label1 :: GHC.Prim.Int# -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,U> -}
+0c64c0ecdf734f7fd71aff986596329f
+  ohms :: ResistorColors.Resistor -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: ResistorColors.Resistor) ->
+                 case w `cast`
+                      (ResistorColors.N:Resistor[0]) of ww { (,,) ww1 ww2 ww3 ->
+                 case GHC.Prim.dataToTag#
+                        @ ResistorColors.Color
+                        ww1 of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ ResistorColors.Color
+                        ww2 of a#1 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ ResistorColors.Color
+                        ww3 of a#2 { DEFAULT ->
+                 case GHC.Prim.<# a#2 0# of lwild {
+                   DEFAULT
+                   -> case a#2 of wild1 {
+                        DEFAULT
+                        -> case GHC.Real.$wf1 10# wild1 of ww4 { DEFAULT ->
+                           GHC.Types.I#
+                             (GHC.Prim.*# (GHC.Prim.+# (GHC.Prim.*# 10# a#) a#1) ww4) }
+                        0# -> GHC.Types.I# (GHC.Prim.+# (GHC.Prim.*# 10# a#) a#1) }
+                   1# -> GHC.Real.^2 } } } } }) -}
+instance [safe] GHC.Enum.Bounded [ResistorColors.Color]
+  = ResistorColors.$fBoundedColor
+instance [safe] GHC.Enum.Bounded [ResistorColors.Prefix]
+  = ResistorColors.$fBoundedPrefix
+instance [safe] GHC.Enum.Enum [ResistorColors.Color]
+  = ResistorColors.$fEnumColor
+instance [safe] GHC.Enum.Enum [ResistorColors.Prefix]
+  = ResistorColors.$fEnumPrefix
+instance [safe] GHC.Show.Show [ResistorColors.Color]
+  = ResistorColors.$fShowColor
+instance [safe] GHC.Show.Show [ResistorColors.Prefix]
+  = ResistorColors.$fShowPrefix
+instance [safe] GHC.Show.Show [ResistorColors.Resistor]
+  = ResistorColors.$fShowResistor
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
