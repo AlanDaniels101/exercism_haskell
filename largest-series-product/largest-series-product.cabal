@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 746e7857afdc229e3fefcb99d2a016cd70b5d5ef38652cf7e9e21471dad02081
+-- hash: 6dbd652e6ce03dcc8f77ea83b5e33d920db35e28fb8a976e7ce9f4a9b68c0b45
 
 name:           largest-series-product
 version:        1.2.0.6
@@ -20,6 +20,7 @@ library
   ghc-options: -Wall
   build-depends:
       base
+    , split
   default-language: Haskell2010
 
 test-suite test
